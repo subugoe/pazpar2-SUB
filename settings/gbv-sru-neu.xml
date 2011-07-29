@@ -3,9 +3,9 @@
 	New GBV SRU Server
 	* Pica-style search keys
 	* transformations:
-		-> Marc XML to TurboMarc (to use indexdata's powerful tmarc.xsl)
+		-> Marc XML to TurboMarc (to use indexdata's powerful ../tmarc.xsl)
 		-> gbv-cleaner to fix a few quirks of the GBV data
-		-> tmarc.xsl
+		-> ../tmarc.xsl
 		-> language-code-cleaner to remove deprecated language codes
 
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
@@ -64,7 +64,7 @@
 
 	<!-- Fix and Transform to TXML -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="SUB-xsl/gbv-cleaner.xsl,tmarc.xsl,SUB-xsl/language-code-cleaner.xsl,SUB-xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,../tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl"/>
 
 <!--
 	<set target="sru.gbv.de/opac-de-7"

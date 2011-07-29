@@ -9,7 +9,7 @@
 -->
 
 
-	<settings src="SUB-settings/gbv-sru-neu.xml"/>
+	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/olc" name="pz:name" value="Online Contents"/>
 		<set target="sru.gbv.de/natliz" name="pz:name" value="Nationallizenzen Bücher"/>
@@ -17,7 +17,7 @@
 	</settings>
 
 
-	<settings src="SUB-settings/GoeScholar.xml"/>
+	<settings src="settings/GoeScholar.xml"/>
 
 
 

@@ -32,7 +32,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="tmarc.xsl,SUB-xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="../tmarc.xsl,xsl/catalogue-url-hint+id.xsl"/>
 	
 </settings>
 

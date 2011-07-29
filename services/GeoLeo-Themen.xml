@@ -11,7 +11,7 @@
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="SUB-settings/gbv-sru-neu.xml"/>
+	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
 		<set target="sru.gbv.de/opac-de-7" name="pz:maxrecs" value="500"/>
@@ -27,14 +27,14 @@
 
 
 <!--
-	<settings src="SUB-settings/SUB-Guides-solr.xml"/>
+	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="History Guide"/>
 	</settings>
 -->
 
 
-	<settings src="SUB-settings/SUB-Guides.xml"/>
+	<settings src="settings/SUB-Guides.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:2020/geo"	name="pz:name" value="Geo-Guide"/>
 		<!--	
@@ -45,9 +45,9 @@
 
 
 <!--
-	<settings src="SUB-settings/Freiberg.xml"/>
+	<settings src="settings/Freiberg.xml"/>
 -->
-	<settings src="SUB-settings/GeoLeo-edocs.xml"/>
+	<settings src="settings/GeoLeo-edocs.xml"/>
 
 
 	<!-- we try to keep same order as in marc21.xsl -->

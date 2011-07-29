@@ -27,5 +27,5 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="SUB-xsl/DSpace-dc-qualified.xsl,SUB-xsl/DSpace-GoeScholar.xsl,SUB-xsl/language-code-cleaner.xsl"/>
+	<set name="pz:xslt" value="xsl/DSpace-dc-qualified.xsl,xsl/DSpace-GoeScholar.xsl,xsl/language-code-cleaner.xsl"/>
 </settings>

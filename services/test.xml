@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <service id="test" xmlns="http://www.indexdata.com/pazpar2/1.0">
 
-<!--	<settings src="SUB-settings/vifamath-solr.xml"/> -->
+<!--	<settings src="settings/vifamath-solr.xml"/> -->
 
-<!--	<settings src="SUB-settings/NEBIS.xml"/>-->
+<!--	<settings src="settings/NEBIS.xml"/>-->
 <!--	<settings src="settings/loc.xml"/>-->
 <!--	<settings src="settings/gutenberg-sru.xml"/>-->
 
-<!--	<settings src="SUB-settings/GoeScholar.xml"/>-->
+<!--	<settings src="settings/GoeScholar.xml"/>-->
 
 <!--
-	<settings src="SUB-settings/gbv-sru-marc.xml"/>
+	<settings src="settings/gbv-sru-marc.xml"/>
 	<settings>
 		<set target="gso.gbv.de/sru/DB=2.1" name="pz:name" value="GBV GVK (SRU)"/>
 	</settings>
 -->
 <!--
-	<settings src="SUB-settings/gbv-sru-neu.xml"/>
+	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK (SRU neu)"/>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="Opac (SRU neu)"/>
 	</settings>
 -->
 
-	<settings src="SUB-settings/zebra-geo.xml"/>
+	<settings src="settings/zebra-geo.xml"/>
 
 <!--
 	<settings src="settings/testserver.xml"/>
 -->
 <!--	
-	<settings src="SUB-settings/SUB-Guides-solr.xml"/>
+	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="DigReg"/>
 	</settings>
 -->
 <!--	<settings src="settings/edu_turbo.xml"/>-->
-<!--	<settings src="SUB-settings/Freiberg.xml"/>-->
+<!--	<settings src="settings/Freiberg.xml"/>-->
 
-<!--	<settings src="SUB-settings/gbv-z3950.xml"/>-->
+<!--	<settings src="settings/gbv-z3950.xml"/>-->
 <!--	<settings>-->
 <!--	<set target="z3950.gbv.de:20012/subgoe_opc"-->
 <!--			name="pz:name" value="GBV SUB OPAC Z39.50"/>-->
 <!--	</settings>
 -->
 	
-<!--	<settings src="SUB-settings/Marianna.xml"/>-->
+<!--	<settings src="settings/Marianna.xml"/>-->
 <!--	<settings>-->
 <!--		<set target="134.76.176.48:3954/ElibM"-->
 <!--			name="pz:name" value="ELibM"/>-->

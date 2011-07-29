@@ -7,7 +7,7 @@
 -->
 
 	<!-- GBV -->>
-	<settings src="SUB-settings/gbv-sru-neu.xml"/>
+	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK"/>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
@@ -41,7 +41,7 @@
 
 
 	<!-- Guides -->
-	<settings src="SUB-settings/SUB-Guides-solr.xml"/>
+	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History Guide"/>
@@ -51,14 +51,14 @@
 
 	
 	<!-- other Libraries -->
-	<settings src="SUB-settings/Freiberg.xml"/>
-	<settings src="SUB-settings/NAL.xml"/>
-	<settings src="SUB-settings/NEBIS-ETH.xml"/>
-	<settings src="SUB-settings/PIO.xml"/>
+	<settings src="settings/Freiberg.xml"/>
+	<settings src="settings/NAL.xml"/>
+	<settings src="settings/NEBIS-ETH.xml"/>
+	<settings src="settings/PIO.xml"/>
 
 	<!-- Zebras -->
-	<settings src="SUB-settings/zebra-geo.xml"/>
-	<settings src="SUB-settings/zebra-vifamath.xml"/>
+	<settings src="settings/zebra-geo.xml"/>
+	<settings src="settings/zebra-vifamath.xml"/>
 	<settings>
 		<set target="134.76.176.48:2021/arxiv" name="pz:name" value="arXiv"/>
 		<set target="134.76.176.48:3954/ElibM" name="pz:name" value="ELibM"/>
@@ -67,9 +67,9 @@
 
 	
 	<!-- DSpace -->
-	<settings src="SUB-settings/ADW.xml"/>
-	<settings src="SUB-settings/GeoLeo-edocs.xml"/>
-	<settings src="SUB-settings/GoeScholar.xml"/>
+	<settings src="settings/ADW.xml"/>
+	<settings src="settings/GeoLeo-edocs.xml"/>
+	<settings src="settings/GoeScholar.xml"/>
 
 
 <!--
