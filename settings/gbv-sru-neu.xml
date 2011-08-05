@@ -47,6 +47,7 @@
 		 Right-truncated phrase search for LKL (in fact this index is phrase search-only)
 	-->
 	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=1"/>
+	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=1"/>
 	
 	<!-- NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search -->
 	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
