@@ -26,21 +26,13 @@
 	</settings>
 
 
-<!--
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="History Guide"/>
-	</settings>
--->
-
-
-	<settings src="settings/SUB-Guides.xml"/>
-	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:2020/geo"	name="pz:name" value="Geo-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
 		<!--	
 			Fake search key for Freiberg classification. Meant to give 0 results.
 		-->
-		<set target="ssgfi1.sub.uni-goettingen.de:2020/geo" name="pz:cclmap:fbg" value="u=21 s=1 t=1"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:fbg" value="1=BK s=1 t=1"/>
 	</settings>
 
 
