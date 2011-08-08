@@ -42,6 +42,23 @@
 	<settings src="settings/GeoLeo-edocs.xml"/>
 
 
+	<!-- GEO-LEO prefers truncated searching -->
+	<settings target="*">
+		<set target="sru.gbv.de/*" name="pz:cclmap:term" value="u=pica.all s=al t=1"/>
+		<set target="sru.gbv.de/*" name="pz:cclmap:fulltext" value="u=pica.tit s=al t=1"/>
+		<set target="sru.gbv.de/*" name="pz:cclmap:title" value="u=pica.tit s=al t=1"/>
+		<set target="sru.gbv.de/*" name="pz:cclmap:person" value="u=pica.per s=al t=1"/>
+		<set target="sru.gbv.de/*" name="pz:cclmap:journal" value="u=pica.sha s=al t=1"/>
+
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:term" value="s=al t=1"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:fulltext" value="s=al t=1"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:title" value="1=Title s=al t=1"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:person" value="1=Author s=al t=1"/>
+	</settings>
+
+
+
+
 	<!-- we try to keep same order as in marc21.xsl -->
 	<metadata name="language" brief="yes" merge="unique"/>
 	<metadata name="id" brief="yes"/>
