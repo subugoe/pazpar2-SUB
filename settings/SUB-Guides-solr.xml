@@ -6,7 +6,7 @@
 	<set name="pz:sru" value="solr"/> 
 	<set name="pz:sru_version" value="1.4"/>
 
-	<set name="pz:maxrecs" value="250"/>
+	<set name="pz:maxrecs" value="1000"/>
 
 
 	<!--
