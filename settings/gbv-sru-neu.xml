@@ -3,15 +3,16 @@
 	New GBV SRU Server
 	* Pica-style search keys
 	* transformations:
-		-> Marc XML to TurboMarc (to use indexdata's powerful ../tmarc.xsl)
 		-> gbv-cleaner to fix a few quirks of the GBV data
 		-> ../tmarc.xsl
-		-> language-code-cleaner to remove deprecated language codes
+		-> language-code-cleaner to convert deprecated language codes
+		-> catalogue-url-hint+id.xsl to insert catalogue-urls into the records based
+			on the catalogue-url-prefix value
 
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<!-- SRU 1.1 GET and POST -->
+	<!-- SRU 1.1 GET -->
 	<set name="pz:sru" value="get"/> 
 	<set name="pz:sru_version" value="1.1"/>
 
@@ -20,12 +21,13 @@
 		* ANDed word search for most fields (s=al)
 		* no truncation by default but giving the user the option to 
 			opt for right truncation by adding a ? (t=r)
-		* use attributes have names pica.XXX where XXX is the GSO search key
+		* use attributes have names pica.XXX where XXX is the Pica search key
 	-->
 	<set name="pz:cclmap:term" value="u=pica.all s=al t=r"/>
 
-	<!-- full-text search; map the search key to the all index 
-			and change that mapping only for the catalogues supporting full text search
+	<!--
+		Full-text search; map the search key to the all index
+		and change that mapping only for the catalogues supporting full text search
 	-->
 	<set name="pz:cclmap:fulltext" value="u=pica.all s=1 t=r"/>
 	<set name="pz:cclmap:fulltext" value="u=pica.txt s=1 t=r" target="sru.gbv.de/gvk"/>
@@ -43,11 +45,18 @@
 	<set name="pz:cclmap:isbn" value="u=pica.isb"/>
 	<set name="pz:cclmap:issn" value="u=pica.iss"/>
 
-	<!-- Lokale Klassifikation for GOK subject search, LKL (5010) 
-		 Right-truncated phrase search for LKL (in fact this index is phrase search-only)
+	<!--
+		Lokale Klassifikation for GOK subject search, LKL (5010) 
+		Right-truncated phrase search for LKL (in fact this index is phrase search-only)
 	-->
 	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=1"/>
 	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=1"/>
+	
+	<!-- 
+		Fake Search key for Freiberg Classification, mapped to the BKL field.
+		Should not return any results in GBV
+	-->
+	<set name="pz:cclmap:fbg" value="u=pica.bkl s=1 t=1"/>
 	
 	<!-- NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search -->
 	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>

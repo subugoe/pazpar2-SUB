@@ -25,6 +25,9 @@
 	<set name="pz:cclmap:date" value="u=31 r=r"/>
 	<set name="pz:cclmap:subject" value="u=21 s=al"/>
 
+	<!-- Fake Search key for Freiberg Classification. Should not return results. -->
+	<set name="pz:cclmap:fbg" value="u=21 s=al"/>
+
 
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="xml"/>

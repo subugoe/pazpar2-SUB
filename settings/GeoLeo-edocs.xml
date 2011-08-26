@@ -24,6 +24,9 @@
 	<!-- Lokale Klassifikation for GOK subject search -->
 	<set name="pz:cclmap:lkl" value="u=dc.gok t=r s=r"/>
 
+	<!-- Fake Search key for Freiberg Classification. Should not return results. -->
+	<set name="pz:cclmap:fbg" value="u=dc.subject t=r s=r"/>
+
 
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
 	<set name="pz:elements" value="dc"/>

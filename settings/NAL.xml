@@ -27,6 +27,9 @@
 	<set name="pz:cclmap:isbn" value="u=7"/>
 	<set name="pz:cclmap:issn" value="u=8"/>
 
+	<!-- Fake Search key for Freiberg Classification. Should not return results. -->
+	<set name="pz:cclmap:fbg" value="u=21 s=al"/>
+
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="marc21"/>
 	<set name="pz:queryencoding" value="utf-8"/>
