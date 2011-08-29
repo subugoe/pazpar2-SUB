@@ -21,12 +21,29 @@
 	</xsl:template>
  
 
-	<!-- remove 245 $h subfields
-			We want to use the controlled media types from tmarc.xsl only
+	<!-- 
+		Remove 245 $h subfields.
+		We want to use the controlled media types from tmarc.xsl only
 			and skip the free-text entered in the records.
 	-->
 	<xsl:template match="tmarc:d245/tmarc:sh"></xsl:template>
 
+
+	<!--
+		GBV Marc export makes sure that volume numbers and names in
+			245 $p and $v subfields always occur in pairs.
+		If data for one of the fields is missing, [...] is inserted.
+		This is said to be a tacit convention between German union
+			catalogues and unlikely to be corrected.
+		As displaying [...] is not useful, strip such subfields.
+	-->
+	<xsl:template match="tmarc:d245/tmarc:sp | tmarc:d245/tmarc:sv">
+		<xsl:if test="text()!='[...]'">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|node()"/>
+			</xsl:copy>
+		</xsl:if>
+	</xsl:template>	
 
 
 	<!-- 
