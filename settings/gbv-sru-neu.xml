@@ -49,7 +49,7 @@
 		Lokale Klassifikation for GOK subject search, LKL (5010) 
 		Right-truncated phrase search for LKL (in fact this index is phrase search-only)
 	-->
-	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=1"/>
+	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
 	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=1"/>
 	
 	<!-- 

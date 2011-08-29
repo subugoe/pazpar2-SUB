@@ -18,7 +18,7 @@
 	<!-- Date added -->
 	<set name="pz:cclmap:dtm" value="u=1012 t=1"/>
 	<!-- Local classification (GOK) -->
-	<set name="pz:cclmap:lkl" value="u=20 t=1"/>
+	<set name="pz:cclmap:lkl" value="u=20 t=r"/>
 	
 
 	<!-- Retrieval settings -->

@@ -36,7 +36,7 @@
 	<!-- Lokale Klassifikation for GOK subject search, LKL (5010) 
 		 Right-truncated phrase search for LKL (in fact this index is phrase search-only)
 	-->
-	<set name="pz:cclmap:lkl" value="u=5010 s=1 t=1"/>
+	<set name="pz:cclmap:lkl" value="u=5010 s=1 t=r"/>
 	
 	<!-- NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search -->
 	<set name="pz:cclmap:nel" value="u=8064 t=1"/>
