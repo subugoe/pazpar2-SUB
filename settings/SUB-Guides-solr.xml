@@ -44,8 +44,8 @@
 	<!-- GOK local classification subject search: Right-truncated phrase search -->
 	<set name="pz:cclmap:lkl" value="1=GOK s=1 t=r"/>	
 	<set name="pz:cclmap:ddc" value="1=DDC s=1 t=r"/>
-	<set name="pz:cclmap:bk" value="1=BK s=al t=r"/>
-	<!-- Fake Search key for Freiberg Classification. Should not return results. -->
+	<set name="pz:cclmap:bkl" value="1=BK s=al t=r"/>
+	<!-- Fake search key for Freiberg classification. Should not return results. -->
 	<set name="pz:cclmap:fbg" value="1=BK s=al t=r"/>
 
 	<!-- Allegro Format Key and Format field -->
