@@ -56,17 +56,18 @@
 		Fake Search key for Freiberg Classification, mapped to the BKL field.
 		Should not return any results in GBV
 	-->
-	<set name="pz:cclmap:fbg" value="u=pica.bkl s=1 t=1"/>
+	<set name="pz:cclmap:fbg" value="u=pica.bkl s=1 t=r"/>
 	
 	<!-- NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search -->
 	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
 	
+	<!-- Map additional pica search keys to pazpar2 -->
+	<set name="pz:cclmap:tit" value="u=pica.tit t=r"/>
+	<set name="pz:cclmap:thm" value="u=pica.thm t=r"/>
+	<set name="pz:cclmap:sww" value="u=pica.sww t=r"/>
+	<set name="pz:cclmap:ddc" value="u=pica.ddc t=r"/>
 	<set name="pz:cclmap:bkl" value="u=pica.bkl t=r"/>
-	<!-- Map additional pica search keys to pazpar2 search keys with the same name -->
-	<set name="pz:cclmap:tit" value="u=pica.tit t=1"/>
-	<set name="pz:cclmap:thm" value="u=pica.thm t=1"/>
-	<set name="pz:cclmap:sww" value="u=pica.sww t=1"/>
-	<set name="pz:cclmap:ddc" value="u=pica.ddc t=1"/>
+	<set name="pz:cclmap:ppn" value="u=pica.ppn"/>
 
 	<!-- SRU schema: Request Marc XML format -->
 	<set name="pz:elements" value="turbomarc"/>
@@ -76,10 +77,6 @@
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,../tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl"/>
 
-<!--
-	<set target="sru.gbv.de/opac-de-7"
-		name="pz:pqf_prefix" value='@and @attr 1=pica.all "not slk a*"'/>
--->
 
 
 	<!-- Set up GBV catalogue URLs -->
