@@ -14,7 +14,6 @@
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
-		<set target="sru.gbv.de/opac-de-7" name="pz:maxrecs" value="500"/>
 
 		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
 		<set target="sru.gbv.de/olcssg-geo" name="pz:name" value="OLC Geowissenschaften"/>

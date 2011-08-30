@@ -12,7 +12,6 @@
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
-		<set target="sru.gbv.de/opac-de-7" name="pz:maxrecs" value="500"/>
 
 		<set target="sru.gbv.de/olcssg-ang" name="pz:name" value="Anglistik Aufsätze"/>
 		<set target="sru.gbv.de/olcssg-his" name="pz:name" value="Geschichte Aufsätze"/>

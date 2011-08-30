@@ -8,6 +8,8 @@
 		-> language-code-cleaner to convert deprecated language codes
 		-> catalogue-url-hint+id.xsl to insert catalogue-urls into the records based
 			on the catalogue-url-prefix value
+	* fetch 500 results for SUB Göttingen Opac
+	* set up catalogueURLHints for a number of databases
 
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -78,6 +80,8 @@
 	<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,../tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl"/>
 
 
+	<!-- Load more records from Göttingen Opac -->
+	<set name="pz:maxrecs" target="sru.gbv.de/opac-de-7" value="500"/>
 
 	<!-- Set up GBV catalogue URLs -->
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/wao" value="http://gso.gbv.de/DB=1.46/PPNSET?PPN="/>
@@ -109,6 +113,5 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-pio" value="http://gso.gbv.de/DB=5.55/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-cup" value="http://gso.gbv.de/DB=5.62/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-rth" value="http://gso.gbv.de/DB=5.72/PPNSET?PPN="/>
-
 
 </settings>

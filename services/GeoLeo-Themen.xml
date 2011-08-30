@@ -2,7 +2,7 @@
 <service id="GEO-LEO-Themen" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!-- 
 	Targets used for Geo-Leo Subject Search:
-	* Göttingen Opac, via GBV SRU service
+	* Göttingen Opac via GBV SRU service
 	* SSG-FI Guide via Solr 
 	* SWB Catalogue search via Z39.50 with condition to search in Freiberg only
 
@@ -16,7 +16,6 @@
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
-		<set target="sru.gbv.de/opac-de-7" name="pz:maxrecs" value="500"/>
 	</settings>
 
 

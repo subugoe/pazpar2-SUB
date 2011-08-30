@@ -2,21 +2,17 @@
 <service id="AAC-Hist-Themen" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!-- 
 	Targets used for Lib AAC History Subject Search:
-	* GBV Databases via new SRU service
+	* Göttingen Opac via GBV SRU service
 	* SSG-FI Guide Databases via Solr interface
 
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings>
-		<set target="*" name="pz:maxrecs" value="1000"/>
-	</settings>>
-
-
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
 	</settings>
+
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
