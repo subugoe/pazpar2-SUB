@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Converts DC Qualified metadata coming from Goescholar’s DSpace SRU interface.
-	This contains a few non-standard fields.
+	Converts DC Qualified metadata coming from Göttingen DSpace SRU interfaces.
+	These contains a few non-standard fields.
 		
-	December 2010
-	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2011, Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 <xsl:stylesheet
 	version="1.0"
@@ -90,8 +89,8 @@
 				</pz:metadata>
 			</xsl:if>
 
-			<xsl:for-each select="dc:bibliographicCitation.volume">
-				<pz:metadata type="journal-volume">
+			<xsl:for-each select="dc:publisher">
+				<pz:metadata type="publication-name">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
@@ -109,6 +108,12 @@
 					<xsl:value-of select="dc:bibliographicCitation.lastPage"/>
 				</pz:metadata>
 			</xsl:if>
+
+			<xsl:for-each select="dc:relation.hasfile">
+				<pz:metadata type="electronic-url" fulltextfile="true">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
 
 			<xsl:for-each select="dc:identifier.uri">
 				<pz:metadata type="catalogue-url">
@@ -152,29 +157,6 @@
 				</pz:metadata>
 			</xsl:for-each>
 
-			<!--
-				Determine the main filename from the last dc:description.provenance field à la:
-
-					Made available in DSpace on 2010-10-28T18:46:49Z (GMT). No. of bitstreams: 1
-					1.pdf: 933573 bytes, checksum: f2161ec553cdba3f3c91cffaaa885f74 (MD5)
-					0306.pdf: 4862284 bytes, checksum: 969cf5ee5ece8f44148f15d629b6c758 (MD5)
-					Previous issue date: 2003
-				
-				* recognise file lines by '(MD5)' at their end
-				* assume file names do not contain a colon and use everything before the first ': ' as the file name 
-
-				Emit the file names in the pz:metadata fields of type dspace-filename for postprocessing
-					where the URL to the document is assembled based on the server used.
-			-->
-			<xsl:for-each select="dc:description.provenance">
-				<xsl:if test="position()=last()">
-				 	<xsl:call-template name="fileinfolines">
-						<xsl:with-param name="str" select="."/>
- 					</xsl:call-template>
-				</xsl:if>
-			</xsl:for-each>
-
-
 			<xsl:for-each select="dc:language.iso">
 				<pz:metadata type="language">
 					<xsl:value-of select="."/>
@@ -209,29 +191,7 @@
 	</xsl:template>
 
 	
-	<!--
-		Template for:
-		1. splitting up text into its lines,
-		2. keeping the ones that end in (MD5)
-		3. an wrapping them in a pz:metadata tag of type dspace-filename
-		Used from the template for dc:description.provenance to find the lines with the file names.
-	-->
-	<xsl:template name="fileinfolines">
-		<xsl:param name="str"/>
-		<xsl:if test="substring($str, string-length(substring-before($str, '&#xa;')) - 4, 5) = '(MD5)'">
-			<pz:metadata type="dspace-filename">
-				<xsl:value-of select="substring-before(substring-before($str, '&#xa;'), ':')"/>
-			</pz:metadata>
-		</xsl:if>
-		<xsl:if test="contains($str, '&#xa;')">
-			<xsl:call-template name="fileinfolines">
-				<xsl:with-param name="str" select="substring-after($str,'&#xa;')"/>
-			</xsl:call-template>
-		</xsl:if>
-	</xsl:template>
 
-	
-	
 	<!-- Kill stray text -->
 	<xsl:template match="text()"/>
 
