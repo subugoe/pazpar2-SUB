@@ -95,14 +95,20 @@
 				</pz:metadata>
 			</xsl:for-each>
 
+			<xsl:for-each select="dc:bibliographicCitation.volume">
+				<pz:metadata type="volume-number">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
 			<xsl:for-each select="dc:bibliographicCitation.issue">
-				<pz:metadata type="journal-issue">
+				<pz:metadata type="issue-number">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
 
 			<xsl:if test="dc:bibliographicCitation.firstPage | dc:bibliographicCitation.lastPage">
-				<pz:metadata type="journal-pages">
+				<pz:metadata type="pages">
 					<xsl:value-of select="dc:bibliographicCitation.firstPage"/>
 					<xsl:text>-</xsl:text>
 					<xsl:value-of select="dc:bibliographicCitation.lastPage"/>

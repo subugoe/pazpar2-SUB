@@ -63,19 +63,19 @@
 		 	</xsl:for-each>
 			
 			<xsl:for-each select="VOLUME">
-				<pz:metadata type="journal-volume">
+				<pz:metadata type="volume-number">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 		 	</xsl:for-each>
 
 			<xsl:for-each select="NUMBER">
-				<pz:metadata type="journal-issue">
+				<pz:metadata type="issue-number">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 		 	</xsl:for-each>
 		 	
 			<xsl:for-each select="PAGES">
-				<pz:metadata type="journal-pages">
+				<pz:metadata type="pages">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 		 	</xsl:for-each>
