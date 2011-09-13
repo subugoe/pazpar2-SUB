@@ -81,11 +81,12 @@
 	
 	<!-- journals -->
 	<metadata name="journal-title" brief="yes" merge="unique"/>
+	<metadata name="journal-title-abbrev" merge="unique"/>
 	<metadata name="journal-subpart" brief="yes" merge="unique"/>
 	<metadata name="volume-number" brief="yes" merge="unique"/>
 	<metadata name="issue-number" brief="yes" merge="unique"/>
 	<metadata name="issue-date"/>
-	<metadata name="pages" brief="yes" merge="unique"/>
+	<metadata name="pages-number" brief="yes" merge="unique"/>
 	
 	<metadata name="url_recipe" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="open_url_resolver" setting="parameter" merge="no"/>
