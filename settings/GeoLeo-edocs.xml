@@ -22,10 +22,10 @@
 	<set name="pz:cclmap:issn" value="u=dc.relation"/>
 
 	<!-- Lokale Klassifikation for GOK subject search -->
-	<set name="pz:cclmap:lkl" value="u=dc.gok s=1 t=r"/>
+	<set name="pz:cclmap:lkl" value="u=dc.gok s=1 t=0"/>
 
 	<!-- Fake Search key for Freiberg Classification. Should not return results. -->
-	<set name="pz:cclmap:fbg" value="u=dc.subject s=1 t=r"/>
+	<set name="pz:cclmap:fbg" value="u=dc.subject s=1 t=0"/>
 
 
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
