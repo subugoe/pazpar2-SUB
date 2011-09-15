@@ -1,0 +1,35 @@
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnaa a22yyyyy i 4500</l>
+  <c001>1876718102</c001>
+  <c003>DE-601</c003>
+  <c005>20110821133829.0</c005>
+  <c008>110821s2011                  000 0     d</c008>
+  <d016 i1="7" i2=" ">
+    <sa>426529-4</sa>
+    <s2>DE-600</s2>
+  </d016>
+  <d028 i1="5" i2="2">
+    <sa>su110727</sa>
+  </d028>
+  <d040 i1=" " i2=" ">
+    <sa>GyGoGBV</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d084 i1=" " i2=" ">
+    <sa>ang</sa>
+    <s2>olc-ssg</s2>
+  </d084>
+  <d245 i1="0" i2="0">
+    <sa>Practice Test.</sa>
+  </d245>
+  <d700 i1="1" i2=" ">
+    <sa>Capps, Laurie.</sa>
+  </d700>
+  <d773 i1="0" i2="8">
+    <sq>volume:issue:subissue&lt;pages</sq>
+    <sg>subfield g 1</sg>
+    <sg>subfield g 2</sg>
+  </d773>
+</r>
+

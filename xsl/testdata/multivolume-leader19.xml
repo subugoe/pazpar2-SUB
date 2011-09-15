@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnam a22yyyyy ia4500</l>
+  <c001>221171045</c001>
+  <c003>DE-601</c003>
+  <c005>20060509165659.0</c005>
+  <c008>970107s1975    gw            000 0 ger d</c008>
+  <d020 i1=" " i2=" ">
+    <sa>3129080007</sa>
+  </d020>
+  <d040 i1=" " i2=" ">
+    <sa>GyGoGBV</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>ger</sa>
+  </d041>
+  <d100 i1="1" i2=" ">
+    <sa>Tolkien, John Ronald Reuel.</sa>
+  </d100>
+  <d240 i1=" " i2="4">
+    <sa>The Lord of the rings &lt;dt.&gt;.</sa>
+  </d240>
+  <d245 i1="1" i2="4">
+    <sa>Der Herr der Ringe /</sa>
+    <sc>J. R. R. Tolkien. [Übers. von Margeret Carroux. Gedichtübertr. von E.-M. von Freymann].</sc>
+  </d245>
+  <d250 i1=" " i2=" ">
+    <sa>16. - 35. Tsd.</sa>
+  </d250>
+  <d260 i1="3" i2=" ">
+    <sa>Stuttgart :</sa>
+    <sb>Klett Kotta,</sb>
+    <sc>1975</sc>
+  </d260>
+  <d490 i1="0" i2=" ">
+    <sa>Hobbit Press</sa>
+  </d490>
+  <d546 i1=" " i2=" ">
+    <sa>Aus dem Engl. übers</sa>
+  </d546>
+  <d700 i1="1" i2=" ">
+    <sa>Carroux, Margeret.</sa>
+  </d700>
+  <d900 i1=" " i2=" ">
+    <sa>GBV</sa>
+    <sb>SUB+Uni Göttingen &lt;7&gt;</sb>
+  </d900>
+  <d954 i1=" " i2=" ">
+    <sa>40</sa>
+    <sb>387181385</sb>
+    <sc>01</sc>
+    <sx>0007</sx>
+  </d954>
+</r>
+
