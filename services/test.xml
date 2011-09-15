@@ -15,12 +15,16 @@
 		<set target="gso.gbv.de/sru/DB=2.1" name="pz:name" value="GBV GVK (SRU)"/>
 	</settings>
 -->
-
+<!--
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="*" name="pz:maxrecs" value="1000"/>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="Opac (SRU neu)"/>
 	</settings>
+-->
+
+	<settings src="settings/IfL.xml"/>
+
 
 <!--
 	<settings src="settings/zebra-geo.xml"/>
@@ -36,7 +40,7 @@
 	</settings>
 -->
 <!--	<settings src="settings/edu_turbo.xml"/>-->
-	<settings src="settings/Freiberg.xml"/>
+<!--	<settings src="settings/Freiberg.xml"/>-->
 
 <!--	<settings src="settings/gbv-z3950.xml"/>-->
 <!--	<settings>-->

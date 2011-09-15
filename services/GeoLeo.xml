@@ -32,6 +32,7 @@
 	<settings src="settings/Freiberg.xml"/>
 	<settings src="settings/NEBIS-ETH.xml"/>
 	<settings src="settings/NAL.xml"/>
+	<settings src="settings/IfL.xml"/>
 
 	<settings src="settings/zebra-geo.xml"/>
 	

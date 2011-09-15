@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00882am  a2200289 a 4500</l>
+  <c001>C20588</c001>
+  <c003>KTS</c003>
+  <d020 i1=" " i2=" ">
+    <sa>92-64-59671-2</sa>
+  </d020>
+  <d041 i1=" " i2=" ">
+    <sa>Deutsch</sa>
+  </d041>
+  <d245 i1=" " i2=" ">
+    <sa>Lernen f&amp;#252;r das Leben</sa>
+  </d245>
+  <d245 i1=" " i2=" ">
+    <sb>Erste Ergebnisse der internationalen Schulleistungsstudie PISA 2000</sb>
+  </d245>
+  <d260 i1=" " i2=" ">
+    <sa>Paris</sa>
+  </d260>
+  <d260 i1=" " i2=" ">
+    <sb>OECD</sb>
+  </d260>
+  <d260 i1=" " i2=" ">
+    <sc>2001</sc>
+  </d260>
+  <d260 i1=" " i2=" ">
+    <sc>2001</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>366 S.</sa>
+  </d300>
+  <d300 i1=" " i2=" ">
+    <sb>Ill., graph. Darst., Kt., Tab., Lit. S. 259-260</sb>
+  </d300>
+  <d300 i1=" " i2=" ">
+    <sc>27 cm</sc>
+  </d300>
+  <d334 i1=" " i2=" ">
+    <sa>Amtsdruckschrift</sa>
+  </d334>
+  <d490 i1=" " i2=" ">
+    <sa>Ausbildung und Kompetenzen</sa>
+  </d490>
+  <d544 i1=" " i2=" ">
+    <sa>2002 B 0290</sa>
+  </d544>
+  <d653 i1=" " i2=" ">
+    <sa>Bildung</sa>
+  </d653>
+  <d653 i1=" " i2=" ">
+    <sa>Schule</sa>
+  </d653>
+  <d653 i1=" " i2=" ">
+    <sa>Sch&amp;#252;ler</sa>
+  </d653>
+  <d653 i1=" " i2=" ">
+    <sa>Leistungskontrolle</sa>
+  </d653>
+  <d710 i1=" " i2=" ">
+    <sa>Organisation for Economic Co-operation and Development</sa>
+  </d710>
+  <d856 i1=" " i2=" ">
+    <su>http://www3.domestic.de/cgi-bin/ifl_for_google.pl?db=db1&amp;amp;a=C&amp;b=20588&amp;format=F9&amp;searchResultNumber=21366&amp;user=GAST&amp;highlightWordsForLink=test</su>
+  </d856>
+</r>
