@@ -1,4 +1,4 @@
-/var/log/pazpar2.log {
+/var/log/pazpar2/pazpar2.log {
 	weekly
 	missingok
 	rotate 4
@@ -6,8 +6,6 @@
 	delaycompress
 	notifempty
 	postrotate
-		if [ -f /var/run/pazpar2.pid ]; then
-			/sbin/service pazpar2 restart > /dev/null
-		fi
+		/etc/init.d/pazpar2 restart
 	endscript
 }
