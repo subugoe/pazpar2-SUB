@@ -1,0 +1,40 @@
+<record><recordSchema>info:srw/schema/1/dc-v1.1</recordSchema><recordPacking>xml</recordPacking><recordData><srw_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:srw_dc="info:srw/schema/1/dc-v1.1">
+    <dc:contributor>Dressel, Ralf PD Dr.med.</dc:contributor>
+    <dc:contributor>Ahrens, Martin Prof. Dr</dc:contributor>
+    <dc:contributor>Ahrens, Martin Prof. Dr</dc:contributor>
+    <dc:contributor>xxx</dc:contributor>
+    <dc:contributor.author>Ensslen, Miriam</dc:contributor.author>
+    <dc:date>2011-06-09T15:01:21Z</dc:date>
+    <dc:date>2011-06-09T15:01:21Z</dc:date>
+    <dc:date>xxx</dc:date>
+    <dc:date>1981-02-15</dc:date>
+    <dc:date.accessioned>2011-07-18T11:53:23Z</dc:date.accessioned>
+    <dc:date.available>2011-07-18T11:53:23Z</dc:date.available>
+    <dc:date.issued>2009</dc:date.issued>
+    <dc:identifier>http://hdl.handle.net/1/335</dc:identifier>
+    <dc:identifier.uri>http://hdl.handle.net/123456789/180</dc:identifier.uri>
+    <dc:description>Made available in DSpace on 2011-06-09T15:01:21Z (GMT). No. of bitstreams: 1
+ensslen.pdf: 374464 bytes, checksum: f13621e53e016ab9589ded7d82107574 (MD5)
+  Previous issue date: 2009</dc:description>
+    <dc:description.abstract>Es gibt Hinweise darauf, dass zytotoxische T-Lymphozyten (CTL) sich selbst vor der Lyse durch ihr eigenes Perforin mittels Expression von Cathepsin B 
+
+auf der Zelloberfl&#xE4;che sch&#xFC;tzen. Interessanterweise wird Cathepsin B auch in vielen Tumorzellen vermehrt exprimiert und ist m&#xF6;glicherweise in die  escape mechanism.</dc:description.abstract>
+    <dc:description.provenance>Made available in DSpace on 2011-07-18T11:53:23Z (GMT). No. of bitstreams: 1
+ensslen.pdf: 374464 bytes, checksum: f13621e53e016ab9589ded7d82107574 (MD5)
+  Previous issue date: 2009</dc:description.provenance>
+    <dc:format.mimetype>application/pdf</dc:format.mimetype>
+    <dc:language.iso>de</dc:language.iso>
+    <dc:publisher>Offenbach am Main</dc:publisher>
+    <dc:rights>mensslen1502@web.de</dc:rights>
+    <dc:rights.uri>http://webdoc.sub.gwdg.de/diss/copyr_diss.html</dc:rights.uri>
+    <dc:subject>610 Medizin, Gesundheit</dc:subject>
+    <dc:subject>MED 341</dc:subject>
+    <dc:subject>Medicine</dc:subject>
+    <dc:subject>Cathepsin B; T-Lymphozyten; Zytotoxizit&#xE4;tstest; Perforin; Krebs; Cathepsin-B-Inhibition;</dc:subject>
+    <dc:subject>cathepsin B; T lymphocytes; cytotoxicity tests; perforin; cancer; cathepsin B inhibition; immune escape</dc:subject>
+    <dc:subject>44.45</dc:subject>
+    <dc:title>Untersuchung zur Funktion von Cathepsin B in der durch zytotoxische T-Zellen vermittelten Lyse von Tumorzellen</dc:title>
+    <dc:title.alternative>Investigation of the function of cathepsin B in T cell mediated tumor cell lysis</dc:title.alternative>
+    <dc:type>doctoralThesis</dc:type>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/xmlui/bitstream/id/214/ensslen.pdf?sequence=1</dc:relation.hasfile>
+</srw_dc:dc></recordData><recordPosition>10</recordPosition></record>

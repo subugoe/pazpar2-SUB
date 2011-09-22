@@ -36,5 +36,5 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/DSpace-dc-qualified.xsl,xsl/language-code-cleaner.xsl,xsl/iso-639-1-to-639-2b.xsl"/>
+	<set name="pz:xslt" value="xsl/DSpace-dc-qualified.xsl,xsl/language-code-cleaner.xsl,xsl/iso-639-1-to-639-2b-converter.xsl"/>
 </settings>
