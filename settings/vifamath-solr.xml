@@ -27,7 +27,7 @@
 		Passed to solr as the fl parameter: all fields we want solr to return.
 		We need to map these to the approriate pz:metadata fields in solr-postprocess.xsl.
 	-->
-	<set name="pz:elements" value="id,title,subject,abstract,author,keyword,doctypecode,origlanguage,localholding,url,citation,cited,reviewer,classification,pissn,issued,pubblisher,source,citedBy"/>
+	<set name="pz:elements" value="id,title,subject,abstract,author,keyword,doctypecode,origlanguage,localholding,url,citation,cited,reviewer,classification,pissn,issued,publisher,source,citedBy"/>
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
