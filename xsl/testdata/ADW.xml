@@ -1,0 +1,66 @@
+<?xml version="1.0" ?> 
+<?xml-stylesheet type="text/xsl" href="/SRW/searchRetrieveResponse.xsl"?>
+<searchRetrieveResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/zing/srw/ http://www.loc.gov/standards/sru/sru1-1archive/xml-files/srw-types.xsd" xmlns="http://www.loc.gov/zing/srw/"><version>1.1</version><numberOfRecords>1</numberOfRecords><resultSetId>vlz27e</resultSetId><resultSetIdleTime>300</resultSetIdleTime><records xmlns:ns1="http://www.loc.gov/zing/srw/"><record><recordSchema>info:srw/schema/1/dc-v1.1</recordSchema><recordPacking>xml</recordPacking><recordData><srw_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:srw_dc="info:srw/schema/1/dc-v1.1">
+    <dc:contributor.author>Gerhardt, Dietrich</dc:contributor.author>
+    <dc:date.accessioned>2011-09-19T09:59:24Z</dc:date.accessioned>
+    <dc:date.available>2011-09-19T09:59:24Z</dc:date.available>
+    <dc:date.issued>2008</dc:date.issued>
+    <dc:identifier.isbn>978-3-11-020291-5</dc:identifier.isbn>
+    <dc:identifier.uri>http://hdl.handle.net/11858/00-001S-0000-0001-6D23-F</dc:identifier.uri>
+    <dc:description.provenance>Submitted by Thomas Bode (tbode1@gwdg.de) on 2011-09-19T09:59:19Z
+No. of bitstreams: 15
+9783110210101_Titelei.pdf: 45816 bytes, checksum: 4ee38a9b4ed3ca42768eb6625ade4c68 (MD5)
+9783110210101_00_Inhaltsverzeichnis.pdf: 44426 bytes, checksum: 0ad5c52d1f0c9a02ab7f62b414748444 (MD5)
+9783110210101_01_Die.Liebesg&#xF6;tter.pdf: 138138 bytes, checksum: bff39bed5659510b4bec51b2638582c6 (MD5)
+9783110210101_02_Wer.kauft.Liebesg&#xF6;tter.pdf: 63331 bytes, checksum: df9a10770f392a5b576ec05a7a87bc02 (MD5)
+9783110210101_03_Exkurs.Messelied.pdf: 88018 bytes, checksum: 797e8a75b2a8e5eddea7ec3786782e87 (MD5)
+9783110210101_04_Bild.Stabiae.pdf: 102527 bytes, checksum: ac8e0ac2be5b8a67f15debb94ddf3af7 (MD5)
+9783110210101_05_Goethe.Pompeji.pdf: 98779 bytes, checksum: 408b917ca027f8857171397008e59b62 (MD5)
+9783110210101_06_Neoklassizismus.pdf: 102694 bytes, checksum: 626c40beabd59d91271cc51e78eded1b (MD5)
+9783110210101_07_Thorvaldsen.pdf: 76965 bytes, checksum: 192dfb45fd0c8af033f073cdfd144ff9 (MD5)
+9783110210101_08_Durchs.19.Jhd.pdf: 99757 bytes, checksum: 17e5041196b25a4d64ac3487fe8f8f85 (MD5)
+9783110210101_09_Liebesg&#xF6;ttinnen.pdf: 60885 bytes, checksum: 9ba42bcbb743f85987a3ca3374e61b6d (MD5)
+9783110210101_10_Puschkins.Gedicht.pdf: 109258 bytes, checksum: c88ee233ca5de3f82a547cce8fbaabff (MD5)
+9783110210101_11_Erz&#xE4;hltypATh555.pdf: 140022 bytes, checksum: aad82c5e7a5c423d2ec4e72700d84d3a (MD5)
+9783110210101_12_Liebesg&#xF6;tter.nach.Jahrtausendwende.pdf: 109257 bytes, checksum: fa5b7445db7db19f7f78348991ecb39e (MD5)
+9783110210101_Anhang.pdf: 1951748 bytes, checksum: d1ae558a6fe2ead59697f98b50a18b22 (MD5)</dc:description.provenance>
+    <dc:description.provenance>Made available in DSpace on 2011-09-19T09:59:24Z (GMT). No. of bitstreams: 15
+9783110210101_Titelei.pdf: 45816 bytes, checksum: 4ee38a9b4ed3ca42768eb6625ade4c68 (MD5)
+9783110210101_00_Inhaltsverzeichnis.pdf: 44426 bytes, checksum: 0ad5c52d1f0c9a02ab7f62b414748444 (MD5)
+9783110210101_01_Die.Liebesg&#xF6;tter.pdf: 138138 bytes, checksum: bff39bed5659510b4bec51b2638582c6 (MD5)
+9783110210101_02_Wer.kauft.Liebesg&#xF6;tter.pdf: 63331 bytes, checksum: df9a10770f392a5b576ec05a7a87bc02 (MD5)
+9783110210101_03_Exkurs.Messelied.pdf: 88018 bytes, checksum: 797e8a75b2a8e5eddea7ec3786782e87 (MD5)
+9783110210101_04_Bild.Stabiae.pdf: 102527 bytes, checksum: ac8e0ac2be5b8a67f15debb94ddf3af7 (MD5)
+9783110210101_05_Goethe.Pompeji.pdf: 98779 bytes, checksum: 408b917ca027f8857171397008e59b62 (MD5)
+9783110210101_06_Neoklassizismus.pdf: 102694 bytes, checksum: 626c40beabd59d91271cc51e78eded1b (MD5)
+9783110210101_07_Thorvaldsen.pdf: 76965 bytes, checksum: 192dfb45fd0c8af033f073cdfd144ff9 (MD5)
+9783110210101_08_Durchs.19.Jhd.pdf: 99757 bytes, checksum: 17e5041196b25a4d64ac3487fe8f8f85 (MD5)
+9783110210101_09_Liebesg&#xF6;ttinnen.pdf: 60885 bytes, checksum: 9ba42bcbb743f85987a3ca3374e61b6d (MD5)
+9783110210101_10_Puschkins.Gedicht.pdf: 109258 bytes, checksum: c88ee233ca5de3f82a547cce8fbaabff (MD5)
+9783110210101_11_Erz&#xE4;hltypATh555.pdf: 140022 bytes, checksum: aad82c5e7a5c423d2ec4e72700d84d3a (MD5)
+9783110210101_12_Liebesg&#xF6;tter.nach.Jahrtausendwende.pdf: 109257 bytes, checksum: fa5b7445db7db19f7f78348991ecb39e (MD5)
+9783110210101_Anhang.pdf: 1951748 bytes, checksum: d1ae558a6fe2ead59697f98b50a18b22 (MD5)
+  Previous issue date: 2011-09-19</dc:description.provenance>
+    <dc:description.tableofcontents>I. Die Liebesg&#xF6;tter auf dem Markt; II. Wer kauft Liebesg&#xF6;tter; III. Exkurs &#xFC;ber das Messelied; IV. Das Bild von Stabiae; V. Goethe und Pompeji; VI. Neoklassizismus; VII. Thorvaldsen; VIII. Durchs 19. Jahrhundert; IX. Wer kauft Liebesg&#xF6;ttinnen?; X. Puschkins Gedicht &quot;Zar Nikita und seine 40 T&#xF6;chter&quot;; XI. Exkurs &#xFC;ber den Erz&#xE4;hltyp ATh 555 bei Puschkin; XII. Die Liebesg&#xF6;tter nach der Jahrhundertwende; Anhang: Texte, Melodien, Abblidungen, Abbildungsverzeichnis, Zitierte Literatur</dc:description.tableofcontents>
+    <dc:language.iso>de</dc:language.iso>
+    <dc:publisher>de Gruyter</dc:publisher>
+    <dc:relation.ispartofseries>Abhandlungen der Akademie der Wissenschaften zu G&#xF6;ttingen, Neue Folge;1</dc:relation.ispartofseries>
+    <dc:title>Wer kauft Liebesg&#xF6;tter?</dc:title>
+    <dc:title.alternative>Metastasen eines Motivs</dc:title.alternative>
+    <dc:type>Book</dc:type>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1738/9783110210101_Titelei.pdf?sequence=1</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1739/9783110210101_00_Inhaltsverzeichnis.pdf?sequence=2</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1740/9783110210101_01_Die.Liebesg%c3%b6tter.pdf?sequence=3</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1741/9783110210101_02_Wer.kauft.Liebesg%c3%b6tter.pdf?sequence=4</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1742/9783110210101_03_Exkurs.Messelied.pdf?sequence=5</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1743/9783110210101_04_Bild.Stabiae.pdf?sequence=6</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1744/9783110210101_05_Goethe.Pompeji.pdf?sequence=7</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1745/9783110210101_06_Neoklassizismus.pdf?sequence=8</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1746/9783110210101_07_Thorvaldsen.pdf?sequence=9</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1747/9783110210101_08_Durchs.19.Jhd.pdf?sequence=10</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1748/9783110210101_09_Liebesg%c3%b6ttinnen.pdf?sequence=11</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1749/9783110210101_10_Puschkins.Gedicht.pdf?sequence=12</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1750/9783110210101_11_Erz%c3%a4hltypATh555.pdf?sequence=13</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1751/9783110210101_12_Liebesg%c3%b6tter.nach.Jahrtausendwende.pdf?sequence=14</dc:relation.hasfile>
+    <dc:relation.hasfile>http://adw-digital.sub.uni-goettingen.de/bitstream/id/1752/9783110210101_Anhang.pdf?sequence=15</dc:relation.hasfile>
+</srw_dc:dc></recordData><recordPosition>1</recordPosition></record></records><echoedSearchRetrieveRequest xmlns:ns2="http://www.loc.gov/zing/srw/"><version>1.1</version><query>dc.all = &quot;Liebesg&#xF6;tter&quot;</query><xQuery><ns3:searchClause xmlns:ns3="http://www.loc.gov/zing/cql/xcql/"><ns3:index>dc.all</ns3:index><ns3:relation><ns3:value>=</ns3:value></ns3:relation><ns3:term>Liebesg&#xF6;tter</ns3:term></ns3:searchClause></xQuery><startRecord>1</startRecord><maximumRecords>10</maximumRecords><recordPacking>xml</recordPacking><recordSchema>info:srw/schema/1/dc-v1.1</recordSchema><resultSetTTL>300</resultSetTTL><sortKeys></sortKeys></echoedSearchRetrieveRequest><extraResponseData xmlns:ns4="http://www.loc.gov/zing/srw/"><ns5:extraData xmlns="http://oclc.org/srw/extraData" xmlns:ns5="http://oclc.org/srw/extraData"><ns5:databaseTitle>ADW Digital</ns5:databaseTitle></ns5:extraData></extraResponseData></searchRetrieveResponse>

@@ -17,6 +17,20 @@
 
 
 	<xsl:template match="srw_dc:dc">
+		<xsl:variable name="medium">
+			<xsl:choose>
+				<xsl:when test="dc:type='book' or dc:type='bookPart' or dc:type='doctoralThesis' or dc:type='Book' or dc:type='periodicalPart'">
+					<xsl:text>book</xsl:text>
+				</xsl:when>
+				<xsl:when test="dc:type='article' or dc:type='lecture' or dc:type='workingPaper'">
+					<xsl:text>article</xsl:text>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:text>electronic</xsl:text>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+	
 		<pz:record>
 
 			<pz:metadata type="id">
@@ -25,6 +39,12 @@
 
 			<xsl:for-each select="dc:title">
 				<pz:metadata type="title">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
+			<xsl:for-each select="dc:title.alternative">
+				<pz:metadata type="title-remainder">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
@@ -59,41 +79,50 @@
 				</pz:metadata>
 			</xsl:for-each>
 
-			<xsl:if test="dc:relation.ispartofseries">
-				<pz:metadata type="journal-title">
-					<xsl:value-of select="dc:relation.ispartofseries"/>
-				</pz:metadata>
-				
-				<pz:metadata type="journal-subpart">
-					<xsl:if test="dc:bibliographicCitation.volume">
-						<xsl:text>Vol. </xsl:text>
-						<xsl:value-of select="dc:bibliographicCitation.volume"/>
-					</xsl:if>
-					<xsl:if test="dc:bibliographicCitation.issue">
-						<xsl:text>, No. </xsl:text>
-						<xsl:value-of select="dc:bibliographicCitation.issue"/>
-					</xsl:if>
-					<xsl:if test="dc:date.issued">
-						<xsl:text> (</xsl:text>
-						<xsl:value-of select="dc:date.issued"/>
-						<xsl:text>)</xsl:text>
-					</xsl:if>
-					<xsl:if test="dc:bibliographicCitation.firstPage">
-						<xsl:text>, </xsl:text>
-						<xsl:value-of select="dc:bibliographicCitation.firstPage"/>
-						<xsl:if test="dc:bibliographicCitation.lastPage">
-							<xsl:text>-</xsl:text>
-							<xsl:value-of select="dc:bibliographicCitation.lastPage"/>
-						</xsl:if>
-					</xsl:if>
-				</pz:metadata>
-			</xsl:if>
-
-			<xsl:for-each select="dc:publisher">
-				<pz:metadata type="publication-name">
+			<xsl:for-each select="dc:format.extent">
+				<pz:metadata type="physical-extent">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
+
+			<xsl:if test="dc:relation.ispartofseries">
+				<xsl:choose>
+					<xsl:when test="$medium='book'">
+						<pz:metadata type="series-title">
+							<xsl:value-of select="dc:relation.ispartofseries"/>
+						</pz:metadata>
+					</xsl:when>
+					<xsl:otherwise>
+						<pz:metadata type="journal-title">
+							<xsl:value-of select="dc:relation.ispartofseries"/>
+						</pz:metadata>
+				
+						<pz:metadata type="journal-subpart">
+							<xsl:if test="dc:bibliographicCitation.volume">
+								<xsl:text>Vol. </xsl:text>
+								<xsl:value-of select="dc:bibliographicCitation.volume"/>
+							</xsl:if>
+							<xsl:if test="dc:bibliographicCitation.issue">
+								<xsl:text>, No. </xsl:text>
+								<xsl:value-of select="dc:bibliographicCitation.issue"/>
+							</xsl:if>
+							<xsl:if test="dc:date.issued">
+								<xsl:text> (</xsl:text>
+								<xsl:value-of select="dc:date.issued"/>
+								<xsl:text>)</xsl:text>
+							</xsl:if>
+							<xsl:if test="dc:bibliographicCitation.firstPage">
+								<xsl:text>, </xsl:text>
+								<xsl:value-of select="dc:bibliographicCitation.firstPage"/>
+								<xsl:if test="dc:bibliographicCitation.lastPage">
+									<xsl:text>-</xsl:text>
+									<xsl:value-of select="dc:bibliographicCitation.lastPage"/>
+								</xsl:if>
+							</xsl:if>
+						</pz:metadata>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:if>
 
 			<xsl:for-each select="dc:bibliographicCitation.volume">
 				<pz:metadata type="volume-number">
@@ -120,6 +149,12 @@
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
+			
+			<xsl:for-each select="dc:relation.dfgviewer">
+				<pz:metadata type="electronic-url" note="DFG Viewer">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>		
 
 			<xsl:for-each select="dc:identifier.uri">
 				<pz:metadata type="catalogue-url">
@@ -169,20 +204,17 @@
 				</pz:metadata>
 			</xsl:for-each>
 
-			<xsl:for-each select="dc:type">
-				<pz:metadata type="medium">
-					<xsl:choose>
-						<xsl:when test=".='book' or .='bookPart' or .='doctoralThesis'">
-							<xsl:text>book</xsl:text>
-						</xsl:when>
-						<xsl:when test=".='article' or .='lecture' or .='workingPaper'">
-							<xsl:text>article</xsl:text>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:text>electronic</xsl:text>
-						</xsl:otherwise>
-					</xsl:choose>
-				</pz:metadata>
+			<pz:metadata type="medium">
+				<xsl:value-of select="$medium"/>
+			</pz:metadata>
+
+
+			<xsl:for-each select="dc:description.tableofcontents">
+				<xsl:call-template name="splitter">
+					<xsl:with-param name="list" select="."/>
+					<xsl:with-param name="separator" select="'; '"/>
+					<xsl:with-param name="metadataType">description</xsl:with-param>
+				</xsl:call-template>
 			</xsl:for-each>
 
 			<xsl:for-each select="dc:subject">
