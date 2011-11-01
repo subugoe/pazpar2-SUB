@@ -34,6 +34,13 @@
 		</xsl:copy>
 	</xsl:template>
  
+	<xsl:template match="pz:record">
+		<xsl:copy>
+			<xsl:apply-templates select="@*|node()"/>
+		</xsl:copy>
+		<!-- Right now, all data we have are articles. -->
+		<pz:metadata type="medium">article</pz:metadata>
+	</xsl:template>
 
 
 	<xsl:template match="pz:metadata[@type='citation']">
@@ -72,14 +79,6 @@
 		</pz:metadata>
 	</xsl:template>
 
-
-	<!--
-		Right now, all data we have are articles. 
-		This needs to be extended once we have more data types.
-	-->
-	<xsl:template match="pz:metadata[@type='doctypecode']">
-		<pz:metadata type="medium">article</pz:metadata>
-	</xsl:template>
 
 
 	<!-- 
