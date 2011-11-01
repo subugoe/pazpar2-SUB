@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <service id="GEO-LEO" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!-- 
-	Targets used for Geo-Leo
-	* GBV Databases, including Göttingen Opac, via new SRU service
-	* SSG-FI Guide Allegro-Databases via Z39.50 
+	Targets used for GEO-LEO
+	* GBV Databases, including Göttingen Opac, via SRU
+	* SSG-FI Guide via Solr
 	* SWB Catalogue search via Z39.50 with condition to search in Freiberg only
-	* NEBIS
+	* Geo Zebra Server: Dokumentenserver, DigiZeitschriften, Retrodigitalisate,
+		Dissertations- und Habilitationsserver
+	* NEBIS/ETH Zürich
 	* NAL
+	* Institut für Länderkunde (IfL)
+	* GEO-LEO edocs DSpace SRU interface
 
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
