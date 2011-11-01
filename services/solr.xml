@@ -14,6 +14,8 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History-Guide (Solr)"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Anglistik-Guide (Solr)"/>
 	</settings>
+	<settings src="settings/vifamath-solr.xml"/>
+	<settings src="settings/gbv-solr.xml"/>
 
 
 	<!-- we try to keep same order as in marc21.xsl -->
