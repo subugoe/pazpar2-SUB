@@ -113,5 +113,8 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-pio" value="http://gso.gbv.de/DB=5.55/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-cup" value="http://gso.gbv.de/DB=5.62/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-rth" value="http://gso.gbv.de/DB=5.72/PPNSET?PPN="/>
-
+	
+	<!-- Set up database restrictions -->
+	<set name="pz:allow" target="sru.gbv.de/zdb-1-pio" value="0"/>
+	<set name="pz:allow" target="sru.gbv.de/olc*" value="0"/>
 </settings>

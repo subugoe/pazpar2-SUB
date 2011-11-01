@@ -27,17 +27,20 @@
 		<set target="sru.gbv.de/fachopac-mat" name="pz:name" value="Fach Opac Mathematik"/>
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
-<!--	
-		<set target="sru.gbv.de/zdb-1-pio" name="pz:name" value="Periodicals Index Online"/>
-		<set target="sru.gbv.de/olc" name="pz:name" value="Online Contents"/>
-		<set target="sru.gbv.de/olcssg-ang" name="pz:name" value="Anglistik Aufsätze"/>
-		<set target="sru.gbv.de/olcssg-his" name="pz:name" value="Geschichte Aufsätze"/>
-		<set target="sru.gbv.de/olcssg-mat" name="pz:name" value="OLC Mathe"/>
-		<set target="sru.gbv.de/olcssg-geo" name="pz:name" value="OLC Geowissenschaften"/>
-		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="OLC Astronomie"/>
--->
-	</settings>
 
+		<!-- Somewhat restricted access -->
+		<set target="sru.gbv.de/olcssg-ang" name="pz:name" value="OLC Anglistik"/>
+		<set target="sru.gbv.de/olcssg-his" name="pz:name" value="OLC Geschichte"/>
+		<set target="sru.gbv.de/olcssg-mat" name="pz:name" value="OLC Mathe"/>
+		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="OLC Geowissenschaften"/>
+		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="OLC Astronomie"/>
+
+		<!-- Strongly restricted access -->
+		<set target="sru.gbv.de/olc" name="pz:name" value="OLC Gesamt"/>
+		<set target="sru.gbv.de/zdb-1-pio" name="pz:name" value="Periodicals Index Online"/>
+		
+	</settings>
+	<settings src="settings/gbv-solr.xml"/>
 
 
 	<!-- Guides -->
@@ -65,7 +68,6 @@
 		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
 	</settings>
 
-	
 	<!-- DSpace -->
 	<settings src="settings/ADW.xml"/>
 	<settings src="settings/GeoLeo-edocs.xml"/>

@@ -13,8 +13,6 @@
 	<settings>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
 
-		<set target="sru.gbv.de/olcssg-ang" name="pz:name" value="Anglistik Aufsätze"/>
-		<set target="sru.gbv.de/olcssg-his" name="pz:name" value="Geschichte Aufsätze"/>
 		<set target="sru.gbv.de/wao" name="pz:name" value="World Affairs Online"/>
 		<set target="sru.gbv.de/zdb-1-eai" name="pz:name" value="Early American Imprints"/>
 		<set target="sru.gbv.de/zdb-1-eeb" name="pz:name" value="Early English Books"/>
@@ -24,10 +22,16 @@
 		<set target="sru.gbv.de/zdb-1-mme" name="pz:name" value="Making of the Modern World"/>
 		<set target="sru.gbv.de/zdb-1-nel" name="pz:name" value="NetLibrary"/>
 		<set target="sru.gbv.de/zdb-1-wfr" name="pz:name" value="Wales Related Fiction"/>
-<!--	<set target="sru.gbv.de/zdb-1-pio" name="pz:name" value="Periodicals Index Online"/> -->
 		<set target="sru.gbv.de/zdb-1-cup" name="pz:name" value="Cambridge Journals"/>
-	</settings>
 
+		<set target="sru.gbv.de/olcssg-ang" name="pz:name" value="Anglistik Aufsätze"/>
+		<set name="pz:allow" target="sru.gbv.de/olcssg-ang" value="1"/>
+		<set target="sru.gbv.de/olcssg-his" name="pz:name" value="Geschichte Aufsätze"/>
+		<set name="pz:allow" target="sru.gbv.de/olcssg-his" value="1"/>
+
+		<set target="sru.gbv.de/zdb-1-pio" name="pz:name" value="Periodicals Index Online"/>
+	</settings>
+	
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
