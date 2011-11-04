@@ -146,6 +146,11 @@
 
 			<xsl:for-each select="dc:relation.hasfile">
 				<pz:metadata type="electronic-url" fulltextfile="true">
+					<xsl:if test="@title">
+						<xsl:attribute name="note">
+							<xsl:value-of select="@title"/>
+						</xsl:attribute>
+					</xsl:if>
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
