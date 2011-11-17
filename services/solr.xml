@@ -63,7 +63,7 @@
 	<metadata name="physical-unitsize"/>
 	<metadata name="physical-specified"/>
 	
-	<metadata name="series-title" brief="yes" merge="all"/>
+	<metadata name="series-title" brief="yes" merge="unique"/>
 	<metadata name="multivolume-title" brief="yes" merge="longest"/>
 	
 	<metadata name="description" brief="yes" merge="unique" rank="3"/>
@@ -91,7 +91,7 @@
 	<metadata name="issue-number" brief="yes" merge="unique"/>
 	<metadata name="issue-date"/>
 	<metadata name="pages-number" brief="yes" merge="unique"/>
-	
+		
 	<metadata name="url_recipe" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="open_url_resolver" setting="parameter" merge="no"/>
 	<metadata name="open-url" merge="longest"/>
@@ -108,5 +108,5 @@
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
 	<metadata name="catalogueURL" brief="yes"/>
-
+	
 </service>
