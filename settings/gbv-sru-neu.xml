@@ -29,7 +29,7 @@
 
 	<!--
 		Full-text search; map the search key to the all index
-		and change that mapping only for the catalogues supporting full text search
+		and change that mapping only for the catalogues supporting full text search.
 	-->
 	<set name="pz:cclmap:fulltext" value="u=pica.all s=1 t=r"/>
 	<set name="pz:cclmap:fulltext" value="u=pica.txt s=1 t=r" target="sru.gbv.de/gvk"/>
@@ -37,55 +37,60 @@
 	
 	<set name="pz:cclmap:title" value="u=pica.tit s=al t=r"/>
 	<set name="pz:cclmap:person" value="u=pica.per s=al t=r"/>
-	<!-- use SHA (8542) for journal title search as ZTI (21) is just a phrase search -->
+	<!-- Use SHA (8542) for journal title search as ZTI (21) is just a phrase search. -->
 	<set name="pz:cclmap:journal" value="u=pica.sha s=al t=r"/>
 	<set name="pz:cclmap:subject" value="u=pica.slw s=al t=r"/>
 
-	<!-- Logic for recognising date ranges is built into the index, we can send the string right there -->
+	<!-- Logic for recognising date ranges is built into the index, we can send the string right there. -->
 	<set name="pz:cclmap:date" value="u=pica.erj"/>
 	
 	<set name="pz:cclmap:isbn" value="u=pica.isb"/>
 	<set name="pz:cclmap:issn" value="u=pica.iss"/>
 
 	<!--
-		Lokale Klassifikation for GOK subject search, LKL (5010) 
-		Right-truncated phrase search for LKL (in fact this index is phrase search-only)
+		Lokale Klassifikation for GOK subject search.
+		Right-truncated phrase search for LKL (in fact this index is phrase search-only).
 	-->
 	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
-	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=1"/>
-	
+
 	<!-- 
-		Fake Search key for Freiberg Classification, mapped to the BKL field.
-		Should not return any results in GBV
+		Fake search key for Freiberg classification, mapped to the BKL field.
+		Should not return any results in GBV.
 	-->
 	<set name="pz:cclmap:fbg" value="u=pica.bkl s=1 t=r"/>
 	
-	<!-- NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search -->
+	<!--
+		NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search.
+		Field content has format YYYY-MM.
+	-->
 	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
 	
-	<!-- Map additional pica search keys to pazpar2 -->
+	<!-- Map additional Pica search keys to pazpar2. -->
 	<set name="pz:cclmap:tit" value="u=pica.tit t=r"/>
 	<set name="pz:cclmap:thm" value="u=pica.thm t=r"/>
 	<set name="pz:cclmap:sww" value="u=pica.sww t=r"/>
 	<set name="pz:cclmap:ddc" value="u=pica.ddc t=r"/>
 	<set name="pz:cclmap:bkl" value="u=pica.bkl t=r"/>
 	<set name="pz:cclmap:ppn" value="u=pica.ppn"/>
+	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=1"/>
+	<!-- … probably only available in opac-de-7. -->
 	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
 	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
+	
 
-	<!-- SRU schema: Request Marc XML format -->
+	<!-- SRU schema: Request turbomarc format. -->
 	<set name="pz:elements" value="turbomarc"/>
 
 
-	<!-- Fix and Transform to TXML -->
+	<!-- Fetch turbomarc and normalise. -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,../tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl"/>
 
 
-	<!-- Load more records from Göttingen Opac -->
+	<!-- Load more records from Göttingen Opac. -->
 	<set name="pz:maxrecs" target="sru.gbv.de/opac-de-7" value="500"/>
 
-	<!-- Set up GBV catalogue URLs -->
+	<!-- Set up GBV catalogue URLs. -->
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/wao" value="http://gso.gbv.de/DB=1.46/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natliz" value="http://gso.gbv.de/DB=1.50/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natlizzss" value="http://gso.gbv.de/DB=1.55/PPNSET?PPN="/>
@@ -116,7 +121,7 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-cup" value="http://gso.gbv.de/DB=5.62/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-rth" value="http://gso.gbv.de/DB=5.72/PPNSET?PPN="/>
 	
-	<!-- Set up database restrictions -->
+	<!-- Set up database restrictions. -->
 	<set name="pz:allow" target="sru.gbv.de/zdb-1-pio" value="0"/>
 	<set name="pz:allow" target="sru.gbv.de/olc*" value="0"/>
 </settings>
