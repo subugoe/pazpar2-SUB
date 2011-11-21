@@ -28,6 +28,7 @@
 		titles may be present in LCSH and MSCverbal fields as well.
 	-->
 	<set name="pz:cclmap:subject" value="1=Keywords s=al t=r"/>
+	<set name="pz:cclmap:date" value="1=GOK s=1"/>
 
 	<!--
 		There is no reasonable publication date information for website records.
