@@ -14,7 +14,6 @@
 		* ANDed word search for most fields (s=al)
 		* no truncation by default but giving the user the option to 
 			opt for right truncation by adding a ? (t=r)
-		* use attributes are Pica IKT numbers
 	-->
 	<set name="pz:cclmap:term" value="s=al t=r"/>
 
