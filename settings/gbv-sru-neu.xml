@@ -70,6 +70,8 @@
 	<set name="pz:cclmap:ddc" value="u=pica.ddc t=r"/>
 	<set name="pz:cclmap:bkl" value="u=pica.bkl t=r"/>
 	<set name="pz:cclmap:ppn" value="u=pica.ppn"/>
+	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
+	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
 
 	<!-- SRU schema: Request Marc XML format -->
 	<set name="pz:elements" value="turbomarc"/>
