@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnam a22yyyyy i 4500</l>
+  <c001>664133290</c001>
+  <c003>DE-601</c003>
+  <c005>20111117104308.0</c005>
+  <c008>110713s2012                  000 0 ||| d</c008>
+  <d015 i1=" " i2=" ">
+    <sa>11N28</sa>
+    <s2>dnb</s2>
+  </d015>
+  <d016 i1="7" i2=" ">
+    <sa>101332613X</sa>
+    <s2>DE-101</s2>
+  </d016>
+  <d020 i1=" " i2=" ">
+    <sa>978-3-7691-1301-3 (kart.) :</sa>
+    <sc>EUR 39.95 (DE), EUR 41.10 (AT)</sc>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>3769113012</sa>
+  </d020>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-101)101332613X</sa>
+  </d035>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)DNB101332613X</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2="7">
+    <sa>de</sa>
+    <sa>en</sa>
+    <s2>iso639-1</s2>
+  </d041>
+  <d082 i1="0" i2="0">
+    <sa>610</sa>
+  </d082>
+  <d084 i1=" " i2=" ">
+    <sa>XC 2800</sa>
+    <s2>rvk</s2>
+  </d084>
+  <d245 i1="0" i2="4">
+    <sa>Die Deklaration von Helsinki :</sa>
+    <sb>Revisionen und Kontroversen /</sb>
+    <sc>H.-J. Ehni/U. Wiesing (Hrsg.).</sc>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>Köln :</sa>
+    <sb>Dt. Ärzte-Verl.,</sb>
+    <sc>2012</sc>
+  </d260>
+</r>
+
+
