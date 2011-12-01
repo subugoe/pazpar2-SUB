@@ -1,4 +1,4 @@
-<settings target="193.197.31.10:20210/swb">
+<settings target="z3950.bsz-bw.de:20215/swb">
 <!--
 	SRW/Freiberg target
 	
@@ -43,7 +43,7 @@
 
 
 	<!-- Result normalization settings -->
-	<set name="pz:nativesyntax" value="txml;iso-8859-1"/>
+	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="../tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl,xsl/medium-strip-electronic.xsl,xsl/medium-video.xsl"/>
 
 </settings>
