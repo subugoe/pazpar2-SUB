@@ -20,6 +20,7 @@
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
 
 		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
+		<set target="sru.gbv.de/ikar" name="pz:name" value="Alte Karten"/>
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
 
