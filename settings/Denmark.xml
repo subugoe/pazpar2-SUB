@@ -1,0 +1,50 @@
+<settings target="z3950.kb.dk:2100/*">
+<!--
+	Royal Library of Denmark target.
+	
+	Target databases on the server according to
+	http://www.loc.gov/cgi-bin/zgate?ACTION=INIT&FORM_HOST_PORT=/prod/www/data/z3950/rex.html,z3950.kb.dk,2100&CI=110237
+
+	KGL01	Books and Periodicals Database
+	BGF01	Bibliographies
+	BHS01	History of Books Collection
+	DJM01	Danish Jewish Museum
+	DRA01	Plays
+	GRB01	Grundtvig-biblioteket
+	KAB01	Art Academy Library
+	KBB01	Den National Billedbase
+	KBH01	Manuscripts
+	KBK01	Maps and atlases
+	KDM01	Royal Danish Music Conservatory
+	KUI01	Institutbiblioteker ved KU m.m.
+	NIA01	Norwegian Institute for Asian Studies
+	SAB01	Saint Andreas Library
+
+	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<!-- unqualified search -->
+	<set name="pz:cclmap:term" value="u=1016 s=al t=r"/>
+	<!-- full-text search; maps to unqualified search if it doesn’t exist -->
+	<set name="pz:cclmap:fulltext" value="u=1016 s=al t=r"/>
+
+	<!-- field-specific mappings -->
+	<set name="pz:cclmap:title" value="u=4 s=al t=r"/>
+	<set name="pz:cclmap:person" value="u=1003 s=al t=r"/>
+	<set name="pz:cclmap:subject" value="u=21 s=al t=r"/>
+	<set name="pz:cclmap:isbn" value="u=7"/>
+	<set name="pz:cclmap:issn" value="u=8"/>
+	<set name="pz:cclmap:date" value="u=31 r=r"/>
+
+
+	<!-- Retrieval settings -->
+	<set name="pz:requestsyntax" value="marc21"/>
+	<set name="pz:elements" value="F"/>
+	<set name="pz:queryencoding" value="utf-8"/>
+
+
+	<!-- Result normalization settings -->
+	<set name="pz:nativesyntax" value="txml;utf-8"/>
+	<set name="pz:xslt" value="../tmarc.xsl"/>
+
+</settings>

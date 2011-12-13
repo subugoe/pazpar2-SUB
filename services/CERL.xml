@@ -1,89 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service id="all" xmlns="http://www.indexdata.com/pazpar2/1.0">
-<!--
-	All targets we are using.
-
+<service id="CERL" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!-- 
+	Targets in CERL Portal
+	
+	http://cerl.epc.ub.uu.se/sportal/
+	
 	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<!-- GBV -->>
+
+	<settings src="settings/Denmark.xml"/>
+	<settings>
+		<set target="z3950.kb.dk:2100/KBH01" name="pz:name" value="Kongelige Bibliotek Manuscripts"/>
+	</settings>
+
+	<settings src="settings/Scotland.xml"/>
+	<settings>
+		<set target="z3950.nls.uk:7390/VOYAGER" name="pz:name" value="National Library of Scotland Manuscripts"/>
+	</settings>
+
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK"/>
-		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
-		<set target="sru.gbv.de/wao" name="pz:name" value="World Affairs Online"/>
-		<set target="sru.gbv.de/zdb-1-eai" name="pz:name" value="Early American Imprints"/>
-		<set target="sru.gbv.de/zdb-1-eeb" name="pz:name" value="Early English Books"/>
-		<set target="sru.gbv.de/zdb-1-ecc" name="pz:name" value="18th Century Collections"/>
-		<set target="sru.gbv.de/zdb-1-elw" name="pz:name" value="English Language Women’s Literature"/>
-		<set target="sru.gbv.de/zdb-1-mml" name="pz:name" value="Making of Modern Law"/>
-		<set target="sru.gbv.de/zdb-1-mme" name="pz:name" value="Making of the Modern World"/>
-		<set target="sru.gbv.de/zdb-1-nel" name="pz:name" value="NetLibrary"/>
-		<set target="sru.gbv.de/zdb-1-wfr" name="pz:name" value="Wales Related Fiction"/>
-		<set target="sru.gbv.de/zdb-1-cup" name="pz:name" value="Cambridge Journals"/>
-		<set target="sru.gbv.de/natliz" name="pz:name" value="Nationallizenzen Bücher"/>
-		<set target="sru.gbv.de/natlizzss" name="pz:name" value="Nationallizenzen Zeitschriften"/>
-		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
-		<set target="sru.gbv.de/fachopac-mat" name="pz:name" value="Fach Opac Mathematik"/>
-		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
-		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
 		<set target="sru.gbv.de/eromm" name="pz:name" value="EROMM"/>
 		<set target="sru.gbv.de/vd17" name="pz:name" value="VD17"/>
-
-		<!-- Somewhat restricted access -->
-		<set target="sru.gbv.de/olcssg-ang" name="pz:name" value="OLC Anglistik"/>
-		<set target="sru.gbv.de/olcssg-his" name="pz:name" value="OLC Geschichte"/>
-		<set target="sru.gbv.de/olcssg-mat" name="pz:name" value="OLC Mathe"/>
-		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="OLC Geowissenschaften"/>
-		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="OLC Astronomie"/>
-
-		<!-- Strongly restricted access -->
-		<set target="sru.gbv.de/olc" name="pz:name" value="OLC Gesamt"/>
-		<set target="sru.gbv.de/zdb-1-pio" name="pz:name" value="Periodicals Index Online"/>
-		
-	</settings>
-	<settings src="settings/gbv-solr.xml"/>
-
-
-	<!-- Guides -->
-	<settings src="settings/SUB-Guides-solr.xml"/>
-	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History Guide"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature Guide"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
+		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK Handschriften"/>
+		<set target="sru.gbv.de/gvk" name="pz:pqf_prefix" value="@and @attr 5=1 @attr 1=pica.mak H"/>
 	</settings>
 
-	
-	<!-- other Libraries -->
-	<settings src="settings/Freiberg.xml"/>
-	<settings src="settings/NAL.xml"/>
-	<settings src="settings/NEBIS-ETH.xml"/>
-	<settings src="settings/PIO.xml"/>
-
-	<!-- Zebras -->
-	<settings src="settings/zebra-geo.xml"/>
-	<settings src="settings/zebra-vifamath.xml"/>
-	<settings>
-		<set target="134.76.176.48:2021/arxiv" name="pz:name" value="arXiv"/>
-		<set target="134.76.176.48:3954/ElibM" name="pz:name" value="ELibM"/>
-		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
-	</settings>
-
-	<!-- DSpace -->
-	<settings src="settings/ADW.xml"/>
-	<settings src="settings/GeoLeo-edocs.xml"/>
-	<settings src="settings/GoeScholar.xml"/>
 
 
-<!--
-	<settings src="conf.d/AHL.xml"/>
-	<settings src="conf.d/MLA.xml"/>	
---> 
-
-
-
-	
 	<!-- we try to keep same order as in marc21.xsl -->
 	<metadata name="language" brief="yes" merge="unique"/>
 	<metadata name="id" brief="yes"/>
