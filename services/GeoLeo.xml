@@ -24,9 +24,9 @@
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
 
-		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="OLC Geowissenschaften"/>
+		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="Artikel Geowissenschaften"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-ggo" value="1"/>
-		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="OLC Astronomie"/>
+		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="Artikel Astronomie"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-ast" value="1"/>
 	</settings>
 
