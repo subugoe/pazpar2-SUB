@@ -137,7 +137,7 @@
 			</xsl:for-each>
 
 			<xsl:if test="dc:bibliographicCitation.firstPage | dc:bibliographicCitation.lastPage">
-				<pz:metadata type="pages">
+				<pz:metadata type="pages-number">
 					<xsl:value-of select="dc:bibliographicCitation.firstPage"/>
 					<xsl:text>-</xsl:text>
 					<xsl:value-of select="dc:bibliographicCitation.lastPage"/>
