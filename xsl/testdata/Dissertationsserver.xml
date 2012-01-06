@@ -1,0 +1,113 @@
+<record>
+      <header>
+<repname>HochschulSchriftenServer Dresden (de)</repname>
+        <identifier>oai:qucosa.de:bsz:14-qucosa-70201</identifier>
+        <datestamp>2011-12-01</datestamp>
+        <setSpec>pub-type:doctoral_thesis</setSpec>
+        <setSpec>has-source-swb:true</setSpec>
+        <setSpec>open_access</setSpec>
+        <setSpec>ddc:550</setSpec>
+        <setSpec>doc-type:doctoralThesis</setSpec>
+      </header>
+      <metadata>
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/&#10;                http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Untersuchungen zu Topographie und Bewegungsverhalten
+für das Küstengebiet des Riiser-Larsen- und Brunt-Schelfeises
+mittels Radarfernerkundung</dc:title>
+          <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Investigations of surface topography and ice dynamics for the coastal areas of the Riiser-Larsen and Brunt ice shelf based on radar remote sensing</dc:title>
+          <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Bäßler, Michael </dc:creator>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Fernerkundung</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">RADAR</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Interferometrie</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">SAR</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">InSAR</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">ERS</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">ALOS</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">LANDSAT</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Antarktis</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Glaziologie</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Geodäsie</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Eisdynamik</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Ozeangezeiten</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Fließgeschwindigkeit</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Geschwindigkeitsänderung</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Schelfeis</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Eiszunge</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">digitales Höhenmodell</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Aufsetzzone</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Gletscher</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Eisstrom</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Stancomb-Wills</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Veststraumen</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Brunt</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Riiser-Larsen</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Plogbreen</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Remote Sensing</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">RADAR</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">interferometry</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">SAR</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">InSAR</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">ERS</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">ALOS</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">LANDSAT</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Antarctica</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">glaciology</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">geodesy</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">ice dynamics</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">ocean tides</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">flow velocities</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">velocity changes</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">ice shelf</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">ice tongue</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">digital elevation model</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">grounding line</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">glacier</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">ice stream</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Stancomb-Wills</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Veststraumen</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Brunt</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Riiser-Larsen</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">Plogbreen</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">ddc:550</dc:subject>
+          <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">rvk:ZI 9560</dc:subject>
+          <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="deu">Mit der Weiterentwicklung von Sensoren und Methoden hat die Satellitenfernerkundung innerhalb der letzten 20 Jahre nicht nur einen großen Stellenwert in der Polarforschung errungen, sondern vor allem die Herangehensweisen an eine Vielzahl glaziologischer Probleme grundlegend verändert. RADAR-Sensoren (Radio Detection and Ranging) sind dabei besonders bei der Erkundung vereister Regionen hilfreich und tragen stark zur Ableitung klimasensitiver Parameter im Bereich der Antarktis bei.
+Nach einem einführenden Überblick im ersten wird im zweiten Kapitel mit Darstellungen zur Nutzung von RADAR-Messungen für Fernerkundungszwecke begonnen. Die zur Erhöhung der räumlichen Auflösung verwendete SAR-Prozessierung (Synthetic Aperture Radar) wird daraufhin kurz umrissen, bevor zu den Grundlagen der interferometrischen Auswertung (InSAR) übergeleitet wird. Bei dieser werden Phasendifferenzen unterschiedlicher Aufnahmen für Messzwecke eingesetzt. In den Beschreibungen wird aufgezeigt, wie sich derartige Messungen für die Ermittlung von Oberflächentopographie und Fließverhalten in polaren Regionen nutzen lassen. Eine Darstellung der ebenfalls benötigten Methoden zur Bestimmung von Verschiebungen in Bildpaaren und das Messprinzip der Laseraltimetrie beenden diesen Theorieteil.
+Das dritte Kapitel der Arbeit ist der Vorstellung des Arbeitsgebietes und der genutzten Datensätze gewidmet. Nach der geographischen Einordnung des Untersuchungsgebietes werden die wichtigsten glaziologischen Gegebenheiten vorgestellt. In der sich anschließenden Beschreibung genutzter Datensätze werden vor allem die für diese Region verfügbaren Höhen- und Ozeangezeitenmodelle intensiver besprochen.
+Die Bestimmung der Oberflächentopographie durch differentielle SAR-Interferometrie (DInSAR) ist Thema des vierten Kapitels. Nachdem die nötigen technischen Aspekte des Prozessierungsablaufes knapp erläutert wurden, werden die Unterschiede bei der Doppeldifferenzbildung benachbarter und identischer Wiederholspuren herausgearbeitet. Danach wird am Beispiel gezeigt, wie mithilfe von ICESat-Daten (Ice, Cloud and Land Elevation Satellite) eine Basislinienverbesserung zur genaueren Höhenbestimmung durchgeführt werden kann. Die ursprünglich separat abgeleiteten Höhenmodelle werden dann zu einer gemeinsamen Lösung kombiniert, welche abschließend hinsichtlich ihrer Genauigkeit besprochen und anderen Modellen vergleichend gegenübergestellt wird.
+Die Ableitung von Fließgeschwindigkeiten mit dem Hintergrund einer späteren Berechnung von Massenflüssen ist Gegenstand des fünften Kapitels, wobei drei unterschiedliche Methoden genutzt werden. Im ersten Fall wird das für RADAR-Bilder typische, hochfrequente Rauschen zur Bestimmung von Verschiebungen in ALOS-Daten (Advanced Land Observing Satellite) genutzt.
+Mit dieser Methode können durchgehende Fließgeschwindigkeitsfelder vom aufliegenden Bereich über die Aufsetzzone bis auf das Schelfeis ermittelt werden. DesWeiteren werden aus ERS-Daten (European Remote Sensing Satellite), die über einen Zeitraum von reichlich 13 Jahren vorliegen, Verschiebungen durch die Verfolgung von unveränderten, aber sich bewegenden Eisstrukturen bestimmt. Bei der als Drittes angewendeten, interferometrischen Methode werden aufsteigende und absteigende Satellitenspuren kombiniert, um die Fließinformationen zu rekonstruieren. In den jeweiligen Sektionen wird neben der Vorstellung der Ergebnisse auch deren Genauigkeit diskutiert.
+Das letzte große, sechste Kapitel untergliedert sich in zwei Teile. Im ersten dieser beiden Abschnitte wird gezeigt, wie InSAR und DInSAR zur Lagekartierung der Aufsetzzone eingesetzt werden können. Dabei werden die auf diese Weise ermittelten Ergebnisse dargestellt und diskutiert. Im zweiten, umfangreicheren Teil werden die zuvor gewonnenen Höhen- und Geschwindigkeitsinformationen genutzt, um deren Einfluss aus den InSAR-Messungen zu eliminieren, wodurch vertikale Höhenunterschiede mittels InSAR bestimmt werden können. Dies ist besonders für den Bereich der Aufsetzzone und des Schelfeises von Interesse, da diese Areale teilweise oder vollständig von Ozeangezeiten beeinflusst werden. Nach einer Luftdruckkorrektion werden den ermittelten Höhenunterschieden (entlang selektierter Profile) die Prädiktionen zwölf verfügbarer Ozeangezeitenmodelle gegenübergestellt. Die RMS-Werte dieser Differenzen werden abschließend genutzt, um die Qualität der Ozeangezeitenmodelle für die Region des Arbeitsgebietes einzustufen.
+Zum Abschluss werden in einer Zusammenfassung noch einmal die wichtigsten Ergebnisse aller Kapitel resümiert und bewertet.</dc:description>
+          <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="eng">The development of new satellite sensors within the last 20 years along with changes towards more sophisticated processing strategies has not only given a new impetus to remote sensing data in view of polar research but also changed how a variety of glaciological problems are being addressed today. Particularly RADAR (radio detection and ranging) sensors are well-suited for the observation of glaciated areas and have already helped to retrieve a vast amount of climate sensitive parameters from the area of Antarctica.
+After an introductive overview at the beginning, the second chapter continues with the description of how RADAR measurements can be used to generate remote sensing images. The principle of synthetic aperture RADAR (SAR) which allows a better focusing of the RADAR
+measurements and therewith a rigorous increase of the spatial resolution of the images is outlined generally before more precise descriptions explain how interferometric SAR (InSAR) analyses can be used for the determination of surface topography heights and area-wide flow velocities.
+Two other techniques, namely matching methods for the determination of shifts between two images as well as the laser satellite altimetry are explained at the end of this chapter which closes the theoretical basics.
+The next section introduces the area of interest along with data sets which were used for validation purposes. After a careful exposure of the geographical situation, single objects such as ice streams and ice shelves are described in more detail. The following part, the data set introduction, has besides the description of other measurements its focus on topography and ocean tide models which are available for the area of investigation.
+Chapter four deals with the estimation of surface topography heights from differential InSAR (DInSAR) analyses. Therein the major differences for the usage of similar repeat tracks in contrast to neighboring, overlapping tracks will be shown and thoroughly discussed. The example of one track will be used to demonstrate how the required baseline estimation can be achieved if ICESat (Ice, Cloud and Land Elevation Satellite) profiles are used as tie points. Afterwards, all separately derived height models will be combined to obtain one final solution followed by an error analysis. A comparison to other available elevation models visualizes the spatial resolution of the derived model.
+The utilization of three different methods for the estimation of surface flow velocities (with the background of possible mass flux determinations) is the topic of the fifth chapter. The first case describes the usage of the high frequent noise contained in RADAR images for the tracking of horizontal surface displacements. Based on ALOS (Advanced Land Observing Satellite) data a flow velocity field which extends from the interior of the ice sheet across the grounding zone up to the ice shelf will be presented. Secondly, geocoded ERS (European Remote Sensing Satellite) images covering a time span of more than 13 years are used to track the motions of well-structured flat areas (ice shelf and glacier tongue). In the third approach used descending and ascending satellite passes will be combined in conjunction with a surface parallel flow assumption to interferometrically derive flow velocities in grounded areas. In each section respective errors will be discussed in order to evaluate the accuracy of the performed measurements.
+The last bigger chapter, number six, is divided into two sections. In the first one the adoption of SAR and InSAR with respect to the mapping of the grounding line location will be demonstrated.
+Results of the entire working area will be presented and compared to other data. The second section deploys the results of topography heights and flow velocities to remove both effects from the InSAR measurements which then allows to also measure height changes. This is of particular interest for the floating areas of ice shelf which are fully affected by ocean tides as well as for the grounding zone locations which partially experience deformations due to these height changes.
+After the correction for air pressure, changes between the image acquisitions, height changes along selected profiles are compared to twelve different ocean tide models. The RMS values of the differences are then used to evaluate the quality of these models for the working area.
+The most important results and conclusions are summarized in the last chapter.</dc:description>
+          <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Saechsische Landesbibliothek- Staats- und Universitaetsbibliothek Dresden</dc:publisher>
+          <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">Technische Universität Dresden, Fakultät Forst-, Geo- und Hydrowissenschaften</dc:contributor>
+          <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">Prof. Dr.-Ing. habil. Reinhard Dietrich</dc:contributor>
+          <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">Prof. Dr.-Ing. habil. Reinhard Dietrich</dc:contributor>
+          <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">Prof. Dr.-Ing. Dr.h.c. Bernhard Heck</dc:contributor>
+          <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2011-07-11</dc:date>
+          <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">doc-type:doctoralThesis</dc:type>
+          <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/pdf</dc:format>
+          <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">http://nbn-resolving.de/urn:nbn:de:bsz:14-qucosa-70201</dc:identifier>
+          <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">urn:nbn:de:bsz:14-qucosa-70201</dc:identifier>
+          <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">PPN354041061</dc:identifier>
+          <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">http://www.qucosa.de/fileadmin/data/qucosa/documents/7020/diss.pdf</dc:identifier>
+          <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">deu</dc:language>
+        </oai_dc:dc>
+      </metadata>
+    
+  <idzebra xmlns="http://www.indexdata.dk/zebra/">
+    <size>17854</size>
+    <localnumber>20308</localnumber>
+    <filename>../therecords/2dresd_geo.xml</filename>
+  </idzebra>
+</record>
