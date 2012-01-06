@@ -1,0 +1,3 @@
+[submodule "pazpar2"]
+	path = pazpar2
+	url = git://git.indexdata.com/pazpar2.git
