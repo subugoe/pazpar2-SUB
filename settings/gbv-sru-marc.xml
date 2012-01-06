@@ -43,6 +43,6 @@
 
 	<!-- Fix and Transform to TXML -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,xsl/gbv-cleaner.xsl,../tmarc.xsl,xsl/language-code-cleaner.xsl"/>
+	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,xsl/gbv-cleaner.xsl,pazpar2/etc/tmarc.xsl,xsl/language-code-cleaner.xsl"/>
 
 </settings>
