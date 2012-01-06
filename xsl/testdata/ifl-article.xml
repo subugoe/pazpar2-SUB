@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+
+  <l>00768am  a2200241 a 4500</l>
+  <c001>C48429</c001>
+  <c003>KTS</c003>
+  <d245 i1=" " i2=" ">
+    <sa>Regionalisierungen</sa>
+    <sb>Raumdimensionen in der EU-Politik</sb>
+    <sc>Sebastian Lentz ...</sc>
+  </d245>
+  <d041 i1=" " i2=" ">
+    <sa>Deutsch</sa>
+  </d041>
+  <d260 i1=" " i2=" ">
+    <sc>2007</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>S. 117 - 131</sa>
+  </d300>
+  <d300 i1=" " i2=" ">
+    <sb>graph. Darst., Kt., Lit.-Hinw.</sb>
+  </d300>
+  <d334 i1=" " i2=" ">
+    <sa>Zeitschriftenaufsatz</sa>
+  </d334>
+  <d544 i1=" " i2=" ">
+    <sa>Z 0488 - 2007,02/03</sa>
+  </d544>
+  <d651 i1=" " i2=" ">
+    <sa>Europäische Union</sa>
+  </d651>
+  <d653 i1=" " i2=" ">
+    <sa>Regionalisierung</sa>
+  </d653>
+  <d653 i1=" " i2=" ">
+    <sa>Raumordnung</sa>
+  </d653>
+  <d653 i1=" " i2=" ">
+    <sa>Regionalpolitik</sa>
+  </d653>
+  <d653 i1=" " i2=" ">
+    <sa>Grenzraum</sa>
+  </d653>
+  <d700 i1=" " i2=" ">
+    <sa>Lentz, Sebastian</sa>
+  </d700>
+  <d773 i1=" " i2=" ">
+    <sg>57 (Februar-März 2007) 2/3</sg>
+  </d773>
+  <d773 i1=" " i2=" ">
+    <st>Osteuropa (Berlin)</st>
+  </d773>
+  <d856 i1=" " i2=" ">
+    <su>http://www3.domestic.de/cgi-bin/ifl_for_google.pl?db=db1&amp;amp;a=C&amp;b=48429&amp;format=F9&amp;searchResultNumber=1393&amp;user=GAST&amp;highlightWordsForLink=</su>
+  </d856>
+</r>
+
