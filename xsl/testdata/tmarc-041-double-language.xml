@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>01694nam a2200337uu 4500</l>
+  <c001>000531035</c001>
+  <c003>ETHICS</c003>
+  <c005>20060223131840.0</c005>
+  <c008>900302s1989    sz u   |  m  |00||||fre|d</c008>
+  <d024 i1="7" i2=" ">
+    <sa>10.5075/epfl-thesis-804</sa>
+    <s2>doi</s2>
+  </d024>
+  <d040 i1=" " i2=" ">
+    <sa>EPF-BC</sa>
+    <sb>fre</sb>
+    <sc>ETH-BIB</sc>
+    <se>ETHICS-ISBD</se>
+  </d040>
+  <d041 i1=" " i2=" ">
+    <sa>freeng</sa>
+  </d041>
+  <d090 i1=" " i2=" ">
+    <sa>000579167</sa>
+    <sb>BHR</sb>
+    <sn>8</sn>
+  </d090>
+  <d099 i1=" " i2=" ">
+    <sa>PATR</sa>
+    <sc>19900828</sc>
+    <sl>E02</sl>
+    <sh>09:30:43</sh>
+  </d099>
+  <d245 i1=" " i2=" ">
+    <sa>Modelling of stochastic and quasi-periodic texture images</sa>
+    <sc>par Thien Ha Minh</sc>
+  </d245>
+  <d260 i1=" " i2=" ">
+    <sa>Lausanne</sa>
+    <sc>1989</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>7 f., 136 p.</sa>
+    <sc>30 cm</sc>
+    <sb>ill.</sb>
+  </d300>
+  <d502 i1=" " i2=" ">
+    <sa>Th&#xE8;se, Sciences techniques, EPF Lausanne, No 804, 1989, D&#xE9;partement d'Electricit&#xE9;. Rapporteur: M. Kunt ; Co-rapporteur: D. Cano ; Co-rapporteur: G. Coray ; Co-rapporteur: A. Gagalowicz</sa>
+  </d502>
+  <d691 i1="E" i2="1">
+    <sa>MATHEMATISCHE BILDVERARBEITUNG</sa>
+    <s9>ger</s9>
+    <s8>519.716.35</s8>
+  </d691>
+  <d691 i1="E" i2="1">
+    <sa>STOCHASTISCHE MODELLE + STOCHASTISCHE SIMULATION (WAHRSCHEINLICHKEITSRECHNUNG)</sa>
+    <s9>ger</s9>
+    <s8>519.216.3,1</s8>
+  </d691>
+  <d691 i1="E" i2="1">
+    <sa>MUSTERERKENNUNG (K&#xDC;NSTLICHE INTELLIGENZ)</sa>
+    <s9>ger</s9>
+    <s8>004*08*05</s8>
+  </d691>
+  <d700 i1=" " i2=" ">
+    <sa>Ha Minh, Thien</sa>
+  </d700>
+  <d900 i1="1" i2=" ">
+    <sa>Kunt, Murat</sa>
+    <sc>Ingenieur, Physiker, Tuerkei, Schweiz</sc>
+    <sd>1945 -</sd>
+    <s9>ger</s9>
+  </d900>
+  <d906 i1=" " i2=" ">
+    <sa>Hochschulschrift = Th&#xE8;se/M&#xE9;moire</sa>
+  </d906>
+  <d907 i1=" " i2=" ">
+    <sg>CF Elektron. Daten Fernzugriff=Fichier online</sg>
+  </d907>
+  <d909 i1="E" i2="2">
+    <sa>EPF</sa>
+  </d909>
+  <d909 i1="E" i2="C">
+    <sa>e-library 2006</sa>
+    <sb>these</sb>
+  </d909>
+  <d856 i1=" " i2=" ">
+    <su>http://library.epfl.ch/theses/?nr=804</su>
+    <sz>E-Library, acc&#xE8;s en ligne: http://library.epfl.ch/theses/?nr=804</sz>
+  </d856>
+  <d852 i1="4" i2=" ">
+    <sb>E02</sb>
+    <sc>E02SA</sc>
+    <sj>ZTH 804</sj>
+    <sp>00200000145926</sp>
+    <s4>EPF-BIB (Lausanne)</s4>
+    <s5>Sous-sol. A83-A84. Th&#xE8;ses et trav.dipl. EPFL</s5>
+  </d852>
+  <d852 i1="4" i2=" ">
+    <sb>E02</sb>
+    <sc>E02XA</sc>
+    <sj>THESE 804</sj>
+    <sp>00200003008069</sp>
+    <s4>EPF-BIB (Lausanne)</s4>
+    <s5>Sous-sol. A101-106. D&#xE9;p&#xF4;t l&#xE9;gal</s5>
+  </d852>
+  <d852 i1="4" i2=" ">
+    <sb>E02</sb>
+    <sc>E02XG</sc>
+    <sj>MICR 18: 804</sj>
+    <sp>00200002979356</sp>
+    <s4>EPF-BIB (Lausanne)</s4>
+    <s5>Sous-sol. Stock</s5>
+  </d852>
+</r>
+
+
