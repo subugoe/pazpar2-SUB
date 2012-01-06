@@ -69,12 +69,22 @@
 				</xsl:if>
 			</xsl:for-each>
 
+			<!--
+				Language codes may have two problems:
+					1. Several codes separated by '; ' can be in the same field
+					2. old language codes may be used
+				Try to fix both of these.
+			-->
 			<xsl:for-each select="dc:language">
-				<pz:metadata type="language">
-					<xsl:call-template name="languageCodeConverter">
-						<xsl:with-param name="languageCode" select="."/>
-					</xsl:call-template>
-				</pz:metadata>
+				<xsl:call-template name="splitter">
+					<xsl:with-param name="list">
+						<xsl:call-template name="languageCodeConverter">
+							<xsl:with-param name="languageCode" select="."/>
+						</xsl:call-template>
+					</xsl:with-param>
+					<xsl:with-param name="separator">; </xsl:with-param>
+					<xsl:with-param name="metadataType">language</xsl:with-param>
+				</xsl:call-template>
 			</xsl:for-each>
 
 			<!-- 
