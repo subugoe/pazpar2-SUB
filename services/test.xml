@@ -3,7 +3,7 @@
 
 <!--	<settings src="settings/vifamath-solr.xml"/> -->
 
-<!--	<settings src="settings/NEBIS.xml"/>-->
+<!--	<settings src="settings/NEBIS-ETH.xml"/> -->
 <!--	<settings src="settings/loc.xml"/>-->
 <!--	<settings src="settings/gutenberg-sru.xml"/>-->
 
@@ -15,17 +15,13 @@
 		<set target="gso.gbv.de/sru/DB=2.1" name="pz:name" value="GBV GVK (SRU)"/>
 	</settings>
 -->
-<!--
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="*" name="pz:maxrecs" value="1000"/>
-		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="Opac (SRU neu)"/>
+		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK (SRU neu)"/>
 	</settings>
+
+<!--	<settings src="settings/IfL.xml"/>
 -->
-
-	<settings src="settings/IfL.xml"/>
-
-
 <!--
 	<settings src="settings/zebra-geo.xml"/>
 -->
