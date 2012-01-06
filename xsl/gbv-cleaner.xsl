@@ -2,7 +2,7 @@
 <!--
 	Slight cleanup for GBV Marc Data.
 
-	2010-09/10 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 <xsl:stylesheet
@@ -20,6 +20,23 @@
 		</xsl:copy>
 	</xsl:template>
  
+ 
+
+	<!--
+		A few GBV databases (e.g. IKAR) return Normsatz records.
+		These can be recongised by having 'z' at position 6 of the Marc leader,
+		don’t contain data and should not be displayed.
+		Delete them.
+	-->
+	<xsl:template match="tmarc:r">
+		<xsl:if test="substring(., 7, 1) != 'z'">
+			<xsl:copy>
+				<xsl:apply-templates select="@*|node()"/>
+			</xsl:copy>
+		</xsl:if>
+	</xsl:template>
+
+
 
 	<!-- 
 		Remove 245 $h subfields.
@@ -46,6 +63,7 @@
 	</xsl:template>	
 
 
+
 	<!-- 
 		GBV Online Contents (Swets data) have broken author information.
 		Author information is in Pica field 028C (rather than 028A/B)
@@ -66,6 +84,7 @@
 	</xsl:template>
 
 
+
 	<!--
 		GBV Marc-Records reliably use the i1 field of field 856 to indicate
 			http (4) and ftp (1) links. 856 fields with a blank i1 field can
@@ -74,6 +93,7 @@
 	-->
 	<xsl:template match="tmarc:d856[@i1!='4' and @i1!='1']">
 	</xsl:template>
+	
 	
 	
 	<!--
@@ -90,6 +110,7 @@
 		</tmarc:c001>
 	</xsl:template>
 	
+
 
 	<!-- 
 		Kill 900 and 954 fields with library information.

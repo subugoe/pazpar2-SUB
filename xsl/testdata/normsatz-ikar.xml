@@ -1,0 +1,15 @@
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnz  a22yyyyyn  4500</l>
+  <c001>040026213</c001>
+  <c003>DE-601</c003>
+  <c005>19990101000000.0</c005>
+  <c008>990101 a azznnaabn          za bna      d</c008>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d950 i1=" " i2=" ">
+    <sa>Nordpolarmeer</sa>
+  </d950>
+</r>
