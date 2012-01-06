@@ -21,7 +21,7 @@
 	
 	<xsl:template match="pz:metadata[@type='medium']">
 		<xsl:choose>
-			<xsl:when test="text() = 'video'">
+			<xsl:when test="substring(text(), 1, 5) = 'video'">
 				<pz:metadata type="medium">audio-visual</pz:metadata>
 			</xsl:when>
 			<xsl:otherwise>
