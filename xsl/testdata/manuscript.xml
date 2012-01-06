@@ -1,0 +1,49 @@
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxntm a22yyyyy2i 4500</l>
+  <c001>142266914</c001>
+  <c003>DE-601</c003>
+  <c005>20101103100925.0</c005>
+  <c008>940311s1778                  000 0     d</c008>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)GBV142266914</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d100 i1="1" i2=" ">
+    <sa>Pütter, Johann Stephan.</sa>
+    <s0>(DE-601)133839036</s0>
+  </d100>
+  <d245 i1="1" i2="0">
+    <sa>Rechtliches Bedenken ob dem Herrn v. Boolen die Leibzucht an den im Erzstifte Cöln gelegenen Gütern seiner verstorg&amp;benen Ehegattin gebühre</sa>
+    <sh>[Manuskript] /</sh>
+    <sc>Johann Stephan Pütter.</sc>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>5. 9. 1778,</sa>
+    <sc>1778</sc>
+  </d260>
+  <d500 i1=" " i2=" ">
+    <sa>[Mspt.]. - [Fol.].</sa>
+  </d500>
+  <d900 i1=" " i2=" ">
+    <sa>GBV</sa>
+    <sb>SUB+Uni Göttingen &lt;7&gt;</sb>
+    <sd>!HG-MAG! DEDUCT B 176/b</sd>
+    <sx>L</sx>
+    <sz>C</sz>
+  </d900>
+  <d954 i1=" " i2=" ">
+    <sa>40</sa>
+    <sb>117198102</sb>
+    <sz>7$228965365</sz>
+    <sc>01</sc>
+    <sf>HG-MAG</sf>
+    <sd>DEDUCT B 176/b</sd>
+    <se>s</se>
+    <sx>0007</sx>
+  </d954>
+</r>
+

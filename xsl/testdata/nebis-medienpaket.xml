@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>01723nom a22004214u 4500</l>
+  <c001>005268586</c001>
+  <c005>20070215112657.0</c005>
+  <c008>031212m20052006gw                b ger  </c008>
+  <d020 i1=" " i2=" ">
+    <sa>3-12-676140-2 (Lehrbuch)</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>3-12-676142-9 (Lehrerhandbuch)</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>3-12-676141-0 (Arbeitsbuch)</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>3-12-676143-7 (W&#xF6;rterheft)</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>3-12-676148-8 (Testheft)</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>3-12-676146-1 (CD zum Lehrbuch)</sa>
+  </d020>
+  <d040 i1=" " i2=" ">
+    <sa>SzZuIDS NEBIS FHNW-PH-S</sa>
+  </d040>
+  <d245 i1=" " i2=" ">
+    <sa>&lt;&lt;Das&gt;&gt; neue Deutschmobil</sa>
+    <sh>Medienpaket</sh>
+    <sn>3</sn>
+    <sb>Lehrwerk f&#xFC;r Kinder</sb>
+    <sc>Jutta Douvitsas-Gamst, Sigrid Xanthos-Kretzschmer, Eleftherios Xanthos</sc>
+  </d245>
+  <d260 i1=" " i2=" ">
+    <sa>Stuttgart</sa>
+    <sb>Ernst Klett Sprachen</sb>
+    <sc>2005-2006</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>6 Teile</sa>
+    <sb>Ill.</sb>
+  </d300>
+  <d490 i1=" " i2=" ">
+    <sa>Edition Deutsch</sa>
+  </d490>
+  <d500 i1=" " i2=" ">
+    <sa>Verschiedene textidentische Drucke</sa>
+  </d500>
+  <d505 i1=" " i2=" ">
+    <st>Testheft</st>
+    <sr>Christine Gagakis-Bantin, Holger Tzschaschel</sr>
+  </d505>
+  <d690 i1="E" i2="8">
+    <sa>Deutsch als Fremdsprache</sa>
+  </d690>
+  <d690 i1="E" i2="8">
+    <sa>Stufenlehrmittel</sa>
+    <sx>2-Mst</sx>
+    <sx>Mittelstufe</sx>
+  </d690>
+  <d700 i1=" " i2=" ">
+    <sa>Douvitsas-Gamst, Jutta</sa>
+  </d700>
+  <d700 i1=" " i2=" ">
+    <sa>Xanthos-Kretzschmer, Sigrid</sa>
+  </d700>
+  <d700 i1=" " i2=" ">
+    <sa>Xanthos, Eleftherios</sa>
+  </d700>
+  <d700 i1=" " i2=" ">
+    <sa>Gagakis-Bantin, Christine</sa>
+  </d700>
+  <d700 i1=" " i2=" ">
+    <sa>Tzschaschel, Holger</sa>
+  </d700>
+  <d906 i1=" " i2=" ">
+    <sj>MM Sprachlehrmittel = M&#xE9;thode de langue</sj>
+  </d906>
+  <d907 i1=" " i2=" ">
+    <se>SR CD</se>
+  </d907>
+  <d909 i1="E" i2="9">
+    <sa>P:803.9(07)</sa>
+  </d909>
+  <d909 i1="E" i2="N">
+    <sa>E39-20070214</sa>
+  </d909>
+  <d852 i1="4" i2=" ">
+    <sb>E39</sb>
+    <sj>803.9(07) DOUV /3</sj>
+    <sp>EM000006230253</sp>
+    <s4>FHNW-PH-S (Solothurn)</s4>
+  </d852>
+  <d852 i1="4" i2=" ">
+    <sb>E39</sb>
+    <sj>803.9(07) DOUV /3</sj>
+    <sp>EM000006230254</sp>
+    <s4>FHNW-PH-S (Solothurn)</s4>
+  </d852>
+  <d852 i1="4" i2=" ">
+    <sb>E39</sb>
+    <sj>803.9(07) DOUV /3</sj>
+    <sp>EBEST531279</sp>
+    <s4>FHNW-PH-S (Solothurn)</s4>
+  </d852>
+  <d852 i1="4" i2=" ">
+    <sb>E39</sb>
+    <sj>803.9(07) DOUV /3</sj>
+    <sp>EM000006230255</sp>
+    <s4>FHNW-PH-S (Solothurn)</s4>
+  </d852>
+  <d852 i1="4" i2=" ">
+    <sb>E39</sb>
+    <sj>803.9(07) DOUV /3</sj>
+    <sp>EM000006230256</sp>
+    <s4>FHNW-PH-S (Solothurn)</s4>
+  </d852>
+  <d852 i1="4" i2=" ">
+    <sb>E39</sb>
+    <sj>803.9(07) DOUV /3</sj>
+    <sp>EM000006230257</sp>
+    <s4>FHNW-PH-S (Solothurn)</s4>
+  </d852>
+</r>
+
