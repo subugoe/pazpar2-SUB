@@ -1,5 +1,9 @@
 <settings target="134.76.21.59/SRW/search/">
+<!--
+	pazpar2 settings for the GEO-LEO edocs DSpace server SRU interface.
 
+	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
 	<set name="pz:name" value="GEO-LEO e-docs"/>
 
 	<set name="pz:sru" value="get"/> 
@@ -17,12 +21,12 @@
 	<set name="pz:cclmap:title" value="u=dc.title s=al t=r"/>
 	<set name="pz:cclmap:person" value="u=dc.contributor s=1 t=r"/>
 	<set name="pz:cclmap:date" value="u=dc.date.issued r=r"/>
-	<set name="pz:cclmap:subject" value="u=dc.subject s=al"/>
+	<set name="pz:cclmap:subject" value="u=dc.subject s=al t=r"/>
 	<set name="pz:cclmap:isbn" value="u=dc.identifier"/>
 	<set name="pz:cclmap:issn" value="u=dc.relation"/>
 
 	<!-- Lokale Klassifikation for GOK subject search -->
-	<set name="pz:cclmap:lkl" value="u=dc.gok s=1 t=0"/>
+	<set name="pz:cclmap:lkl" value="u=dc.gok s=1 t=r"/>
 
 	<!-- Fake Search key for Freiberg Classification. Should not return results. -->
 	<set name="pz:cclmap:fbg" value="u=dc.subject s=1 t=0"/>
@@ -30,7 +34,6 @@
 
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
 	<set name="pz:elements" value="dc"/>
-
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>

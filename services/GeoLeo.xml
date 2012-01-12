@@ -12,7 +12,7 @@
 	* Institut für Länderkunde (IfL)
 	* GEO-LEO edocs DSpace SRU interface
 
-	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<settings src="settings/gbv-sru-neu.xml"/>
@@ -21,9 +21,12 @@
 
 		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
 		<set target="sru.gbv.de/ikar" name="pz:name" value="Alte Karten"/>
+		
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
+		<set target="sru.gbv.de/fachopac-ggo" name="pz:pqf_prefix" value='@and @attr 1=pica.all "not bib 0007"'/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
-
+		<set target="sru.gbv.de/fachopac-ast" name="pz:pqf_prefix" value='@and @attr 1=pica.all "not bib 0007"'/>
+		
 		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="Artikel Geowissenschaften"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-ggo" value="1"/>
 		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="Artikel Astronomie"/>
@@ -46,20 +49,6 @@
 	<settings src="settings/GeoLeo-edocs.xml"/>
 
 	
-	<!-- GEO-LEO prefers truncated searching -->
-	<settings target="*">
-		<set target="sru.gbv.de/*" name="pz:cclmap:term" value="u=pica.all s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:fulltext" value="u=pica.tit s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:title" value="u=pica.tit s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:person" value="u=pica.per s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:journal" value="u=pica.sha s=al t=1"/>
-
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:term" value="s=al t=1"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:fulltext" value="s=al t=1"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:title" value="1=Title s=al t=1"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:person" value="1=Author s=al t=1"/>
-	</settings>
-
 
 	<!-- we try to keep same order as in marc21.xsl -->
 	<metadata name="language" brief="yes" merge="unique"/>
@@ -112,7 +101,7 @@
 	<metadata name="description" brief="yes" merge="unique" rank="3"/>
 	<metadata name="abstract" brief="yes" merge="unique"/>
 	<metadata name="subject-long" rank="3"/>
-	<metadata name="subject" termlist="yes" rank="0"/>
+	<metadata name="subject" brief="yes" merge="unique"/>
 	<metadata name="snippet" brief="yes" merge="unique"/>
 	<metadata name="electronic-url" brief="yes" merge="no"/>
 	<metadata name="electronic-format-type" />
