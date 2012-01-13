@@ -1,0 +1,91 @@
+
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>01058caaaa2200337   4500</l>
+  <c001>1739398</c001>
+  <c005>20100305202157.0</c005>
+  <c008>800626r19791978   a          00010 eng d</c008>
+  <d016 i1="7" i2=" ">
+    <sa>IND80079103</sa>
+    <s2>DNAL</s2>
+  </d016>
+  <d035 i1=" " i2=" ">
+    <s9>1734-68260</s9>
+  </d035>
+  <d035 i1=" " i2=" ">
+    <sa>1739398</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>AGL</sa>
+  </d040>
+  <d041 i1="1" i2=" ">
+    <sa>engrus</sa>
+  </d041>
+  <d072 i1=" " i2=" ">
+    <sa>J200</sa>
+  </d072>
+  <d072 i1=" " i2=" ">
+    <sa>K001</sa>
+  </d072>
+  <d100 i1="1" i2=" ">
+    <sa>Belozerskiy, G.N.</sa>
+  </d100>
+  <d245 i1="1" i2="0">
+    <sa>Use of Mossbauer spectroscopy for studying the forms of iron in forest soils.</sa>
+  </d245>
+  <d300 i1=" " i2=" ">
+    <sa>p. 534-545.</sa>
+    <sb>ill.</sb>
+  </d300>
+  <d504 i1=" " i2=" ">
+    <sa>29 ref.</sa>
+  </d504>
+  <d650 i1=" " i2="3">
+    <sa>forestry</sa>
+    <s9>auto-assigned by category code</s9>
+  </d650>
+  <d650 i1=" " i2="3">
+    <sa>soil science</sa>
+    <s9>auto-assigned by category code</s9>
+  </d650>
+  <d650 i1=" " i2="3">
+    <sa>soil physics</sa>
+    <s9>auto-assigned by category code</s9>
+  </d650>
+  <d650 i1=" " i2="3">
+    <sa>soil chemistry</sa>
+    <s9>auto-assigned by category code</s9>
+  </d650>
+  <d700 i1="1" i2=" ">
+    <sa>Kazakov, M.I.</sa>
+  </d700>
+  <d700 i1="1" i2=" ">
+    <sa>Gagarina, E.I.</sa>
+  </d700>
+  <d700 i1="1" i2=" ">
+    <sa>Khantulev, A.A.</sa>
+  </d700>
+  <d773 i1="0" i2=" ">
+    <st>Soviet soil science.</st>
+    <sp>Sov Soil Sci</sp>
+    <sg>Sept/Oct 1978 (pub. 1979). v. 10 (5)</sg>
+    <sx>0038-5832</sx>
+    <s7>nnas</s7>
+    <s9>jnl44605</s9>
+  </d773>
+  <d852 i1=" " i2=" ">
+    <sa>DNAL</sa>
+    <si>57.8 P34AE</si>
+  </d852>
+  <d930 i1=" " i2=" ">
+    <sa>00000000</sa>
+    <sb>19800626</sb>
+    <sc>00000000</sc>
+  </d930>
+  <d945 i1=" " i2=" ">
+    <sa>IND</sa>
+  </d945>
+  <d946 i1=" " i2=" ">
+    <sa>Other US</sa>
+  </d946>
+</r>
+

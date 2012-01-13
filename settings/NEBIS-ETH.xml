@@ -35,7 +35,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="xsl/language-code-split-nebis.xsl,pazpar2/etc/tmarc.xsl,xsl/medium-video.xsl,xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="xsl/tmarc-041-language-code-split.xsl,pazpar2/etc/tmarc.xsl,xsl/medium-video.xsl,xsl/catalogue-url-hint+id.xsl"/>
 	
 </settings>
 
