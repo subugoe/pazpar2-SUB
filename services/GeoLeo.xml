@@ -23,9 +23,9 @@
 		<set target="sru.gbv.de/ikar" name="pz:name" value="Alte Karten"/>
 		
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
-		<set target="sru.gbv.de/fachopac-ggo" name="pz:pqf_prefix" value='@and @attr 1=pica.all "not bib 0007"'/>
+		<set target="sru.gbv.de/fachopac-ggo" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
-		<set target="sru.gbv.de/fachopac-ast" name="pz:pqf_prefix" value='@and @attr 1=pica.all "not bib 0007"'/>
+		<set target="sru.gbv.de/fachopac-ast" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
 		
 		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="Artikel Geowissenschaften"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-ggo" value="1"/>
