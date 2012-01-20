@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnmm a22yyyyy c 4500</l>
+  <c001>NLM003678911</c001>
+  <c003>DE-601</c003>
+  <c005>20100616122824.0</c005>
+  <c007>cr uuu---uuuuu</c007>
+  <c008>100326s2005                  000 0 eng d</c008>
+  <d020 i1=" " i2=" ">
+    <sa>9780387241234</sa>
+  </d020>
+  <d024 i1="7" i2=" ">
+    <sa>10.1007/b104751</sa>
+    <s2>doi</s2>
+  </d024>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)GBV550102973</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>eng</sa>
+  </d041>
+  <d084 i1=" " i2=" ">
+    <sa>scm</sa>
+    <s2>natliz</s2>
+  </d084>
+  <d100 i1="1" i2=" ">
+    <sa>Gustafson, J. Perry</sa>
+  </d100>
+  <d245 i1="1" i2="0">
+    <sa>Genome Exploitation :</sa>
+    <sb>Data Mining the Genome /</sb>
+    <sc>edited by J. Perry Gustafson, Randy Shoemaker, John W. Snape</sc>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>Norwell</sa>
+    <sb>Springer Science+Business Media, Inc</sb>
+    <sc>2005</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>Online-Ressource</sa>
+    <sb>v.: digital</sb>
+  </d300>
+  <d533 i1=" " i2=" ">
+    <sa>Online-Ausg.</sa>
+    <sb>Norwell</sb>
+    <sc>Springer Science+Business Media, Inc</sc>
+    <sd>2005</sd>
+    <sf>Springer ebook collection. Chemistry and Materials Science 2005-2008 ; 041171-1</sf>
+    <s7>|2005||||||||||</s7>
+  </d533>
+  <d650 i1=" " i2="0">
+    <sa>Biochemistry</sa>
+  </d650>
+  <d650 i1=" " i2="0">
+    <sa>Biotechnology</sa>
+  </d650>
+  <d650 i1=" " i2="0">
+    <sa>Cytology</sa>
+  </d650>
+  <d650 i1=" " i2="0">
+    <sa>Genetic engineering</sa>
+  </d650>
+  <d650 i1=" " i2="0">
+    <sa>Human genetics</sa>
+  </d650>
+  <d650 i1=" " i2="0">
+    <sa>Plant breeding</sa>
+  </d650>
+  <d700 i1="1" i2=" ">
+    <sa>Shoemaker, Randy</sa>
+  </d700>
+  <d700 i1="1" i2=" ">
+    <sa>Snape, John W.</sa>
+  </d700>
+  <d710 i1="2" i2=" ">
+    <sa>SpringerLink (Online service)</sa>
+  </d710>
+  <d773 i1="0" i2="8">
+    <si>In: </si>
+    <st>Springer e-books</st>
+  </d773>
+  <d776 i1="1" i2=" ">
+    <sz>9780387241876</sz>
+  </d776>
+  <d856 i1="4" i2="1">
+    <su>http://dx.doi.org/10.1007/b104751</su>
+    <s3>Volltext</s3>
+  </d856>
+  <d912 i1=" " i2=" ">
+    <sa>ZDB-1-SCM</sa>
+  </d912>
+  <d912 i1=" " i2=" ">
+    <sa>ZDB-2-CMS</sa>
+  </d912>
+</r>
