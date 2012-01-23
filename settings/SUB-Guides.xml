@@ -29,6 +29,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="pazpar2/etc/tmarc.xsl,xsl/sub-guides.xsl"/>
+	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/sub-guides.xsl"/>
 
 </settings>
