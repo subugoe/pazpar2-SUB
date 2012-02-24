@@ -1,0 +1,19 @@
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnaa a22yyyyy i 4500</l>
+  <c001>1876718102</c001>
+  <c003>DE-601</c003>
+  <c005>20110821133829.0</c005>
+  <c008>110821s2011                  000 0     d</c008>
+  <d245 i1="0" i2="0">
+    <sa>Practice Test.</sa>
+  </d245>
+  <d600 i1="1" i2=" ">
+    <sa>Pushkin, Aleksandr Sergeevich,</sa>
+    <sd>1799-1837</sd>
+    <sx>Museums</sx>
+    <sx>Russia (Federation)</sx>
+    <sz>Moscow</sz>
+    <sv>Maps.</sv>
+  </d600>
+ </r>
+
