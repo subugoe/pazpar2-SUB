@@ -4,3 +4,6 @@
 [submodule "pazpar2-etc"]
 	path = pazpar2-etc
 	url = git://github.com/ssp/pazpar2-etc.git
+[submodule "yaz"]
+	path = yaz
+	url = git://git.indexdata.com/yaz.git
