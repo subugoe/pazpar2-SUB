@@ -3,7 +3,7 @@
 	Converts DC Qualified metadata coming from Göttingen DSpace SRU interfaces.
 	These contains a few non-standard fields.
 		
-	2010-2011, Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2012, Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 <xsl:stylesheet
 	version="1.0"
@@ -19,9 +19,6 @@
 	<xsl:template match="srw_dc:dc">
 		<xsl:variable name="medium">
 			<xsl:choose>
-				<xsl:when test="dc:type='book' or dc:type='bookPart' or dc:type='doctoralThesis' or dc:type='Book' or dc:type='periodicalPart'">
-					<xsl:text>book</xsl:text>
-				</xsl:when>
 				<xsl:when test="dc:type='article' or dc:type='lecture' or dc:type='workingPaper'">
 					<xsl:text>article</xsl:text>
 				</xsl:when>
