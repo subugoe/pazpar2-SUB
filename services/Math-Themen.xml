@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service id="Math" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<service id="Math-Themen" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!-- 
-	Targets used for vifamath
-	* GBV Databases, including Göttingen Opac, via new SRU service
+	Targets used for vifamath Subject Search:
+	* fachopac-mat via GBV SRU interface
 	* SSG-FI Guide Databases via Solr interface
-	* Digitalisate, Dissertations
-	* arXiv, jfm, ElibM
 
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
 		<set target="sru.gbv.de/fachopac-mat" name="pz:name" value="Fachkatalog Mathematik"/>
-		<set target="sru.gbv.de/olcssg-mat" name="pz:name" value="OLC Mathematik"/>
-		<set name="pz:allow" target="sru.gbv.de/olcssg-mat" value="1"/>
 	</settings>
 
 
@@ -26,23 +20,9 @@
 	</settings>
 
 
-	<settings src="settings/testing/SUB-Guides.xml"/>
-	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:2020/reg" name="pz:name" value="Digitalisate"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:2020/diss" name="pz:name" value="Dissertationen"/>
-	</settings>
-
-
-	<settings src="settings/testing/zebra-vifamath.xml"/>
-	<settings>
-		<set target="134.76.176.48:2021/arxiv" name="pz:name" value="arXiv"/>
-		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
-		<set target="134.76.176.48:3954/ElibM" name="pz:name" value="ELibM"/>
-	</settings>
 
 
 
-	
 	<!-- we try to keep same order as in marc21.xsl -->
 	<metadata name="language" brief="yes" merge="unique"/>
 	<metadata name="id" brief="yes"/>
