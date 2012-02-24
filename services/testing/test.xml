@@ -1,31 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service id="CERL" xmlns="http://www.indexdata.com/pazpar2/1.0">
-<!-- 
-	Targets in CERL Portal
-	
-	http://cerl.epc.ub.uu.se/sportal/
-	
-	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+<service id="test" xmlns="http://www.indexdata.com/pazpar2/1.0">
+
+<!--	<settings src="settings/vifamath-solr.xml"/> -->
+
+<!--	<settings src="settings/NEBIS-ETH.xml"/> -->
+<!--	<settings src="settings/loc.xml"/>-->
+<!--	<settings src="settings/gutenberg-sru.xml"/>-->
+
+<!--	<settings src="settings/GoeScholar.xml"/>-->
+
+<!--
+	<settings src="settings/gbv-sru-marc.xml"/>
+	<settings>
+		<set target="gso.gbv.de/sru/DB=2.1" name="pz:name" value="GBV GVK (SRU)"/>
+	</settings>
 -->
-
-
-	<settings src="settings/Denmark.xml"/>
-	<settings>
-		<set target="z3950.kb.dk:2100/KBH01" name="pz:name" value="Kongelige Bibliotek Manuscripts"/>
-	</settings>
-
-	<settings src="settings/Scotland.xml"/>
-	<settings>
-		<set target="z3950.nls.uk:7390/VOYAGER" name="pz:name" value="National Library of Scotland Manuscripts"/>
-	</settings>
-
+<!--
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/eromm" name="pz:name" value="EROMM"/>
-		<set target="sru.gbv.de/vd17" name="pz:name" value="VD17"/>
-		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK Handschriften"/>
-		<set target="sru.gbv.de/gvk" name="pz:pqf_prefix" value="@and @attr 5=1 @attr 1=pica.mak H"/>
+		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK (SRU neu)"/>
 	</settings>
+-->
+
+	<settings src="settings/testing/SUB-Harvesting-solr.xml"/>
+
+
+<!--	<settings src="settings/IfL.xml"/>
+-->
+<!--
+	<settings src="settings/zebra-geo.xml"/>
+-->
+
+<!--
+	<settings src="settings/testserver.xml"/>
+-->
+<!--	
+	<settings src="settings/SUB-Guides-solr.xml"/>
+	<settings>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="DigReg"/>
+	</settings>
+-->
+<!--	<settings src="settings/edu_turbo.xml"/>-->
+<!--	<settings src="settings/Freiberg.xml"/>-->
+
+<!--	<settings src="settings/gbv-z3950.xml"/>-->
+<!--	<settings>-->
+<!--	<set target="z3950.gbv.de:20012/subgoe_opc"-->
+<!--			name="pz:name" value="GBV SUB OPAC Z39.50"/>-->
+<!--	</settings>
+-->
+	
+<!--	<settings src="settings/Marianna.xml"/>-->
+<!--	<settings>-->
+<!--		<set target="134.76.176.48:3954/ElibM"-->
+<!--			name="pz:name" value="ELibM"/>-->
+<!--		<set target="134.76.176.48:3954/ElibM"-->
+<!--			name="pz:xslt" value="SUB-xsl/elibm-languages.xsl,SUB-xsl/ZMath-doctypes.xsl,SUB-xsl/ZMath.xsl"/>-->
+<!--	</settings>
+-->
 
 
 

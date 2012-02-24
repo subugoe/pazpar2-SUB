@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service id="solr" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<service id="DSpace" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!-- 
-	Service using solr.
+	Service using the GoeDoc DSpace server’s SRU interface.
 
-	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010/11-12: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/vifamath-solr.xml"/>
+	<settings src="settings/GoeScholar.xml"/>
+	<settings src="settings/ADW.xml"/>
+	<settings src="settings/GEO-LEO-edocs.xml"/>
 
-	<settings src="settings/SUB-Guides-solr.xml"/>
-	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math-Guide (Solr)"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History-Guide (Solr)"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Anglistik-Guide (Solr)"/>
-	</settings>
-	<settings src="settings/vifamath-solr.xml"/>
-	<settings src="settings/gbv-solr.xml"/>
 
 
 	<!-- we try to keep same order as in marc21.xsl -->

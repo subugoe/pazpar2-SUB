@@ -1,51 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<service id="GEO-LEO-Themen" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<service id="CERL" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!-- 
-	Targets used for Geo-Leo Subject Search:
-	* Göttingen Opac via GBV SRU service
-	* SSG-FI Guide via Solr 
-	* SWB Catalogue search via Z39.50 with condition to search in Freiberg only
-
-	All targets support the fbg and lkl search keys for the Göttingen and Freiberg
-	subject classifications. On servers which do not provide this key, it is mapped
-	to a different index which exists but will not return any results on the queries.
-
-	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	Targets in CERL Portal
+	
+	http://cerl.epc.ub.uu.se/sportal/
+	
+	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
+
+
+	<settings src="settings/testing/Denmark.xml"/>
+	<settings>
+		<set target="z3950.kb.dk:2100/KBH01" name="pz:name" value="Kongelige Bibliotek Manuscripts"/>
+	</settings>
+
+	<settings src="settings/testing/Scotland.xml"/>
+	<settings>
+		<set target="z3950.nls.uk:7390/VOYAGER" name="pz:name" value="National Library of Scotland Manuscripts"/>
+	</settings>
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
+		<set target="sru.gbv.de/eromm" name="pz:name" value="EROMM"/>
+		<set target="sru.gbv.de/vd17" name="pz:name" value="VD17"/>
+		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK Handschriften"/>
+		<set target="sru.gbv.de/gvk" name="pz:pqf_prefix" value="@and @attr 5=1 @attr 1=pica.mak H"/>
 	</settings>
-
-
-	<settings src="settings/Freiberg.xml"/>
-
-
-	<settings src="settings/SUB-Guides-solr.xml"/>
-	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
-	</settings>
-
-
-	<settings src="settings/GeoLeo-edocs.xml"/>
-
-
-
-	<!-- GEO-LEO prefers truncated searching -->
-	<settings>
-		<set target="sru.gbv.de/*" name="pz:cclmap:term" value="u=pica.all s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:fulltext" value="u=pica.tit s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:title" value="u=pica.tit s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:person" value="u=pica.per s=al t=1"/>
-		<set target="sru.gbv.de/*" name="pz:cclmap:journal" value="u=pica.sha s=al t=1"/>
-
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:term" value="s=al t=1"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:fulltext" value="s=al t=1"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:title" value="1=Title s=al t=1"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:cclmap:person" value="1=Author s=al t=1"/>
-	</settings>
-
 
 
 
