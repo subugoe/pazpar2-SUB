@@ -119,13 +119,13 @@
 
 # Check for missing binaries (stale symlinks should not happen)
 # Note: Special treatment of stop for LSB conformance
-FOO_BIN=/usr/local/sbin/pazpar2
+FOO_BIN=/home/pazpar2/pazpar2-SUB/pazpar2/src/pazpar2
 test -x $FOO_BIN || { echo "$FOO_BIN not installed"; 
 	if [ "$1" = "stop" ]; then exit 0;
 	else exit 5; fi; }
 
 # Check for existence of needed config file and read it
-FOO_CONFIG=/home/vlib/pazpar2-SUB/pazpar2-SUB.cfg
+FOO_CONFIG=/home/pazpar2/pazpar2-SUB/pazpar2-SUB.cfg
 test -r $FOO_CONFIG || { echo "$FOO_CONFIG not existing";
 	if [ "$1" = "stop" ]; then exit 0;
 	else exit 6; fi; }
