@@ -1,5 +1,5 @@
 <settings target="sru.gbv.de/*">
-<!-- 
+<!--
 	New GBV SRU Server
 	* Pica-style search keys
 	* transformations:
@@ -15,13 +15,13 @@
 -->
 
 	<!-- SRU 1.1 GET -->
-	<set name="pz:sru" value="get"/> 
+	<set name="pz:sru" value="get"/>
 	<set name="pz:sru_version" value="1.1"/>
 
 	<!--
 		Default Search settings:
 		* ANDed word search for most fields (s=al)
-		* no truncation by default but giving the user the option to 
+		* no truncation by default but giving the user the option to
 			opt for right truncation by adding a ? (t=r)
 		* use attributes have names pica.XXX where XXX is the Pica search key
 	-->
@@ -34,7 +34,7 @@
 	<set name="pz:cclmap:fulltext" value="u=pica.all s=1 t=r"/>
 	<set name="pz:cclmap:fulltext" value="u=pica.txt s=1 t=r" target="sru.gbv.de/gvk"/>
 	<set name="pz:cclmap:fulltext" value="u=pica.txt s=1 t=r" target="sru.gbv.de/opac-de-7"/>
-	
+
 	<set name="pz:cclmap:title" value="u=pica.tit s=al t=r"/>
 	<set name="pz:cclmap:person" value="u=pica.per s=al t=r"/>
 	<!-- Use SHA (8542) for journal title search as ZTI (21) is just a phrase search. -->
@@ -43,7 +43,7 @@
 
 	<!-- Logic for recognising date ranges is built into the index, we can send the string right there. -->
 	<set name="pz:cclmap:date" value="u=pica.erj"/>
-	
+
 	<set name="pz:cclmap:isbn" value="u=pica.isb"/>
 	<set name="pz:cclmap:issn" value="u=pica.iss"/>
 
@@ -53,18 +53,18 @@
 	-->
 	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
 
-	<!-- 
+	<!--
 		Fake search key for Freiberg classification, mapped to the BKL field.
 		Should not return any results in GBV.
 	-->
 	<set name="pz:cclmap:fbg" value="u=pica.bkl s=1 t=r"/>
-	
+
 	<!--
 		NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search.
 		Field content has format YYYY-MM.
 	-->
 	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
-	
+
 	<!-- Map additional Pica search keys to pazpar2. -->
 	<set name="pz:cclmap:tit" value="u=pica.tit t=r"/>
 	<set name="pz:cclmap:thm" value="u=pica.thm t=r"/>
@@ -72,11 +72,11 @@
 	<set name="pz:cclmap:ddc" value="u=pica.ddc t=r"/>
 	<set name="pz:cclmap:bkl" value="u=pica.bkl t=r"/>
 	<set name="pz:cclmap:ppn" value="u=pica.ppn"/>
-	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=1"/>
+	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
 	<!-- … probably only available in opac-de-7. -->
 	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
 	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
-	
+
 
 	<!-- SRU schema: Request turbomarc format. -->
 	<set name="pz:elements" value="turbomarc"/>
@@ -123,7 +123,7 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-rth" value="http://gso.gbv.de/DB=5.72/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/eromm" value="http://gso.gbv.de/DB=2.8/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/vd17" value="http://gso.gbv.de/DB=1.28/PPNSET?PPN="/>
-			
+
 	<!-- Set up database restrictions. -->
 	<set name="pz:allow" target="sru.gbv.de/zdb-1-pio" value="0"/>
 	<set name="pz:allow" target="sru.gbv.de/olc*" value="0"/>
