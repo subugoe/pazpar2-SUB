@@ -61,7 +61,7 @@
 
 	<!--
 		NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search.
-		Field content has format YYYY-MM.
+		Field content has format YYYYMM.
 	-->
 	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
 
