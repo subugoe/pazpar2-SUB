@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <service id="GEO-LEO" xmlns="http://www.indexdata.com/pazpar2/1.0">
-<!-- 
+<!--
 	Targets used for GEO-LEO
 	* GBV Databases, including Göttingen Opac, via SRU
 	* SSG-FI Guide via Solr
@@ -21,12 +21,12 @@
 
 		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
 		<set target="sru.gbv.de/ikar" name="pz:name" value="Alte Karten"/>
-		
+
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
-		
+
 		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="Artikel Geowissenschaften"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-ggo" value="1"/>
 		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="Artikel Astronomie"/>
@@ -39,16 +39,20 @@
 	</settings>
 
 	<settings src="settings/Freiberg.xml"/>
-	
+
 	<settings src="settings/NEBIS-ETH.xml"/>
 	<settings src="settings/NAL.xml"/>
 	<settings src="settings/IfL.xml"/>
 
-	<settings src="settings/zebra-geo.xml"/>
-	
+	<settings src="settings/SUB-Harvesting-solr.xml"/>
+	<settings>
+		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="Repositories"/>
+		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="Digitalisate"/>
+	</settings>
+
 	<settings src="settings/GEO-LEO-edocs.xml"/>
 
-	
+
 
 	<!-- we try to keep same order as in marc21.xsl -->
 	<metadata name="language" brief="yes" merge="unique"/>
@@ -94,10 +98,10 @@
 	<metadata name="physical-unittype"/>
 	<metadata name="physical-unitsize"/>
 	<metadata name="physical-specified"/>
-	
+
 	<metadata name="series-title" brief="yes" merge="unique"/>
 	<metadata name="multivolume-title" brief="yes" merge="longest"/>
-	
+
 	<metadata name="description" brief="yes" merge="unique" rank="3"/>
 	<metadata name="abstract" brief="yes" merge="unique"/>
 	<metadata name="subject-long" rank="3"/>
@@ -114,7 +118,7 @@
 	<metadata name="locallocation" brief="yes"/>
 	<metadata name="callnumber" brief="yes"/>
 	<metadata name="publicnote" brief="yes"/>
-	
+
 	<!-- journals -->
 	<metadata name="journal-title" brief="yes" merge="unique"/>
 	<metadata name="journal-title-abbrev" merge="unique"/>
@@ -123,13 +127,13 @@
 	<metadata name="issue-number" brief="yes" merge="unique"/>
 	<metadata name="issue-date"/>
 	<metadata name="pages-number" brief="yes" merge="unique"/>
-		
+
 	<metadata name="url_recipe" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="open_url_resolver" setting="parameter" merge="no"/>
 	<metadata name="open-url" merge="longest"/>
 	<metadata name="use_url_proxy" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="catalogue-url" brief="yes"/>
-		
+
 	<metadata name="publisher"/>
 	<metadata name="available"/>
 	<metadata name="due"/>
@@ -140,5 +144,5 @@
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
 	<metadata name="catalogueURL" brief="yes"/>
-	
+
 </service>

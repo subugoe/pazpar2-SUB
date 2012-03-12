@@ -22,7 +22,7 @@
 	</settings>
 -->
 
-	<settings src="settings/testing/SUB-Harvesting-solr.xml"/>
+	<settings src="settings/SUB-Harvesting-solr.xml"/>
 
 
 <!--	<settings src="settings/IfL.xml"/>
@@ -34,7 +34,7 @@
 <!--
 	<settings src="settings/testserver.xml"/>
 -->
-<!--	
+<!--
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="DigReg"/>
@@ -49,7 +49,7 @@
 <!--			name="pz:name" value="GBV SUB OPAC Z39.50"/>-->
 <!--	</settings>
 -->
-	
+
 <!--	<settings src="settings/Marianna.xml"/>-->
 <!--	<settings>-->
 <!--		<set target="134.76.176.48:3954/ElibM"-->
@@ -105,10 +105,10 @@
 	<metadata name="physical-unittype"/>
 	<metadata name="physical-unitsize"/>
 	<metadata name="physical-specified"/>
-	
+
 	<metadata name="series-title" brief="yes" merge="unique"/>
 	<metadata name="multivolume-title" brief="yes" merge="longest"/>
-	
+
 	<metadata name="description" brief="yes" merge="unique" rank="3"/>
 	<metadata name="abstract" brief="yes" merge="unique"/>
 	<metadata name="subject-long" rank="3"/>
@@ -125,7 +125,7 @@
 	<metadata name="locallocation" brief="yes"/>
 	<metadata name="callnumber" brief="yes"/>
 	<metadata name="publicnote" brief="yes"/>
-	
+
 	<!-- journals -->
 	<metadata name="journal-title" brief="yes" merge="unique"/>
 	<metadata name="journal-title-abbrev" merge="unique"/>
@@ -134,13 +134,13 @@
 	<metadata name="issue-number" brief="yes" merge="unique"/>
 	<metadata name="issue-date"/>
 	<metadata name="pages-number" brief="yes" merge="unique"/>
-		
+
 	<metadata name="url_recipe" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="open_url_resolver" setting="parameter" merge="no"/>
 	<metadata name="open-url" merge="longest"/>
 	<metadata name="use_url_proxy" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="catalogue-url" brief="yes"/>
-		
+
 	<metadata name="publisher"/>
 	<metadata name="available"/>
 	<metadata name="due"/>
@@ -151,5 +151,5 @@
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
 	<metadata name="catalogueURL" brief="yes"/>
-	
+
 </service>
