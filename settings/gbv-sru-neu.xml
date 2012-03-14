@@ -100,11 +100,14 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-his" value="http://gso.gbv.de/DB=2.35/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-geo" value="http://gso.gbv.de/DB=2.38/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-ast" value="http://gso.gbv.de/DB=2.43/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-nord" value="http://gso.gbv.de/DB=2.47/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-ang" value="http://gso.gbv.de/DB=2.75/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-mat" value="http://gso.gbv.de/DB=2.77/PPNSET?PPN="/>
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-ast" value="http://gso.gbv.de/DB=2.113/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-bal" value="http://gso.gbv.de/DB=2.151/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-ast" value="http://gso.gbv.de/DB=2.112/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-fin" value="http://gso.gbv.de/DB=2.113/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-ggo" value="http://gso.gbv.de/DB=2.114/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-vifanord" value="http://gso.gbv.de/DB=2.119/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-mat" value="http://gso.gbv.de/DB=2.122/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/amb" value="http://gso.gbv.de/DB=2.910/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/ikar" value="http://gso.gbv.de/DB=1.68/PPNSET?PPN="/>
