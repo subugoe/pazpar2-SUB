@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Creates the pz:metadata field of type 'catalogue-url' by concatenating the
-		$catalogueURLHint parameter with the 'id' pz:metadata field.
+	Creates the pz:metadata field of type 'catalogue-url' by concatenating
+		the $catalogueURLHintPrefix and $catalogueURLHintPostfix parameters
+		with the 'id' pz:metadata field.
 
 	July 2011
 	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
@@ -23,19 +24,22 @@
 		</xsl:copy>
 	</xsl:template>
 
-	
-	<xsl:template match="pz:metadata[@type='id']">
+
+	<xsl:template match="pz:metadata[@type='id'] | pz:metadata[@type='parent-id']">
 
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:copy>
 
-		<pz:metadata type="catalogue-url">
+		<pz:metadata>
+			<xsl:attribute name="type">
+				<xsl:value-of select="concat(substring-before(@type, 'id'), 'catalogue-url')"/>
+			</xsl:attribute>
 			<xsl:value-of select="$catalogueURLHintPrefix"/>
 			<xsl:value-of select="."/>
 			<xsl:value-of select="$catalogueURLHintPostfix"/>
 		</pz:metadata>
-		
+
 	</xsl:template>
 
 </xsl:stylesheet>

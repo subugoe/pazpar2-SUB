@@ -101,6 +101,7 @@
 
 	<metadata name="series-title" brief="yes" merge="unique"/>
 	<metadata name="multivolume-title" brief="yes" merge="longest"/>
+	<metadata name="parent-id" brief="yes"/>
 
 	<metadata name="description" brief="yes" merge="unique" rank="3"/>
 	<metadata name="abstract" brief="yes" merge="unique"/>
@@ -133,6 +134,7 @@
 	<metadata name="open-url" merge="longest"/>
 	<metadata name="use_url_proxy" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="catalogue-url" brief="yes"/>
+	<metadata name="parent-catalogue-url" brief="yes"/>
 
 	<metadata name="publisher"/>
 	<metadata name="available"/>

@@ -84,7 +84,7 @@
 
 	<!-- Fetch turbomarc and normalise. -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl,xsl/gbv-parent-catalogue-url-postprocess.xsl"/>
 
 
 	<!-- Load more records from Göttingen Opac. -->
