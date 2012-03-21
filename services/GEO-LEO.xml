@@ -98,6 +98,7 @@
 	<metadata name="physical-unittype"/>
 	<metadata name="physical-unitsize"/>
 	<metadata name="physical-specified"/>
+	<metadata name="mapscale" brief="yes" merge="unique"/>
 
 	<metadata name="series-title" brief="yes" merge="unique"/>
 	<metadata name="multivolume-title" brief="yes" merge="longest"/>
