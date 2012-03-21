@@ -22,7 +22,15 @@
 	</settings>
 -->
 
+<!--
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
+-->
+
+	<settings src="settings/Gale.xml"/>
+	<settings>
+		<set target="z3950.iacenter.com/mla" name="pz:name" value="MLA"/>
+		<set target="z3950.iacenter.com/mla" name="pz:allow" value="1"/>
+	</settings>
 
 
 <!--	<settings src="settings/IfL.xml"/>

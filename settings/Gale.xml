@@ -1,0 +1,43 @@
+<settings target="z3950.iacenter.com/*">
+<!--
+	Gale Servers
+
+	Benötigt Login mit Nutzername nsub ohne Paßwort.
+
+	Z39.50 Server documentation:
+	http://support.gale.com/gale/article.html?article=1176
+-->
+
+	<set name="pz:authentication" value="nsub"/>
+
+
+	<!-- mapping for unqualified search -->
+	<set name="pz:cclmap:term" value="1=1016 s=al t=r"/>
+
+	<!-- field-specific mappings -->
+	<set name="pz:cclmap:title" value="1=4 s=al t=r"/>
+	<set name="pz:cclmap:person" value="1=1003 s=al t=r"/>
+	<set name="pz:cclmap:date" value="1=31 r=r"/>
+	<set name="pz:cclmap:subject" value="1=21 s=al t=r"/>
+	<set name="pz:cclmap:isbn" value="1=7"/>
+	<set name="pz:cclmap:issn" value="1=8"/>
+
+
+	<!-- Retrieval settings -->
+	<set name="pz:requestsyntax" value="usmarc"/>
+	<set name="pz:elements" value="F"/>
+	<set name="pz:queryencoding" value="iso-8859-1"/>
+
+
+	<!-- Result normalization settings -->
+	<set name="pz:nativesyntax" value="txml;marc8"/>
+	<set name="pz:xslt" value="xsl/Gale.xsl,pazpar2-etc/tmarc.xsl,xsl/catalogue-url-hint+id.xsl"/>
+
+	<!-- Turn database off by default -->
+	<set name="pz:allow" value="0"/>
+
+	<!-- catalogue URL setup -->
+	<set name="catalogueURLHintPrefix" target="z3950.iacenter.com/mla" value="http://go.galegroup.com/ps/i.do?v=2.1&amp;u=nsub&amp;it=r&amp;p=MLA&amp;sw=w&amp;id=GALE%7C"/>
+
+
+</settings>

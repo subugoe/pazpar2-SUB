@@ -1,0 +1,81 @@
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>01332nab a22003497  4500</l>
+  <c001>N2812613557</c001>
+  <c007>t                     </c007>
+  <c008>      e20110301                         </c008>
+  <d040 i1=" " i2=" ">
+    <sa>MiFhGG</sa>
+    <sc>MiFhGG</sc>
+  </d040>
+  <d100 i1="1" i2=" ">
+    <sa>Coleman, Jenny</sa>
+  </d100>
+  <d245 i1="0" i2="0">
+    <sa>The Disconcerting Double Bind: Anonymity and Writing as a Woman in the Nineteenth Century</sa>
+  </d245>
+  <d245 i1="0" i2="0">
+    <sk>MLA Citation</sk>
+  </d245>
+  <d500 i1=" " i2=" ">
+    <sa>Journal article</sa>
+  </d500>
+  <d540 i1=" " i2=" ">
+    <sa>MLA International Bibliography . New York: Modern Language Association of America.</sa>
+  </d540>
+  <d600 i1="1" i2="0">
+    <sa>Ellis, Ellen</sa>
+  </d600>
+  <d600 i1="1" i2="0">
+    <sa>Ellis, Ellen</sa>
+  </d600>
+  <d600 i1="1" i2="0">
+    <sa>Ellis, Ellen</sa>
+  </d600>
+  <d650 i1="0" i2="0">
+    <sa>1800-1899</sa>
+  </d650>
+  <d650 i1="0" i2="0">
+    <sa>New Zealand literature</sa>
+  </d650>
+  <d650 i1="0" i2="0">
+    <sa>pseudonym</sa>
+  </d650>
+  <d650 i1="0" i2="0">
+    <sa>women writers</sa>
+  </d650>
+  <d773 i1="0" i2=" ">
+    <st>Nineteenth-Century Gender Studies</st>
+  </d773>
+  <d856 i1="4" i2=" ">
+    <su>http://infotrac.galegroup.com/itw/infomark/1/1/1/purl=rc1_MLA_0_N2812613557&amp;dyn=5!xrn_1_0_N2812613557?Z3950=1&amp;sw_aep=nsub</su>
+    <sy>Electronic resource (HTML)</sy>
+    <sq>HTML</sq>
+  </d856>
+  <d900 i1=" " i2=" ">
+    <ss>Coleman, Jenny. &quot;The Disconcerting Double Bind: Anonymity and Writing as a Woman in the Nineteenth Century.&quot; Nineteenth-Century Gender Studies , 7:1 (2011 Spring), p. 49 paragraphs. Electronic publication.</ss>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <s4>English</s4>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <s5>1556-7524</s5>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <s6>201107</s6>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <s7>2011-1-10955</s7>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <s8>2011140670</s8>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <s0>Yes</s0>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <sq>Electronic publication.</sq>
+  </d900>
+  <d997 i1=" " i2=" ">
+    <sa>20111203</sa>
+  </d997>
+</r>
