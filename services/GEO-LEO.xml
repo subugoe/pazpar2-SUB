@@ -85,6 +85,7 @@
 	<metadata name="title-dates" brief="yes" merge="longest"/>
 	<metadata name="title-medium" brief="yes" merge="longest"/>
 	<metadata name="title-number-section" brief="yes" merge="unique" mergekey="optional"/>
+	<metadata name="title-complete"/>
 	<metadata name="medium" brief="yes" merge="unique" termlist="yes"/>
 	<metadata name="iii-id" brief="yes" merge="no"/>
 	<metadata name="edition" brief="yes"/>
@@ -146,6 +147,5 @@
 	<metadata name="creator" brief="yes" merge="unique"/>
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
-	<metadata name="catalogueURL" brief="yes"/>
 
 </service>
