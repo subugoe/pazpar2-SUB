@@ -37,7 +37,7 @@
 	<set name="pz:allow" value="0"/>
 
 	<!-- catalogue URL setup -->
-	<set name="catalogueURLHintPrefix" target="z3950.iacenter.com/mla" value="http://go.galegroup.com/ps/i.do?v=2.1&amp;u=nsub&amp;it=r&amp;p=MLA&amp;sw=w&amp;id=GALE%7C"/>
+	<set name="catalogueURLHintPrefix" target="z3950.iacenter.com/mla" value="http://go.galegroup.com/ps/i.do?v=2.1&amp;it=r&amp;p=MLA&amp;sw=w&amp;id=GALE%7C"/>
 
 
 </settings>
