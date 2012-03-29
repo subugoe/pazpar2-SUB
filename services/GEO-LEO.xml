@@ -17,7 +17,7 @@
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
+		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
 
 		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
 		<set target="sru.gbv.de/ikar" name="pz:name" value="Alte Karten"/>

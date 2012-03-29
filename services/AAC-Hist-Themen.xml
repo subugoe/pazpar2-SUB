@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <service id="AAC-Hist-Themen" xmlns="http://www.indexdata.com/pazpar2/1.0">
-<!-- 
+<!--
 	Targets used for Lib AAC History Subject Search:
 	* Göttingen Opac via GBV SRU service
 	* SSG-FI Guide Databases via Solr interface
 
-	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
+		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
 	</settings>
 
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <service id="Literature-Guide" xmlns="http://www.indexdata.com/pazpar2/1.0">
-<!-- 
+<!--
 	Literature Guide, using the Solr interface.
-	
-	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+
+	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 

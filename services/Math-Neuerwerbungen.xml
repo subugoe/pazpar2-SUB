@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <service id="Math-Neuerwerbungen" xmlns="http://www.indexdata.com/pazpar2/1.0">
-<!-- 
+<!--
 	Targets used for vifamath Neuerwerbungen
 	* SUB Göttingen Opac
 	* Math Guide
@@ -11,7 +11,7 @@
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen"/>
+		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
 	</settings>
 
 
@@ -22,7 +22,7 @@
 
 
 
-	
+
 	<!-- we try to keep same order as in marc21.xsl -->
 	<metadata name="language" brief="yes" merge="unique"/>
 	<metadata name="id" brief="yes"/>
