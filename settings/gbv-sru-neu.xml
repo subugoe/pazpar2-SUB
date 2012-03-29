@@ -94,7 +94,7 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/wao" value="http://gso.gbv.de/DB=1.46/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natliz" value="http://gso.gbv.de/DB=1.50/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natlizzss" value="http://gso.gbv.de/DB=1.55/PPNSET?PPN="/>
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/opac-de-7" value="https://opac.sub.uni-goettingen.de/DB=1/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/opac-de-7" value="http://gso.gbv.de/DB=2.1/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/gvk" value="http://gso.gbv.de/DB=2.1/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olc" value="http://gso.gbv.de/DB=2.3/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-his" value="http://gso.gbv.de/DB=2.35/PPNSET?PPN="/>
