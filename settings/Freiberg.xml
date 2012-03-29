@@ -2,15 +2,15 @@
 <!--
 	pazpar2 settings for records from the Freiberg library
 	using the Z39.50 service of BSZ/SWB.
-	
+
 	https://wiki.bsz-bw.de/doku.php?id=v-team:daten:z39.50
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
-	<set name="pz:name" value="Freiberg"/>
-	<set name="catalogueURLHintPrefix" value="http://webopac.ub.tu-freiberg.de/libero/WebopacOpenURL.cls?ACTION=DISPLAY&amp;sid=Libero:TUF&amp;RID="/>
-	
-	
+	<set name="pz:name" value="Freiberg (SWB)"/>
+	<set name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PPNSET?PPN="/>
+
+
 	<!-- filter for books in Freiberg library, @attr 1=1044 105 -->
 	<set name="pz:pqf_prefix" value="@and @attr 1=1044 105"/>
 
