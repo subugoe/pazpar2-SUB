@@ -56,6 +56,7 @@
 	<metadata name="title-dates" brief="yes" merge="longest"/>
 	<metadata name="title-medium" brief="yes" merge="longest"/>
 	<metadata name="title-number-section" brief="yes" merge="unique" mergekey="optional"/>
+	<metadata name="title-complete"/>
 	<metadata name="medium" brief="yes" merge="unique" termlist="yes"/>
 	<metadata name="iii-id" brief="yes" merge="no"/>
 	<metadata name="edition" brief="yes"/>
@@ -69,14 +70,16 @@
 	<metadata name="physical-unittype"/>
 	<metadata name="physical-unitsize"/>
 	<metadata name="physical-specified"/>
+	<metadata name="mapscale" brief="yes" merge="unique"/>
 
 	<metadata name="series-title" brief="yes" merge="unique"/>
 	<metadata name="multivolume-title" brief="yes" merge="longest"/>
+	<metadata name="parent-id" brief="yes"/>
 
 	<metadata name="description" brief="yes" merge="unique" rank="3"/>
 	<metadata name="abstract" brief="yes" merge="unique"/>
-	<metadata name="subject-long" rank="3"/>
-	<metadata name="subject" termlist="yes" rank="0"/>
+	<metadata name="subject-long"/>
+	<metadata name="subject"/>
 	<metadata name="snippet" brief="yes" merge="unique"/>
 	<metadata name="electronic-url" brief="yes" merge="no"/>
 	<metadata name="electronic-format-type" />
@@ -104,6 +107,7 @@
 	<metadata name="open-url" merge="longest"/>
 	<metadata name="use_url_proxy" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="catalogue-url" brief="yes"/>
+	<metadata name="parent-catalogue-url" brief="yes"/>
 
 	<metadata name="publisher"/>
 	<metadata name="available"/>
@@ -114,6 +118,5 @@
 	<metadata name="creator" brief="yes" merge="unique"/>
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
-	<metadata name="catalogueURL" brief="yes"/>
 
 </service>
