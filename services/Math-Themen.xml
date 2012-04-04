@@ -10,7 +10,10 @@
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
+		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
+
 		<set target="sru.gbv.de/fachopac-mat" name="pz:name" value="Fachkatalog Mathematik"/>
+		<set target="sru.gbv.de/fachopac-mat" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
 	</settings>
 
 
@@ -19,6 +22,11 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
 	</settings>
 
+
+	<settings src="settings/SUB-Harvesting-solr.xml"/>
+	<settings>
+		<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="arXiv"/>
+	</settings>
 
 
 
