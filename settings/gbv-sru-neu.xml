@@ -98,7 +98,7 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/gvk" value="http://gso.gbv.de/DB=2.1/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olc" value="http://gso.gbv.de/DB=2.3/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-his" value="http://gso.gbv.de/DB=2.35/PPNSET?PPN="/>
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-geo" value="http://gso.gbv.de/DB=2.38/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-ggo" value="http://gso.gbv.de/DB=2.38/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-ast" value="http://gso.gbv.de/DB=2.43/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-nord" value="http://gso.gbv.de/DB=2.47/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-ang" value="http://gso.gbv.de/DB=2.75/PPNSET?PPN="/>
