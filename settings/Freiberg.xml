@@ -8,7 +8,7 @@
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 	<set name="pz:name" value="Freiberg (SWB)"/>
-	<set name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
 
 
 	<!-- filter for books in Freiberg library, @attr 1=1044 105 -->
@@ -30,7 +30,7 @@
 	<!-- Freiberg classification exposed as Bib-1 Attribute 1042 -->
 	<set name="pz:cclmap:fbg" value="u=1042 s=pw t=r"/>
 
-	<!-- 
+	<!--
 		Fake Search key for Göttingen classification, mapped to the subject field.
 		Should not return any results in SWB
 	-->
