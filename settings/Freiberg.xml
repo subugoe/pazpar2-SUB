@@ -7,13 +7,14 @@
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
-	<set name="pz:name" value="Freiberg (SWB)"/>
+	<set name="pz:name" value="SWB"/>
 	<set name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
 
 
 	<!-- filter for books in Freiberg library, @attr 1=1044 105 -->
+	<!--
 	<set name="pz:pqf_prefix" value="@and @attr 1=1044 105"/>
-
+	-->
 	<!-- unqualified search -->
 	<set name="pz:cclmap:term" value="u=1016 s=al t=r"/>
 	<!-- full-text search; maps to unqualified search if it doesn’t exist -->
