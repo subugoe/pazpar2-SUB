@@ -1,4 +1,4 @@
-<settings target="134.76.21.59/SRW/search/">
+<settings target="e-docs.geo-leo.de/SRW/search/">
 <!--
 	pazpar2 settings for the GEO-LEO edocs DSpace server SRU interface.
 
@@ -6,7 +6,7 @@
 -->
 	<set name="pz:name" value="GEO-LEO e-docs"/>
 
-	<set name="pz:sru" value="get"/> 
+	<set name="pz:sru" value="get"/>
 	<set name="pz:sru_version" value="1.1"/>
 
 	<set name="pz:maxrecs" value="250"/>
@@ -14,7 +14,7 @@
 
 	<!-- mapping for unqualified search on all metadata fields -->
 	<set name="pz:cclmap:term" value="u=dc.all s=al t=r"/>
-	
+
 	<!-- full-text search -->
 	<set name="pz:cclmap:fulltext" value="u=cql.serverChoice s=al t=r"/>
 
