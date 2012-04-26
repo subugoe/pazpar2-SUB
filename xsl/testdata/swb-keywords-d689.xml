@@ -1,0 +1,158 @@
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>01746cam a2200421   4500</l>
+  <c001>25237701X</c001>
+  <c003>DE-576</c003>
+  <c005>20100313033622.0</c005>
+  <c007>tu</c007>
+  <c008>060329s2004    xx             00 0 ger c</c008>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-576)25237701X</sa>
+  </d035>
+  <d035 i1=" " i2=" ">
+    <sa>(OCoLC)254482108</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>DE-576</sa>
+    <sb>ger</sb>
+    <sc>DE-576</sc>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>ger</sa>
+  </d041>
+  <d041 i1="0" i2="7">
+    <sa>dt.</sa>
+  </d041>
+  <d084 i1=" " i2=" ">
+    <sa>ZK 5500</sa>
+    <s2>rvk</s2>
+  </d084>
+  <d100 i1="1" i2=" ">
+    <sa>Schade, Markus</sa>
+    <s0>(DE-576)184541549</s0>
+  </d100>
+  <d245 i1="1" i2="0">
+    <sa>Gold im Vogtland :</sa>
+    <sb>Fundorte, Herkunft, Entstehung /</sb>
+    <sc>Markus Schade</sc>
+  </d245>
+  <d260 i1=" " i2=" ">
+    <sa>Theuern/Thür. :</sa>
+    <sb>Gold-Museum,</sb>
+    <sc>2004</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>216 S. :</sa>
+    <sb>Ill.</sb>
+  </d300>
+  <d500 i1=" " i2=" ">
+    <sa>Zsfassung in dt., engl. und tschech. Sprache</sa>
+  </d500>
+  <d650 i1=" " i2="7">
+    <sa>Bodenkunde</sa>
+    <s0>(DE-588c)4007379-8</s0>
+    <s0>(DE-576)20886993X</s0>
+    <s2>swd</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <sa>Erzbergbau</sa>
+    <s0>(DE-588c)4015469-5</s0>
+    <s0>(DE-576)208911839</s0>
+    <s2>swd</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <sa>Gold</sa>
+    <s0>(DE-588c)4157819-3</s0>
+    <s0>(DE-576)20983756X</s0>
+    <s2>swd</s2>
+  </d650>
+  <d651 i1=" " i2="7">
+    <sa>Vogtland</sa>
+    <s0>(DE-588c)4063754-2</s0>
+    <s0>(DE-576)209150254</s0>
+    <s2>swd</s2>
+  </d651>
+  <d689 i1="0" i2="0">
+    <sA>g</sA>
+    <s0>(DE-588c)4051176-5</s0>
+    <s0>(DE-576)209091789</s0>
+    <s2>swd</s2>
+    <sa>Sachsen</sa>
+  </d689>
+  <d689 i1="0" i2="1">
+    <sA>g</sA>
+    <s0>(DE-588c)4063754-2</s0>
+    <s0>(DE-576)209150254</s0>
+    <s2>swd</s2>
+    <sa>Vogtland</sa>
+  </d689>
+  <d689 i1="0" i2="2">
+    <sA>s</sA>
+    <s0>(DE-588c)4021541-6</s0>
+    <s0>(DE-576)208938516</s0>
+    <s2>swd</s2>
+    <sa>Goldlagerstätte</sa>
+  </d689>
+  <d689 i1="0" i2="3">
+    <sA>s</sA>
+    <s0>(DE-588c)4157819-3</s0>
+    <s0>(DE-576)20983756X</s0>
+    <s2>swd</s2>
+    <sa>Gold</sa>
+  </d689>
+  <d689 i1="0" i2="4">
+    <sA>s</sA>
+    <s0>(DE-588c)4188678-1</s0>
+    <s0>(DE-576)210054468</s0>
+    <s2>swd</s2>
+    <sa>Vorkommen</sa>
+  </d689>
+  <d689 i1="0" i2="5">
+    <sA>s</sA>
+    <s0>(DE-588c)4180734-0</s0>
+    <s0>(DE-576)210000007</s0>
+    <s2>swd</s2>
+    <sa>Seife &lt;Geologie&gt;</sa>
+  </d689>
+  <d689 i1="0" i2=" ">
+    <s5>DE-576</s5>
+  </d689>
+  <d689 i1="1" i2="0">
+    <sA>g</sA>
+    <s0>(DE-588c)4059979-6</s0>
+    <s0>(DE-576)20913321X</s0>
+    <s2>swd</s2>
+    <sa>Thüringen</sa>
+  </d689>
+  <d689 i1="1" i2="1">
+    <sA>g</sA>
+    <s0>(DE-588c)4018093-1</s0>
+    <s0>(DE-576)208922520</s0>
+    <s2>swd</s2>
+    <sa>Franken</sa>
+  </d689>
+  <d689 i1="1" i2="2">
+    <sA>g</sA>
+    <s0>(DE-588c)4063754-2</s0>
+    <s0>(DE-576)209150254</s0>
+    <s2>swd</s2>
+    <sa>Vogtland</sa>
+  </d689>
+  <d689 i1="1" i2="3">
+    <sA>s</sA>
+    <s0>(DE-588c)4157819-3</s0>
+    <s0>(DE-576)20983756X</s0>
+    <s2>swd</s2>
+    <sa>Gold</sa>
+  </d689>
+  <d689 i1="1" i2="4">
+    <sA>s</sA>
+    <s0>(DE-588c)4188678-1</s0>
+    <s0>(DE-576)210054468</s0>
+    <s2>swd</s2>
+    <sa>Vorkommen</sa>
+  </d689>
+  <d689 i1="1" i2=" ">
+    <s5>DE-576</s5>
+  </d689>
+</r>
