@@ -26,8 +26,15 @@
 		titles may be present in LCSH and MSCverbal fields as well.
 	-->
 	<set name="pz:cclmap:subject" value="1=subject s=al t=r"/>
-	<set name="pz:cclmap:gok" value="1=subject_gok s=al t=r"/>
+	<set name="pz:cclmap:lkl" value="1=subject_gok s=al t=r"/>
 	<set name="pz:cclmap:msc" value="1=subject_msc s=al t=r"/>
+
+	<!--
+		Fake Search key for Freiberg classification, mapped to MSC field.
+		Should not return any results.
+	-->
+	<set name="pz:cclmap:fbg" value="1=subject_msc s=1 t=r"/>
+
 
 	<!--
 		Passed to solr as the fl parameter: all fields we want solr to return.

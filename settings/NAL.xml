@@ -2,16 +2,16 @@
 <!--
 	United States Department of Agriculture
 	National Agricultural Library Article Database Z39.50 Interface
-	
+
 	http://agricola.nal.usda.gov/help/z3950.html
-		
+
 	Could not find documentation how to construct URLs for linking to specific records.
 	Figured out a search which seems to do the right thing and using that as the URL hint.
-	
+
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 	<set name="pz:name" value="NAL"/>
-	
+
 	<set name="catalogueURLHintPrefix" value="http://agricola.nal.usda.gov/cgi-bin/Pwebrecon.cgi?DB=local&amp;CNT=10&amp;Search_Arg="/>
 	<set name="catalogueURLHintPostfix" value="&amp;Search_Code=CMD&amp;STARTDB=AGRIDB"/>
 
@@ -19,7 +19,7 @@
 	<!-- mappings for search -->
 	<set name="pz:cclmap:term" value="u=1016 s=al t=r"/>
 	<set name="pz:cclmap:fulltext" value="u=1016 s=al t=r"/>
-	
+
 	<set name="pz:cclmap:title" value="u=4 s=al 2=102 t=r"/>
 	<set name="pz:cclmap:person" value="u=1003 s=al t=r"/>
 	<set name="pz:cclmap:date" value="u=31 r=r"/>
@@ -28,9 +28,9 @@
 	<set name="pz:cclmap:issn" value="u=8"/>
 
 	<!-- Fake search key for local classifications. Should not return results. -->
-	<set name="pz:cclmap:fbg" value="u=21 s=al t=r"/>
-	<set name="pz:cclmap:lkl" value="u=21 s=1 t=r"/>
-	
+	<set name="pz:cclmap:fbg" value="u=7 s=al t=r"/>
+	<set name="pz:cclmap:lkl" value="u=7 s=1 t=r"/>
+
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="marc21"/>
 	<set name="pz:queryencoding" value="utf-8"/>
@@ -38,6 +38,6 @@
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/tmarc-041-language-code-split.xsl,xsl/tmarc-773p-to-773t.xsl,xsl/tmarc-300a-to-773g.xsl,pazpar2-etc/tmarc.xsl,xsl/medium-strip-electronic.xsl,xsl/strip-physical-extent.xsl,xsl/catalogue-url-hint+id.xsl"/>
-	
+
 </settings>
 

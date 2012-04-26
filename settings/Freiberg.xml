@@ -32,10 +32,10 @@
 	<set name="pz:cclmap:fbg" value="u=1042 s=pw t=r"/>
 
 	<!--
-		Fake Search key for Göttingen classification, mapped to the subject field.
-		Should not return any results in SWB
+		Fake Search key for Göttingen classification, mapped to ISBN field.
+		Should not return any results in SWB.
 	-->
-	<set name="pz:cclmap:lkl" value="u=46 s=1 t=r"/>
+	<set name="pz:cclmap:lkl" value="u=7 s=1 t=r"/>
 
 
 	<!-- Retrieval settings -->
