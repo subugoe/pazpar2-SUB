@@ -104,6 +104,8 @@
 	<metadata name="thumburl" brief="yes" merge="unique"/>
 	<metadata name="score"/>
 
+	<metadata name="country" brief="yes" termlist="yes" merge="unique"/>
+	<metadata name="source-type" brief="yes" termlist="yes" merge="unique"/>
 	<metadata name="creator" brief="yes" merge="unique"/>
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
