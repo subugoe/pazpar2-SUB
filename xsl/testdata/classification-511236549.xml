@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnam a22yyyyy c 4500</l>
+  <c001>511236549</c001>
+  <c003>DE-601</c003>
+  <c005>20111212065102.0</c005>
+  <c008>060503s2006    sz            000 0 eng d</c008>
+  <d015 i1=" " i2=" ">
+    <sa>06N200896</sa>
+    <s2>dnb</s2>
+  </d015>
+  <d015 i1=" " i2=" ">
+    <sa>06A440530</sa>
+    <s2>dnb</s2>
+  </d015>
+  <d016 i1="7" i2=" ">
+    <sa>979421543</sa>
+    <s2>DE-101</s2>
+  </d016>
+  <d020 i1=" " i2=" ">
+    <sa>3764376864</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>978-3-7643-7686-4</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>3764376872 (e-ISBN)</sa>
+  </d020>
+  <d028 i1="5" i2="2">
+    <sa>11671978</sa>
+  </d028>
+  <d035 i1=" " i2=" ">
+    <sa>(OBV)AC05682399</sa>
+  </d035>
+  <d035 i1=" " i2=" ">
+    <sa>(ZBM)1097.58001</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>eng</sa>
+  </d041>
+  <d044 i1=" " i2=" ">
+    <sa>sz</sa>
+    <sa>xxu</sa>
+    <sa>gw</sa>
+  </d044>
+  <d050 i1=" " i2="0">
+    <sa>QA326</sa>
+  </d050>
+  <d082 i1="0" i2="0">
+    <sa>512.556</sa>
+  </d082>
+  <d084 i1=" " i2=" ">
+    <sa>31.61 ; Algebraische Topologie</sa>
+    <s2>bcl</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>31.55 ; Globale Analysis</sa>
+    <s2>bcl</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>SK 600</sa>
+    <s2>rvk</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>17,1</sa>
+    <s2>ssgn</s2>
+  </d084>
+  <d245 i1="1" i2="0">
+    <sa>C*-algebras and elliptic theory :</sa>
+    <sb>[contains the proceedings of the Conference on &quot;C*-Algebras and Elliptic Theory&quot; held in Bedlewo, Poland, in February 2004] /</sb>
+    <sc>Bogdan Bojarski ... (ed.). In cooperation with Dan Burghelea ...</sc>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>Basel ;Boston ;Berlin</sa>
+    <sb>Birkhäuser</sb>
+    <sc>2006</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>IX, 327 S</sa>
+    <sb>graph. Darst</sb>
+    <sc>24 cm</sc>
+  </d300>
+  <d490 i1="0" i2=" ">
+    <sa>Trends in mathematics</sa>
+  </d490>
+  <d500 i1=" " i2=" ">
+    <sa>Literaturangaben</sa>
+  </d500>
+  <d653 i1=" " i2="0">
+    <sa>C*-algebras</sa>
+  </d653>
+  <d653 i1=" " i2="0">
+    <sa>Elliptic functions</sa>
+  </d653>
+  <d700 i1="1" i2=" ">
+    <sa>Bojarski, Bogdan</sa>
+    <se>Hrsg.</se>
+    <s4>edt</s4>
+    <s0>(DE-601)517879565</s0>
+  </d700>
+  <d856 i1="4" i2="2">
+    <su>http://deposit.ddb.de/cgi-bin/dokserv?id=2797499&amp;prov=M&amp;dok_var=1&amp;dok_ext=htm</su>
+  </d856>
+  <d856 i1="4" i2="2">
+    <sy>Zentralblatt MATH</sy>
+    <su>http://www.zentralblatt-math.org/zmath/en/search/?an=1097.58001</su>
+    <sm>V:DE-601;ZBM</sm>
+    <s3>Inhaltstext</s3>
+  </d856>
+  <d856 i1="4" i2="2">
+    <sy>Inhaltsverzeichnis</sy>
+    <su>http://www.gbv.de/dms/bsz/toc/bsz254196896inh.pdf</su>
+    <sm>V:DE-601;DE-84</sm>
+    <s3>Inhaltsverzeichnis</s3>
+  </d856>
+  <d900 i1=" " i2=" ">
+    <sa>GBV</sa>
+    <sb>SUB+Uni Göttingen &lt;7&gt;</sb>
+    <sd>!FMAG! 2006 A 1152</sd>
+    <sx>L</sx>
+    <sz>LC</sz>
+  </d900>
+  <d950 i1=" " i2=" ">
+    <sa>Nichtkommutative Geometrie</sa>
+    <sa>C-Stern-Algebra</sa>
+    <sa>Elliptischer Differentialoperator</sa>
+    <sa>Kongress</sa>
+    <sa>Be̜dlewo &lt;2004&gt;</sa>
+  </d950>
+  <d950 i1=" " i2=" ">
+    <sa>Indextheorem</sa>
+    <sa>Kongress</sa>
+    <sa>Be̜dlewo &lt;2004&gt;</sa>
+  </d950>
+  <d951 i1=" " i2=" ">
+    <sa>EBJK 000  / $K$-theory and operator algebras  </sa>
+    <s2>40</s2>
+  </d951>
+  <d951 i1=" " i2=" ">
+    <sa>EFIJ 000  / Partial differential equations on manifolds; differential operators  </sa>
+    <s2>40</s2>
+  </d951>
+  <d951 i1=" " i2=" ">
+    <sa>EFHR 000  / Differential topology  </sa>
+    <s2>40</s2>
+  </d951>
+  <d951 i1=" " i2=" ">
+    <sa>EFIJ 320  / Boundary value problems on manifolds {Partial differential equations on manifolds; differential operators} </sa>
+    <s2>40</s2>
+  </d951>
+  <d951 i1=" " i2=" ">
+    <sa>EBJD 550  / $K$-theory and homology; cyclic homology and cohomology  </sa>
+    <s2>40</s2>
+  </d951>
+  <d954 i1=" " i2=" ">
+    <sa>40</sa>
+    <sb>798849746</sb>
+    <sz>7$218997353</sz>
+    <sc>01</sc>
+    <sf>FMAG</sf>
+    <sd>2006 A 1152</sd>
+    <se>u</se>
+    <sx>0007</sx>
+  </d954>
+</r>
+
