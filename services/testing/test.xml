@@ -124,6 +124,9 @@
 	<metadata name="abstract" brief="yes" merge="unique"/>
 	<metadata name="subject-long"/>
 	<metadata name="subject"/>
+	<metadata name="classification-ddc"/>
+	<metadata name="classification-msc" brief="yes"/>
+	<metadata name="classification-bcl"/>
 	<metadata name="snippet" brief="yes" merge="unique"/>
 	<metadata name="electronic-url" brief="yes" merge="no"/>
 	<metadata name="electronic-format-type" />
