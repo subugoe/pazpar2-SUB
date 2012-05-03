@@ -65,10 +65,10 @@
 	<settings src="settings/testing/deprecated/zebra-geo.xml"/>
 	<settings src="settings/testing/zebra-vifamath.xml"/>
 	<settings>
-		<set target="134.76.176.48:2021/arxiv" name="pz:name" value="arXiv"/>
-		<set target="134.76.176.48:3954/ElibM" name="pz:name" value="ELibM"/>
 		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
 	</settings>
+
+	<settings src="settings/fiz-elibm.xml"/>
 
 	<!-- DSpace -->
 	<settings src="settings/ADW.xml"/>

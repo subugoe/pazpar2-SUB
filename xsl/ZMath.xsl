@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Converts ZMath records for pazpar2.
-	
+
 	December 2010
 	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -14,6 +14,8 @@
 
 	<xsl:import href="metadata-splitter.xsl"/>
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
+
+	<xsl:param name="has_fulltext"/>
 
 
 	<xsl:template match="record|rec">
@@ -29,7 +31,7 @@
 				</pz:metadata>
 			</xsl:for-each>
 
-			<xsl:for-each select="au">
+			<xsl:for-each select="au|authors/au">
 				<pz:metadata type="author">
 					<xsl:value-of select="."/>
 				</pz:metadata>
@@ -41,9 +43,23 @@
 				</pz:metadata>
 			</xsl:for-each>
 
-			<xsl:for-each select="ut|cc">
-				<pz:metadata type="subject">
+			<xsl:for-each select="ut|terms/ut">
+				<pz:metadata type="subject" accordingto="Zentralblatt Math">
 					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
+			<xsl:for-each select="cc|classification/cc">
+				<pz:metadata type="classification-msc" accordingto="Zentralblatt Math">
+					<xsl:choose>
+						<xsl:when test="substring(., 1 , 1) = '*'">
+							<xsl:attribute name="default">yes</xsl:attribute>
+							<xsl:value-of select="substring-after(., '*')"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="."/>
+						</xsl:otherwise>
+					</xsl:choose>
 				</pz:metadata>
 			</xsl:for-each>
 
@@ -55,8 +71,8 @@
 				</xsl:call-template>
 			</xsl:for-each>
 
-			<!-- not ideal: This contains the information of the journal-title 
-					as well as the journal-subpart field. 
+			<!-- not ideal: This contains the information of the journal-title
+					as well as the journal-subpart field.
 			-->
 			<xsl:for-each select="so">
 				<pz:metadata type="journal-title">
@@ -67,7 +83,7 @@
 			<xsl:for-each select="is">
 				<pz:metadata type="issn">
 					<xsl:choose>
-						<!-- ELibM ISSN entries occasionally come witha leading ISSN -->
+						<!-- ELibM ISSN entries occasionally come with a leading 'ISSN' -->
 						<xsl:when test="substring(., 1, 4) = 'ISSN'">
 							<xsl:value-of select="normalize-space(substring(., 5))"/>
 						</xsl:when>
@@ -78,7 +94,7 @@
 				</pz:metadata>
 			</xsl:for-each>
 
-			<xsl:for-each select="ft">
+			<xsl:for-each select="et">
 				<pz:metadata type="electronic-url">
 					<xsl:value-of select="."/>
 				</pz:metadata>
@@ -91,7 +107,7 @@
 			</xsl:for-each>
 
 			<xsl:for-each select="ab">
-				<pz:metadata type="description">
+				<pz:metadata type="abstract">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
@@ -101,6 +117,10 @@
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
+
+			<xsl:if test="$has_fulltext = 'yes'">
+				<pz:metadata type="has-fulltext">yes</pz:metadata>
+			</xsl:if>
 
 		</pz:record>
 	</xsl:template>

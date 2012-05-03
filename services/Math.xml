@@ -39,8 +39,9 @@
 	<settings src="settings/testing/zebra-vifamath.xml"/>
 	<settings>
 		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
-		<set target="134.76.176.48:3954/ElibM" name="pz:name" value="ELibM"/>
 	</settings>
+
+	<settings src="settings/fiz-elibm.xml"/>
 
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
 	<settings>
