@@ -25,7 +25,7 @@
 			opt for right truncation by adding a ? (t=r)
 		* use attributes have names pica.XXX where XXX is the Pica search key
 	-->
-	<set name="pz:cclmap:term" value="u=pica.all s=al t=r"/>
+	<set name="pz:cclmap:term" value="u=pica.all t=r"/>
 
 	<!--
 		Full-text search; map the search key to the all index
@@ -35,17 +35,17 @@
 	<set name="pz:cclmap:fulltext" value="u=pica.txt s=1 t=r" target="sru.gbv.de/gvk"/>
 	<set name="pz:cclmap:fulltext" value="u=pica.txt s=1 t=r" target="sru.gbv.de/opac-de-7"/>
 
-	<set name="pz:cclmap:title" value="u=pica.tit s=al t=r"/>
-	<set name="pz:cclmap:person" value="u=pica.per s=al t=r"/>
+	<set name="pz:cclmap:title" value="u=pica.tit t=r"/>
+	<set name="pz:cclmap:person" value="u=pica.per t=r"/>
 	<!-- Use SHA (8542) for journal title search as ZTI (21) is just a phrase search. -->
-	<set name="pz:cclmap:journal" value="u=pica.sha s=al t=r"/>
-	<set name="pz:cclmap:subject" value="u=pica.slw s=al t=r"/>
+	<set name="pz:cclmap:journal" value="u=pica.sha t=r"/>
+	<set name="pz:cclmap:subject" value="u=pica.slw t=r"/>
 
 	<!-- Logic for recognising date ranges is built into the index, we can send the string right there. -->
 	<set name="pz:cclmap:date" value="u=pica.erj"/>
 
-	<set name="pz:cclmap:isbn" value="u=pica.isb"/>
-	<set name="pz:cclmap:issn" value="u=pica.iss"/>
+	<set name="pz:cclmap:isbn" value="u=pica.isb t=r"/>
+	<set name="pz:cclmap:issn" value="u=pica.iss t=r"/>
 
 	<!--
 		Lokale Klassifikation for GOK subject search.
@@ -59,6 +59,8 @@
 	-->
 	<set name="pz:cclmap:fbg" value="u=pica.bkl s=1 t=r"/>
 
+	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
+
 	<!--
 		NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search.
 		Field content has format YYYYMM.
@@ -66,13 +68,12 @@
 	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
 
 	<!-- Map additional Pica search keys to pazpar2. -->
-	<set name="pz:cclmap:tit" value="u=pica.tit t=r"/>
 	<set name="pz:cclmap:thm" value="u=pica.thm t=r"/>
 	<set name="pz:cclmap:sww" value="u=pica.sww t=r"/>
 	<set name="pz:cclmap:ddc" value="u=pica.ddc t=r"/>
 	<set name="pz:cclmap:bkl" value="u=pica.bkl t=r"/>
-	<set name="pz:cclmap:ppn" value="u=pica.ppn"/>
-	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
+	<set name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
+
 	<!-- … probably only available in opac-de-7. -->
 	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
 	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>

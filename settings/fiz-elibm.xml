@@ -1,6 +1,6 @@
 <settings target="elibm.fiz-karlsruhe.de/srw/search/escidoc_all">
 <!--
-	FIZ Karlsruhe SRU Server for ELibm
+	FIZ Karlsruhe SRU Server for ELibM
 
 	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -10,27 +10,19 @@
 	<set name="pz:sru" value="get"/>
 	<set name="pz:sru_version" value="1.1"/>
 
-	<!--
-		Default Search settings:
-		* ANDed word search for most fields (s=al)
-		* no truncation by default but giving the user the option to
-			opt for right truncation by adding a ? (t=r)
-		* use attributes have names pica.XXX where XXX is the Pica search key
-	-->
-	<set name="pz:cclmap:term" value="u=cql.serverChoice s=al t=r"/>
+
+	<set name="pz:cclmap:term" value="u=cql.serverChoice t=r"/>
 	<set name="pz:cclmap:fulltext" value="u=fulltext s=1 t=r"/>
 
-	<set name="pz:cclmap:title" value="u=ti s=al t=r"/>
-	<set name="pz:cclmap:person" value="u=au s=al t=r"/>
-	<set name="pz:cclmap:journal" value="u=so s=al t=r"/>
-	<set name="pz:cclmap:subject" value="u=ut s=al t=r"/>
+	<set name="pz:cclmap:title" value="u=ti t=r"/>
+	<set name="pz:cclmap:person" value="u=au t=r"/>
+	<set name="pz:cclmap:journal" value="u=so t=r"/>
+	<set name="pz:cclmap:subject" value="u=ut t=r"/>
 	<set name="pz:cclmap:msc" value="u=cc s=1 t=r"/>
 
-	<!-- Logic for recognising date ranges is built into the index, we can send the string right there. -->
-	<set name="pz:cclmap:date" value="u=py"/>
+	<set name="pz:cclmap:date" value="u=py r=r"/>
 
-	<set name="pz:cclmap:isbn" value="u=pica.isb"/>
-	<set name="pz:cclmap:issn" value="u=pica.iss"/>
+	<set name="pz:cclmap:issn" value="u=is t=r"/>
 
 
 	<!-- Map additional keys from the SRU explain response to pazpar2. -->

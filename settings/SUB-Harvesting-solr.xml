@@ -8,26 +8,19 @@
 
 	<set name="pz:maxrecs" value="500"/>
 
-	<!--
-		Default Search settings:
-		* ANDed word search for most fields (s=al)
-		* no truncation by default but giving the user the option to
-			opt for right truncation by adding a ? (t=r)
-	-->
-	<set name="pz:cclmap:term" value="s=al t=r"/>
+	<set name="pz:cclmap:term" value="t=r"/>
 
 	<!-- full-text search; maps to unqualified search if it doesn’t exist -->
-	<set name="pz:cclmap:fulltext" value="s=al t=r"/>
+	<set name="pz:cclmap:fulltext" value="t=r"/>
 
-	<set name="pz:cclmap:title" value="1=title s=al t=r"/>
-	<set name="pz:cclmap:person" value="1=author s=al t=r"/>
-	<!--
-		The Keywords field may not be the best for searches as interesting subject
-		titles may be present in LCSH and MSCverbal fields as well.
-	-->
-	<set name="pz:cclmap:subject" value="1=subject s=al t=r"/>
-	<set name="pz:cclmap:lkl" value="1=subject_gok s=al t=r"/>
-	<set name="pz:cclmap:msc" value="1=subject_msc s=al t=r"/>
+	<set name="pz:cclmap:title" value="1=title t=r"/>
+	<set name="pz:cclmap:person" value="1=author t=r"/>
+
+	<set name="pz:cclmap:date" value="1=date r=r"/>
+
+	<set name="pz:cclmap:subject" value="1=subject s=pw t=r"/>
+	<set name="pz:cclmap:lkl" value="1=subject_gok s=pw t=r"/>
+	<set name="pz:cclmap:msc" value="1=subject_msc s=pw t=r"/>
 
 	<!--
 		Fake Search key for Freiberg classification, mapped to MSC field.

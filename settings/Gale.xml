@@ -12,15 +12,15 @@
 
 
 	<!-- mapping for unqualified search -->
-	<set name="pz:cclmap:term" value="1=1016 s=al t=r"/>
+	<set name="pz:cclmap:term" value="1=1016 t=r"/>
 
 	<!-- field-specific mappings -->
-	<set name="pz:cclmap:title" value="1=4 s=al t=r"/>
-	<set name="pz:cclmap:person" value="1=1003 s=al t=r"/>
+	<set name="pz:cclmap:title" value="1=4 t=r"/>
+	<set name="pz:cclmap:person" value="1=1003 t=r"/>
 	<set name="pz:cclmap:date" value="1=31 r=r"/>
-	<set name="pz:cclmap:subject" value="1=21 s=al t=r"/>
-	<set name="pz:cclmap:isbn" value="1=7"/>
-	<set name="pz:cclmap:issn" value="1=8"/>
+	<set name="pz:cclmap:subject" value="1=21 t=r"/>
+	<set name="pz:cclmap:isbn" value="1=7 t=r"/>
+	<set name="pz:cclmap:issn" value="1=8 t=r"/>
 
 
 	<!-- Retrieval settings -->

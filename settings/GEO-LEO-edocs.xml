@@ -13,23 +13,24 @@
 
 
 	<!-- mapping for unqualified search on all metadata fields -->
-	<set name="pz:cclmap:term" value="u=dc.all s=al t=r"/>
+	<set name="pz:cclmap:term" value="u=dc.all t=r"/>
 
 	<!-- full-text search -->
-	<set name="pz:cclmap:fulltext" value="u=cql.serverChoice s=al t=r"/>
+	<set name="pz:cclmap:fulltext" value="u=cql.serverChoice t=r"/>
 
-	<set name="pz:cclmap:title" value="u=dc.title s=al t=r"/>
-	<set name="pz:cclmap:person" value="u=dc.contributor s=1 t=r"/>
+	<set name="pz:cclmap:title" value="u=dc.title t=r"/>
+	<set name="pz:cclmap:person" value="u=dc.contributor t=r"/>
 	<set name="pz:cclmap:date" value="u=dc.date.issued r=r"/>
-	<set name="pz:cclmap:subject" value="u=dc.subject s=al t=r"/>
-	<set name="pz:cclmap:isbn" value="u=dc.identifier"/>
-	<set name="pz:cclmap:issn" value="u=dc.relation"/>
+	<set name="pz:cclmap:subject" value="u=dc.subject t=r"/>
+	<set name="pz:cclmap:isbn" value="u=dc.identifier t=r"/>
+	<set name="pz:cclmap:issn" value="u=dc.relation t=r"/>
 
 	<!-- Lokale Klassifikation for GOK subject search -->
 	<set name="pz:cclmap:lkl" value="u=dc.gok s=1 t=r"/>
 
 	<!-- Fake Search key for Freiberg Classification. Should not return results. -->
 	<set name="pz:cclmap:fbg" value="u=dc.subject s=1 t=0"/>
+
 
 
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
