@@ -1,10 +1,9 @@
-<settings target="80.153.241.36:9999">
+<settings target="217.7.254.220:9999">
 <!--
 	Institut für Länderkunde Z39.50 target.
 	The server is run by KTS Informationssysteme, München.
 
-	2011-2012
-	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 	<set name="pz:name" value="Institut für Länderkunde"/>
 
