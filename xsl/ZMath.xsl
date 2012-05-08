@@ -95,7 +95,15 @@
 			</xsl:for-each>
 
 			<xsl:for-each select="et">
+				<xsl:variable name="file-type">
+					<xsl:value-of select="substring-after(substring(., string-length(.) - 6 , 7), '.')"/>
+				</xsl:variable>
 				<pz:metadata type="electronic-url">
+					<xsl:if test="string-length($file-type) &gt; 0">
+						<xsl:attribute name="name">
+							<xsl:value-of select="$file-type"/>
+						</xsl:attribute>
+					</xsl:if>
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
@@ -107,8 +115,13 @@
 			</xsl:for-each>
 
 			<xsl:for-each select="ab">
-				<pz:metadata type="abstract">
+				<pz:metadata type="description">
 					<xsl:value-of select="."/>
+					<xsl:if test="../rv">
+						<xsl:text> [Reviewer: </xsl:text>
+							<xsl:value-of select="../rv"/>
+						<xsl:text>]</xsl:text>
+					</xsl:if>
 				</pz:metadata>
 			</xsl:for-each>
 
@@ -117,6 +130,13 @@
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
+
+			<xsl:for-each select="an">
+				<pz:metadata type="description">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
 
 			<xsl:if test="$has_fulltext = 'yes'">
 				<pz:metadata type="has-fulltext">yes</pz:metadata>
