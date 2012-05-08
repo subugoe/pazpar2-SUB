@@ -28,6 +28,7 @@
 		<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="arXiv"/>
 	</settings>
 
+	<settings src="settings/fiz-elibm.xml"/>
 
 
 
