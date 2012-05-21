@@ -11,10 +11,10 @@
 	<set name="pz:sru_version" value="1.1"/>
 
 
-	<set name="pz:cclmap:term" value="u=cql.serverChoice t=r"/>
-	<set name="pz:cclmap:fulltext" value="u=fulltext s=1 t=r"/>
+	<set name="pz:cclmap:term" value="u=cql.serverChoice s=al t=r"/>
+	<set name="pz:cclmap:fulltext" value="u=fulltext s=al t=r"/>
 
-	<set name="pz:cclmap:title" value="u=ti t=r"/>
+	<set name="pz:cclmap:title" value="u=ti s=al t=r"/>
 	<set name="pz:cclmap:person" value="u=au t=r"/>
 	<set name="pz:cclmap:journal" value="u=so t=r"/>
 	<set name="pz:cclmap:subject" value="u=ut t=r"/>

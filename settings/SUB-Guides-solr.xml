@@ -9,13 +9,13 @@
 	<set name="pz:maxrecs" value="1000"/>
 
 
-	<set name="pz:cclmap:term" value="t=r"/>
+	<set name="pz:cclmap:term" value="s=al t=r"/>
 
 	<!-- full-text search; maps to unqualified search if it doesn’t exist -->
-	<set name="pz:cclmap:fulltext" value="t=r"/>
+	<set name="pz:cclmap:fulltext" value="s=al t=r"/>
 
 
-	<set name="pz:cclmap:title" value="1=Title t=r"/>
+	<set name="pz:cclmap:title" value="1=Title s=al t=r"/>
 	<set name="pz:cclmap:person" value="1=Author t=r"/>
 	<!--
 		The Keywords field may not be the best for searches as interesting subject
