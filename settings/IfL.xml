@@ -15,7 +15,7 @@
 	<set name="pz:cclmap:title" value="u=4 s=al t=r"/>
 	<set name="pz:cclmap:person" value="u=1004 t=r"/>
 	<set name="pz:cclmap:journal" value="u=8542 t=r"/>
-	<set name="pz:cclmap:subject" value="u=21 t=r"/>
+	<set name="pz:cclmap:subject" value="u=21 s=al t=r"/>
 
 	<!-- Logic for recognising date ranges is built into the index, we can send the string right there -->
 	<set name="pz:cclmap:date" value="u=9000 r=r"/>

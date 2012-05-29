@@ -21,7 +21,7 @@
 		The Keywords field may not be the best for searches as interesting subject
 		titles may be present in LCSH and MSCverbal fields as well.
 	-->
-	<set name="pz:cclmap:subject" value="1=Keywords t=r"/>
+	<set name="pz:cclmap:subject" value="1=Keywords s=al t=r"/>
 
 	<set name="pz:cclmap:date" value="1=GOK s=1"/>
 

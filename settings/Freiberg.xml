@@ -27,7 +27,7 @@
 	<!-- field-specific mappings -->
 	<set name="pz:cclmap:title" value="u=4 s=al t=r"/>
 	<set name="pz:cclmap:person" value="u=1004 t=r"/>
-	<set name="pz:cclmap:subject" value="u=46 t=r"/>
+	<set name="pz:cclmap:subject" value="u=46 s=al t=r"/>
 	<set name="pz:cclmap:isbn" value="u=7 t=r"/>
 	<set name="pz:cclmap:issn" value="u=8 t=r"/>
 	<set name="pz:cclmap:date" value="u=31 s=4 r=r"/>

@@ -39,7 +39,7 @@
 	<set name="pz:cclmap:person" value="u=pica.per t=r"/>
 	<!-- Use SHA (8542) for journal title search as ZTI (21) is just a phrase search. -->
 	<set name="pz:cclmap:journal" value="u=pica.sha t=r"/>
-	<set name="pz:cclmap:subject" value="u=pica.slw t=r"/>
+	<set name="pz:cclmap:subject" value="u=pica.slw s=al t=r"/>
 
 	<!-- Logic for recognising date ranges is built into the index, we can send the string right there. -->
 	<set name="pz:cclmap:date" value="u=pica.erj"/>

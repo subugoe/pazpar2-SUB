@@ -18,7 +18,7 @@
 
 	<set name="pz:cclmap:date" value="1=date r=r"/>
 
-	<set name="pz:cclmap:subject" value="1=subject s=pw t=r"/>
+	<set name="pz:cclmap:subject" value="1=subject s=al t=r"/>
 	<set name="pz:cclmap:lkl" value="1=subject_gok s=pw t=r"/>
 	<set name="pz:cclmap:msc" value="1=subject_msc s=pw t=r"/>
 

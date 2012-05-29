@@ -17,7 +17,7 @@
 	<set name="pz:cclmap:title" value="u=ti s=al t=r"/>
 	<set name="pz:cclmap:person" value="u=au t=r"/>
 	<set name="pz:cclmap:journal" value="u=so t=r"/>
-	<set name="pz:cclmap:subject" value="u=ut t=r"/>
+	<set name="pz:cclmap:subject" value="u=ut s=al t=r"/>
 	<set name="pz:cclmap:msc" value="u=cc s=1 t=r"/>
 
 	<set name="pz:cclmap:date" value="u=py r=r"/>
