@@ -32,16 +32,4 @@
 	</xsl:template>
 
 
-	<!--
-		SWB article records seem to contain the name of the containing
-		journal in 773 $a. tmarc.xsl expects it in 773 $t: rewrite the
-		information to that field.
-	-->
-	<xsl:template match="tmarc:d773/tmarc:sa">
-		<tmarc:st>
-			<xsl:apply-templates select="@*|node()"/>
-		</tmarc:st>
-	</xsl:template>
-
-
 </xsl:stylesheet>
