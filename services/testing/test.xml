@@ -15,19 +15,20 @@
 		<set target="gso.gbv.de/sru/DB=2.1" name="pz:name" value="GBV GVK (SRU)"/>
 	</settings>
 -->
-<!--
+
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK (SRU neu)"/>
 	</settings>
--->
-
 <!--
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
+	<settings>
+		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="Repositories"/>
+	</settings>
 -->
-
+<!--
 	<settings src="settings/fiz-elibm.xml"/>
-
+-->
 <!--
 	<settings src="settings/Gale.xml"/>
 	<settings>
@@ -117,7 +118,7 @@
 	<metadata name="physical-unittype"/>
 	<metadata name="physical-unitsize"/>
 	<metadata name="physical-specified"/>
-	<metadata name="mapscale" brief="yes" merge="unique"/>
+	<metadata name="mapscale" brief="yes" merge="unique" mergekey="optional"/>
 
 	<metadata name="series-title" brief="yes" merge="unique"/>
 	<metadata name="multivolume-title" brief="yes" merge="longest"/>
