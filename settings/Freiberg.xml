@@ -47,6 +47,9 @@
 	-->
 	<set name="pz:cclmap:lkl" value="u=7 s=1 t=r"/>
 
+	<!-- additional indexes -->
+	<set name="pz:cclmap:ppn" value="u=12 s=1 t=r"/>
+
 
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="marc21"/>
