@@ -21,7 +21,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="iso2709;utf-8"/>
-	<set name="pz:xslt" value="pazpar2/etc/unimarc.xsl,xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="pazpar2/etc/unimarc.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
 
 
 	<set name="catalogueURLHintPrefix" value="http://z39.libis.lt/simpleSearch.do?BI001="/>

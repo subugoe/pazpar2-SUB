@@ -37,7 +37,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="xsl/tmarc-041-language-code-split.xsl,xsl/tmarc-773p-to-773t.xsl,xsl/tmarc-300a-to-773g.xsl,pazpar2-etc/tmarc.xsl,xsl/medium-strip-electronic.xsl,xsl/strip-physical-extent.xsl,xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="xsl/tmarc-041-language-code-split.xsl,xsl/tmarc-773p-to-773t.xsl,xsl/tmarc-300a-to-773g.xsl,pazpar2-etc/tmarc.xsl,xsl/medium-strip-electronic.xsl,xsl/strip-physical-extent.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
 
 </settings>
 

@@ -15,9 +15,9 @@
 -->
 
 
-	<set target="zgw.ebscohost.com/ahl" 
+	<set target="zgw.ebscohost.com/ahl"
 		name="pz:name" value="America: History and Life (Z39.50)"/>
- 
+
 
 	<!-- mapping for unqualified search -->
 	<set name="pz:cclmap:term" value="1=1016 2=3 3=3 4=2 5=1 6=1 s=al"/>
@@ -40,6 +40,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="iso2709;utf-8"/>
-	<set name="pz:xslt" value="pazpar2/etc/marc21.mmap"/>
+	<set name="pz:xslt" value="pazpar2/etc/marc21.mmap,xsl/merge-fields.xsl"/>
 
 </settings>

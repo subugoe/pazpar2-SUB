@@ -38,7 +38,7 @@
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
 
-	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl"/>
-	<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl"/>
-	<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl"/>
+	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
+	<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
+	<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
 </settings>

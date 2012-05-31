@@ -1,7 +1,7 @@
 <settings target="z3950.kb.dk:2100/*">
 <!--
 	Royal Library of Denmark target.
-	
+
 	Target databases on the server according to
 	http://www.loc.gov/cgi-bin/zgate?ACTION=INIT&FORM_HOST_PORT=/prod/www/data/z3950/rex.html,z3950.kb.dk,2100&CI=110237
 
@@ -45,6 +45,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl"/>
+	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/merge-fields.xsl"/>
 
 </settings>

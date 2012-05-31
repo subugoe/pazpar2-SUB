@@ -139,6 +139,7 @@
 	<metadata name="electronic-note"/>
 	<metadata name="citation"/>
 	<metadata name="holding"/>
+	<metadata name="has-fulltext" brief="yes"/>
 	<metadata name="fulltext"/>
 	<metadata name="locallocation" brief="yes"/>
 	<metadata name="callnumber" brief="yes"/>
@@ -171,5 +172,8 @@
 	<metadata name="creator" brief="yes" merge="unique"/>
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
+
+	<metadata name="merge-title" mergekey="required"/>
+	<metadata name="merge-author" mergekey="optional"/>
 
 </service>

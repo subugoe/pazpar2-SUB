@@ -10,10 +10,10 @@
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="xml"/>
 	<set name="pz:queryencoding" value="utf-8"/>
-	
+
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
-	<set name="pz:xslt" value="xsl/JSTOR.xsl"/>
+	<set name="pz:xslt" value="xsl/JSTOR.xsl,xsl/merge-fields.xsl"/>
 </settings>
 

@@ -1,10 +1,10 @@
 <settings target="findex.gbv.de/index/40/">
-<!-- 
+<!--
 	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 	<set name="pz:name" value="GBV Solr"/>
-	
-	<set name="pz:sru" value="solr"/> 
+
+	<set name="pz:sru" value="solr"/>
 	<set name="pz:sru_version" value="1.4"/>
 
 	<set name="pz:maxrecs" value="1000"/>
@@ -13,7 +13,7 @@
 	<!--
 		Default Search settings:
 		* ANDed word search for most fields (s=al)
-		* no truncation by default but giving the user the option to 
+		* no truncation by default but giving the user the option to
 			opt for right truncation by adding a ? (t=r)
 		* use attributes are Pica IKT numbers
 	-->
@@ -22,7 +22,7 @@
 	<!-- full-text search; maps to unqualified search if it doesn’t exist -->
 	<set name="pz:cclmap:fulltext" value="s=al t=r"/>
 
-	
+
 	<set name="pz:cclmap:title" value="1=title s=al t=r"/>
 	<set name="pz:cclmap:person" value="1=author s=al t=r"/>
 
@@ -33,7 +33,7 @@
 	<set name="pz:cclmap:isbn" value="1=isbn"/>
 	<set name="pz:cclmap:issn" value="1=issn"/>
 
-	<!-- 
+	<!--
 		Passed to solr as the fl parameter: all fields we want solr to return.
 		We need to map these to the approriate pz:metadata fields in solr-postprocess.xsl.
 	-->
@@ -41,6 +41,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
-	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-gbv.xsl"/>
-	
+	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-gbv.xsl,xsl/merge-fields.xsl"/>
+
 </settings>

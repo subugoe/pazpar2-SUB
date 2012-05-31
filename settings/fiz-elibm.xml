@@ -43,6 +43,6 @@
 
 	<!-- Fetch turbomarc and normalise. -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
-	<set name="pz:xslt" value="xsl/elibm-languages.xsl,xsl/ZMath-doctypes.xsl,xsl/ZMath.xsl"/>
+	<set name="pz:xslt" value="xsl/elibm-languages.xsl,xsl/ZMath-doctypes.xsl,xsl/ZMath.xsl,xsl/merge-fields.xsl"/>
 
 </settings>

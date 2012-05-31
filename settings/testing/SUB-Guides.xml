@@ -1,5 +1,5 @@
 <settings target="ssgfi1.sub.uni-goettingen.de:2020/*">
-<!-- 
+<!--
 	Settings for Z39.50 Interface to Allegro Databases with
 	SSG-FI Guides.
 
@@ -8,7 +8,7 @@
 
 	<!-- mapping for unqualified search -->
 	<set name="pz:cclmap:term" value="u=1016 s=al t=1"/>
- 
+
 	<!-- field-specific mappings -->
 	<set name="pz:cclmap:title" value="u=4 2=102 s=al t=1"/>
 	<set name="pz:cclmap:person" value="u=1004 s=al t=1"/>
@@ -19,7 +19,7 @@
 	<set name="pz:cclmap:nel" value="u=1012 t=1"/>
 	<!-- Local classification (GOK) -->
 	<set name="pz:cclmap:lkl" value="u=20 t=r"/>
-	
+
 
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="usmarc"/>
@@ -29,6 +29,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/sub-guides.xsl"/>
+	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/sub-guides.xsl,xsl/merge-fields.xsl"/>
 
 </settings>

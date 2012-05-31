@@ -31,7 +31,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;marc8"/>
-	<set name="pz:xslt" value="xsl/Gale.xsl,pazpar2-etc/tmarc.xsl,xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="xsl/Gale.xsl,pazpar2-etc/tmarc.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
 
 	<!-- Turn database off by default -->
 	<set name="pz:allow" value="0"/>

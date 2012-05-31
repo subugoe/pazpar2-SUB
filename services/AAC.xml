@@ -31,7 +31,7 @@
 
 		<set target="sru.gbv.de/zdb-1-pio" name="pz:name" value="Periodicals Index Online"/>
 	</settings>
-	
+
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
@@ -42,12 +42,12 @@
 
 <!--
 	<settings src="conf.d/AHL.xml"/>
-	<settings src="conf.d/MLA.xml"/>	
---> 
+	<settings src="conf.d/MLA.xml"/>
+-->
 
 
 
-	
+
 	<!-- we try to keep same order as in marc21.xsl -->
 	<metadata name="language" brief="yes" merge="unique"/>
 	<metadata name="id" brief="yes"/>
@@ -59,8 +59,7 @@
 	<metadata name="pissn" brief="yes" merge="unique"/>
 	<metadata name="doi" brief="yes" merge="unique"/>
 	<metadata name="tech-rep-nr"/>
-	<metadata name="author" brief="yes" termlist="yes" merge="unique" sortkey="skiparticle"
-			rank="2" mergekey="optional"/>
+	<metadata name="author" brief="yes" termlist="yes" merge="unique" sortkey="skiparticle"/>
 	<metadata name="other-person" brief="yes" merge="unique"/>
 	<metadata name="author-title"/>
 	<metadata name="author-date"/>
@@ -72,13 +71,12 @@
 	<metadata name="meeting-date"/>
 	<metadata name="date" brief="yes" sortkey="numeric" type="year"
 			merge="range" termlist="yes"/>
-	<metadata name="title" brief="yes" sortkey="skiparticle"
-			merge="longest" rank="6" mergekey="required"/>
-	<metadata name="title-remainder" brief="yes" merge="unique" mergekey="optional"/>
+	<metadata name="title" brief="yes" sortkey="skiparticle" merge="longest"/>
+	<metadata name="title-remainder" brief="yes" merge="unique"/>
 	<metadata name="title-responsibility" brief="yes" merge="longest"/>
 	<metadata name="title-dates" brief="yes" merge="longest"/>
 	<metadata name="title-medium" brief="yes" merge="longest"/>
-	<metadata name="title-number-section" brief="yes" merge="unique" mergekey="optional"/>
+	<metadata name="title-number-section" brief="yes" merge="unique"/>
 	<metadata name="title-complete"/>
 	<metadata name="medium" brief="yes" merge="unique" termlist="yes"/>
 	<metadata name="iii-id" brief="yes" merge="no"/>
@@ -115,7 +113,7 @@
 	<metadata name="locallocation" brief="yes"/>
 	<metadata name="callnumber" brief="yes"/>
 	<metadata name="publicnote" brief="yes"/>
-	
+
 	<!-- journals -->
 	<metadata name="journal-title" brief="yes" merge="unique"/>
 	<metadata name="journal-title-abbrev" merge="unique"/>
@@ -124,14 +122,14 @@
 	<metadata name="issue-number" brief="yes" merge="unique"/>
 	<metadata name="issue-date"/>
 	<metadata name="pages-number" brief="yes" merge="unique"/>
-		
+
 	<metadata name="url_recipe" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="open_url_resolver" setting="parameter" merge="no"/>
 	<metadata name="open-url" merge="longest"/>
 	<metadata name="use_url_proxy" setting="postproc" brief="yes" merge="no"/>
 	<metadata name="catalogue-url" brief="yes"/>
 	<metadata name="parent-catalogue-url" brief="yes"/>
-		
+
 	<metadata name="publisher"/>
 	<metadata name="available"/>
 	<metadata name="due"/>
@@ -141,5 +139,8 @@
 	<metadata name="creator" brief="yes" merge="unique"/>
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
-	
+
+	<metadata name="merge-title" mergekey="required"/>
+	<metadata name="merge-author" mergekey="optional"/>
+
 </service>

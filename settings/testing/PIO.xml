@@ -4,7 +4,7 @@
 -->
 
 	<set target="pio.chadwyck.co.uk:210/pio" name="pz:name" value="PIO"/>
- 
+
   	<!-- prefix for building the catalogue link -->
 	<set name="catalogueURLHintPrefix" value="http://gateway.proquest.com/openurl?url_ver=Z39.88-2004&amp;res_dat=xri:pio:&amp;rft_dat=xri:pio:article:"/>
 
@@ -26,6 +26,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml"/>
-	<set name="pz:xslt" value="xsl/PIO.xsl,pazpar2-etc/tmarc.xsl,xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="xsl/PIO.xsl,pazpar2-etc/tmarc.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
 
 </settings>
