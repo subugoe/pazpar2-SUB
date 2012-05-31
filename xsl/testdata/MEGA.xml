@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnam a22yyyyy cc4500</l>
+  <c001>668931833</c001>
+  <c003>DE-601</c003>
+  <c005>20120105144446.0</c005>
+  <c008>110927s2011                  000 0 ger d</c008>
+  <d020 i1=" " i2=" ">
+    <sa>978-3-05-004673-0</sa>
+  </d020>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)GBV668931833</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>ger</sa>
+    <sa>eng</sa>
+  </d041>
+  <d100 i1="1" i2=" ">
+    <sa>Marx, Karl</sa>
+    <s0>(DE-601)134253078</s0>
+  </d100>
+  <d245 i1="1" i2="0">
+    <sa>Gesamtausgabe</sa>
+    <sb> : (MEGA)</sb>
+    <sn>Abt. 4</sn>
+    <sp>Exzerpte, Notizen, Marginalien</sp>
+    <sn>Bd. 26</sn>
+    <sp>Exzerpte und Notizen zur Geologie, Mineralogie und Agrikulturchemie : März bis September 1878</sp>
+    <sn>Text</sn>
+    <sp>[...]</sp>
+    <sc>Karl Marx; Friedrich Engels. Hrsg. von der Internationalen Marx-Engels-Stiftung</sc>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>Berlin</sa>
+    <sb>Akad.-Verl.</sb>
+    <sc>2011</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>XII, 679 S.</sa>
+    <sb>Ill., graph. Darst., Kt.</sb>
+    <se>Diakritische Zeichen und Siglen (1 Bl.)</se>
+  </d300>
+  <d700 i1="1" i2=" ">
+    <sa>Griese, Anneliese</sa>
+    <s0>(DE-601)521408725</s0>
+  </d700>
+  <d700 i1="1" i2=" ">
+    <sa>Krüger, Peter</sa>
+    <s0>(DE-601)080453104</s0>
+  </d700>
+  <d700 i1="1" i2=" ">
+    <sa>Engels, Friedrich</sa>
+    <se>Associated name</se>
+    <s4>asn</s4>
+    <s0>(DE-601)134253108</s0>
+  </d700>
+  <d710 i1="2" i2=" ">
+    <sa>Internationale Marx-Engels-Stiftung</sa>
+    <s0>(DE-601)12891887X</s0>
+  </d710>
+  <d773 i1="0" i2="8">
+    <sq>4,26,1.2011</sq>
+    <sw>(DE-601)033718334</sw>
+  </d773>
+  <d856 i1="4" i2="2">
+    <sy>Inhaltsverzeichnis</sy>
+    <su>http://www.gbv.de/dms/weimar/toc/668931833_toc.pdf</su>
+    <sm>V:DE-601;DE-Wim2</sm>
+    <s3>Inhaltsverzeichnis</s3>
+  </d856>
+  <d900 i1=" " i2=" ">
+    <sa>GBV</sa>
+    <sb>SUB+Uni Göttingen &lt;7&gt;</sb>
+    <sd>!BBWISO! 3 : IX d 2 Mar</sd>
+    <sx>N</sx>
+    <sz>N</sz>
+    <ss>7/148</ss>
+  </d900>
+  <d954 i1=" " i2=" ">
+    <sa>40</sa>
+    <sb>127062380X</sb>
+    <sz>7$223147737</sz>
+    <sc>01</sc>
+    <sf>BBWISO</sf>
+    <sd>3 : IX d 2 Mar</sd>
+    <se>i</se>
+    <sx>7/148</sx>
+  </d954>
+</r>
+
