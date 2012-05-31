@@ -60,7 +60,15 @@
 					* only use the part of the field content before the comma
 			-->
 			<pz:metadata type="merge-author">
-				<xsl:value-of select="substring-before(pz:metadata[@type='author'][1], ',')"/>
+				<xsl:variable name="first-author" select="pz:metadata[@type='author'][1]"/>
+				<xsl:choose>
+					<xsl:when test="contains($first-author, ',')">
+						<xsl:value-of select="substring-before($first-author, ',')"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="$first-author"/>
+					</xsl:otherwise>
+				</xsl:choose>
 			</pz:metadata>
 
 		</xsl:copy>
