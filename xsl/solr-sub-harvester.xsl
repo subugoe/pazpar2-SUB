@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Post-processes solr records coming from the SUB Harvesting Solr server.
-	
+
 	2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
@@ -9,7 +9,7 @@
 	version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:pz="http://www.indexdata.com/pazpar2/1.0">
-	
+
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
 	<xsl:template match="@*|node()">
@@ -19,6 +19,18 @@
 	</xsl:template>
 
 
+	<xsl:template match="pz:metadata[@type='author']">
+		<pz:metadata type="author">
+			<xsl:choose>
+				<xsl:when test="contains(., ';')">
+					<xsl:value-of select="normalize-space(substring-before(., ';'))"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="."/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</pz:metadata>
+	</xsl:template>
 
 	<xsl:template match="pz:metadata[@type='publisher']">
 		<pz:metadata type="publication-name">
