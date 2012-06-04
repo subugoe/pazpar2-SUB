@@ -65,6 +65,7 @@
 
 
 	<xsl:template match="pz:metadata[@type='type']">
+
 		<pz:metadata type="medium">
 			<xsl:choose>
 				<xsl:when test=".='text'">article</xsl:when>
@@ -72,6 +73,7 @@
 				<xsl:when test=".='book'">book</xsl:when>
 				<xsl:when test=".='proceeding'">book</xsl:when>
 				<xsl:when test=".='monograph'">book</xsl:when>
+				<xsl:when test=".='oai'">electronic</xsl:when>
 				<!-- unclean: keep original media type string -->
 				<xsl:otherwise>electronic</xsl:otherwise>
 			</xsl:choose>

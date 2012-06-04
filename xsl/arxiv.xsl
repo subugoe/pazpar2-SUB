@@ -40,6 +40,10 @@
 	</xsl:template>
 
 
+	<!-- All records are of type 'electronic' -->
+	<xsl:template match="pz:metadata[@type='medium']">
+		<pz:metadata type="medium">electronic</pz:metadata>
+	</xsl:template>
 
 
 </xsl:stylesheet>
