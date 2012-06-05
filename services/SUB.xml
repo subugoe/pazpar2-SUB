@@ -24,6 +24,7 @@
 
 
 	<settings src="settings/GoeScholar.xml"/>
+	<settings src="settings/GEO-LEO-edocs.xml"/>
 
 
 
