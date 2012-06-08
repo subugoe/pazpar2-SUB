@@ -21,12 +21,35 @@
 		</xsl:copy>
 	</xsl:template>
 
-	<!-- Set media type to website for all records -->
 	<xsl:template match="pz:record">
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
-			<pz:metadata type="medium">website</pz:metadata>
 		</xsl:copy>
+	</xsl:template>
+
+
+	<xsl:template match="pz:metadata[@type='Type']">
+		<pz:metadata type="medium">
+			<xsl:choose>
+				<xsl:when test=". = 'on'">website</xsl:when>
+				<xsl:when test=". = 'Article'">article</xsl:when>
+				<xsl:when test=". = 'Conference Article'">article</xsl:when>
+				<xsl:when test=". = 'Conference Proceedings'">book</xsl:when>
+				<xsl:when test=". = 'Habilitation'">book</xsl:when>
+				<xsl:when test=". = 'Journal'">journal</xsl:when>
+				<xsl:when test=". = 'Monograph'">book</xsl:when>
+				<xsl:when test=". = 'Movie'">audio-visual</xsl:when>
+				<xsl:when test=". = 'Multivolume Work'">book</xsl:when> <!-- apparently used for volumes in a multivolume work -->
+				<xsl:when test=". = 'Periodical Volume'">journal</xsl:when>
+				<xsl:when test=". = 'Project'">website</xsl:when>
+				<xsl:when test=". = 'Report'">book</xsl:when>
+				<xsl:when test=". = 'Review'">article</xsl:when>
+				<xsl:when test=". = 'Serial Material'">multivolume</xsl:when> <!-- apparently used the multivolume work itself -->
+				<xsl:when test=". = 'Thesis'">book</xsl:when>
+				<xsl:when test=". = 'Video'">audio-visual</xsl:when>
+				<xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+			</xsl:choose>
+		</pz:metadata>
 	</xsl:template>
 
 
@@ -56,34 +79,38 @@
 		</pz:metadata>
 	</xsl:template>
 
-
-
-	<!--
-		Site information, all mapped to description. Use data from fields:
-			1. Description
-			2. Notes
-	-->
-	<xsl:template match="pz:metadata[@type='Description']">
-		<pz:metadata type="description">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-	<xsl:template match="pz:metadata[@type='Notes']">
-		<pz:metadata type="description">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-
-	<xsl:template match="pz:metadata[@type='MSCverbal']">
-		<pz:metadata type="subject">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
 	<xsl:template match="pz:metadata[@type='Title']">
 		<pz:metadata type="title">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Journal']">
+		<pz:metadata type="journal-title">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Volume']">
+		<pz:metadata type="volume-number">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Issue']">
+		<pz:metadata type="issue-number">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Page']">
+		<pz:metadata type="pages-number">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Year']">
+		<pz:metadata type="date">
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
@@ -94,8 +121,22 @@
 		</pz:metadata>
 	</xsl:template>
 
+	<!-- Classification information, mapped to the respective classification fields. -->
 	<xsl:template match="pz:metadata[@type='DDC']">
-		<pz:metadata type="ddc">
+		<pz:metadata type="classification-ddc">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='MSC']">
+		<pz:metadata type="classification-msc">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<!-- Textual subject information, all mapped to 'subject'. -->
+	<xsl:template match="pz:metadata[@type='MSCverbal']">
+		<pz:metadata type="subject">
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
@@ -112,12 +153,67 @@
 		</pz:metadata>
 	</xsl:template>
 
+	<!-- Description fields, populated from:
+			* Translated (English titles for texts, e.g. from RusDML)
+			* Description
+			* Notes
+			* Size/Quality
+	-->
+	<xsl:template match="pz:metadata[@type='Translated']">
+		<pz:metadata type="description">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Description']">
+		<pz:metadata type="description">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Notes']">
+		<pz:metadata type="description">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Size/Quality']">
+		<pz:metadata type="description">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Zbl']">
+		<pz:metadata type="description">
+			<xsl:text>Zbl </xsl:text>
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='MR']">
+		<pz:metadata type="electronic-url" note="MathSciNet Review">
+			<xsl:text>http://www.ams.org/mathscinet-getitem?mr=</xsl:text>
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+
+	<!-- Data origin information. -->
 	<xsl:template match="pz:metadata[@type='Data_Source']">
 		<pz:metadata type="creator">
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
 
+	<xsl:template match="pz:metadata[@type='Contained_in']">
+		<xsl:if test="not(substring(., 1, 4) = 'http')">
+			<pz:metadata type="edition">
+				<xsl:value-of select="."/>
+			</pz:metadata>
+		</xsl:if>
+	</xsl:template>
+
+	<!-- Media Types -->
 	<xsl:template match="pz:metadata[@type='Source_Code']">
 		<pz:metadata type="source-type">
 			<xsl:choose>
@@ -145,16 +241,16 @@
 		</pz:metadata>
 	</xsl:template>
 
+	<!-- Country -->
 	<xsl:template match="pz:metadata[@type='Country']">
 		<pz:metadata type="country">
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
 
-
-	<!--
-		Call languageCodeConverter template from iso-639-1-to-639-2b.xsl.
-		Use the first two characters of the field content only.
+	<!-- Language:
+			* Call languageCodeConverter template from iso-639-1-to-639-2b.xsl.
+			* Use the first two characters of the field content only.
 	-->
 	<xsl:template match="pz:metadata[@type='Language']">
 		<pz:metadata type="language">
