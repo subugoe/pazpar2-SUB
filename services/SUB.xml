@@ -20,6 +20,7 @@
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
 	<settings>
 		<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+		<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:maxrecs" value="250"/>
 	</settings>
 
 
