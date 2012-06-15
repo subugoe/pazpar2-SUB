@@ -132,6 +132,18 @@
 
 
 	<!--
+		GBV (just like SWB) use field 689 for local keywords (Pica field 044K).
+		Map those to 690.
+	-->
+	<xsl:template match="tmarc:d689">
+		<tmarc:d690>
+			<xsl:apply-templates select="@*|node()"/>
+		</tmarc:d690>
+	</xsl:template>
+
+
+
+	<!--
 		Kill 900 and 954 fields with library information.
 		There tend to be many of those and we don't use them.
 	-->
