@@ -60,5 +60,7 @@
 	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/medium-website.xsl,xsl/merge-fields.xsl"/>
 	<!-- DigReg: create journal-subpart field from the metadata -->
 	<set name="pz:xslt" target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/journal-subpart-creator.xsl,xsl/fulltext-urls.xsl,xsl/merge-fields.xsl"/>
-
+	<!-- JfM -->
+	<set name="pz:xslt" target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" value="pazpar2/etc/solr-pz2.xsl,xsl/jfm-id.xsl,xsl/solr-Guide-postprocess.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="catalogueURLHintPrefix" value="http://www.emis.de/cgi-bin/jfmen/MATH/JFM/quick.html?first=1&amp;maxdocs=1&amp;type=html&amp;format=complete&amp;an="/>
 </settings>

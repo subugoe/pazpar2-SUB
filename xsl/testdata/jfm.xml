@@ -1,0 +1,41 @@
+<doc>
+<arr name="Author">
+<str>Basset, A. B.</str>
+</arr>
+<arr name="Description">
+<str>JFM 32.0593.01 (Data of JFM: JFM 36.0650.05; Copyright 2005 Jahrbuch Database used with permission)</str>
+</arr>
+<arr name="Editor">
+<str>Basset, Alfred Barnard</str>
+</arr>
+<arr name="Keywords">
+<str>elimination theory</str>
+<str>ideal theory of polynomial rings in several variables</str>
+<str>zeros of power series</str>
+</arr>
+<arr name="Language">
+<str>en</str>
+</arr>
+<str name="MD_Created">2006-05-11T17:05:23Z</str>
+<str name="MD_Revised">2012-06-15T14:46:14-154441/19090Z</str>
+<arr name="MSC">
+<str>14A25</str>
+</arr>
+<str name="Number">00154461</str>
+<str name="Person">For the first part, see JFM35.0229.06.</str>
+<str name="Referred_in">Zbl 0860.65029</str>
+<arr name="Reviewer">
+<str>Müller, R.</str>
+<str>Prof.</str>
+</arr>
+<str name="Source">New York: Macmillan. XVI u. 255 S. $8^{\text{vo}}$ (s. F. d. M. 32, 593, 1901). (1901) XXX</str>
+<arr name="Source_Type">
+<str>B</str>
+</arr>
+<arr name="Title">
+<str>An elementary treatise on cubic and quartic curves</str>
+</arr>
+<str name="Zbl-Nr.">36.0650.05</str>
+<str name="db">jfm</str>
+<str name="id">jfm_00154461</str>
+</doc>

@@ -21,13 +21,7 @@
 		</xsl:copy>
 	</xsl:template>
 
-	<xsl:template match="pz:record">
-		<xsl:copy>
-			<xsl:apply-templates select="@*|node()"/>
-		</xsl:copy>
-	</xsl:template>
-
-
+	<!-- Type: Media Types for digreg -->
 	<xsl:template match="pz:metadata[@type='Type']">
 		<pz:metadata type="medium">
 			<xsl:choose>
@@ -52,15 +46,18 @@
 		</pz:metadata>
 	</xsl:template>
 
+	<!-- Source_Type: Media Types for jfm -->
+	<xsl:template match="pz:metadata[@type='Source_Type']">
+		<pz:metadata type="medium">
+			<xsl:choose>
+				<xsl:when test=". = 'B'">book</xsl:when> <!-- Book -->
+				<xsl:when test=". = 'D'">book</xsl:when> <!-- Dissertation -->
+				<xsl:when test=". = 'J'">article</xsl:when> <!-- Journal Article -->
+				<xsl:otherwise>article</xsl:otherwise> <!-- Let everything else appear as an article as well -->
+			</xsl:choose>
+		</pz:metadata>
+	</xsl:template>
 
-	<!--
-		Possibly 3 fields in our Solr data:
-			1. Author: site owner -> author
-			2. Editor: -> other-person
-			2. Publisher: (institutional site owner) -> title-responsibility
-			3. Distributor: (only in old records) -> ignored
-			4. Autor: metadata author -> ignored
-	-->
 	<xsl:template match="pz:metadata[@type='Author']">
 		<pz:metadata type="author">
 			<xsl:value-of select="."/>
@@ -76,11 +73,47 @@
 	<xsl:template match="pz:metadata[@type='Editor']">
 		<pz:metadata type="other-person">
 			<xsl:value-of select="."/>
+			<xsl:text> (Ed.)</xsl:text>
 		</pz:metadata>
 	</xsl:template>
 
 	<xsl:template match="pz:metadata[@type='Title']">
 		<pz:metadata type="title">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='ISBN/ISSN']">
+		<xsl:choose>
+			<xsl:when test="substring(., 1, 4) = 'ISBN'">
+				<pz:metadata type="isbn">
+					<xsl:value-of select="normalize-space(substring(., 5))"/>
+				</pz:metadata>
+			</xsl:when>
+			<xsl:when test="substring(., 1, 4) = 'ISSN'">
+				<pz:metadata type="issn">
+					<xsl:value-of select="normalize-space(substring(., 5))"/>
+				</pz:metadata>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+
+	<!-- In JfM 'Source' contains information about the 'container' of the current item. -->
+	<xsl:template match="pz:metadata[@type='Source']">
+		<pz:metadata>
+			<xsl:attribute name="type">
+				<xsl:choose>
+					<xsl:when test="../pz:metadata[@type='Journal']">
+						<xsl:text>journal-subpart</xsl:text>
+					</xsl:when>
+					<xsl:when test="../pz:metadata[@type='Source_Type'] = 'B' or ../pz:metadata[@type='Source_Type'] = 'D'">
+						<xsl:text>title-remainder</xsl:text>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>journal-title</xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:attribute>
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
@@ -183,7 +216,7 @@
 		</pz:metadata>
 	</xsl:template>
 
-	<xsl:template match="pz:metadata[@type='Zbl']">
+	<xsl:template match="pz:metadata[@type='Zbl'] | pz:metadata[@type='Zbl-Nr.']">
 		<pz:metadata type="description">
 			<xsl:text>Zbl </xsl:text>
 			<xsl:value-of select="."/>

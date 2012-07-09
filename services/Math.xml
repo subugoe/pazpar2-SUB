@@ -33,22 +33,16 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/*" name="pz:maxrecs" value="100"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:maxrecs" value="100"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Digitalisate"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:maxrecs" value="100"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
 	</settings>
 
 
 	<settings src="settings/testing/SUB-Guides.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:2020/diss" name="pz:name" value="Dissertationen"/>
-	</settings>
-
-
-	<settings src="settings/testing/zebra-vifamath.xml"/>
-	<settings>
-		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
 	</settings>
 
 	<settings src="settings/fiz-elibm.xml"/>
