@@ -20,8 +20,9 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/*" name="pz:maxrecs" value="250"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:maxrecs" value="250"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
 	</settings>
 
 
