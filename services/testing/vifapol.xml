@@ -8,6 +8,8 @@
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
+		<set target="sru.gbv.de/opac-de-18-ssgpol" name="pz:name" value="Fachopac Politik &amp; Friedensforschung"/>
+
 		<set target="sru.gbv.de/olcssg-pol" name="pz:name" value="OLC Politik &amp; Friedensforschung"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-pol" value="1"/>
 		<set target="sru.gbv.de/olcssg-zge" name="pz:name" value="OLC Zeitgeschichte"/>
