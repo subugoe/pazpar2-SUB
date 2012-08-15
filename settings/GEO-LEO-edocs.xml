@@ -1,4 +1,5 @@
-<settings target="e-docs.geo-leo.de/SRW/search/">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="e-docs.geo-leo.de/SRW/search/" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the GEO-LEO edocs DSpace server SRU interface.
 

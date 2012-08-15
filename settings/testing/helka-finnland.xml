@@ -1,4 +1,5 @@
-<settings target="linnea1.linneanet.fi:7590/voyager">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="linnea1.linneanet.fi:7590/voyager" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	Helka, Finland
 	Address from Google search

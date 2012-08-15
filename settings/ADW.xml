@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="adw-digital.sub.uni-goettingen.de/SRW/search/">
+<settings target="adw-digital.sub.uni-goettingen.de/SRW/search/" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	ADW DSpace Target.
 	* Standard DSpace settings

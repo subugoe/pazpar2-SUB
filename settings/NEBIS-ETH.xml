@@ -1,4 +1,5 @@
-<settings target="opac.nebis.ch:9909/NEBIS_UTF">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="opac.nebis.ch:9909/NEBIS_UTF" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for querying the NEBIS Z39.50 server
 	* documentation: http://www.nebis.ch/technik/z3950.html

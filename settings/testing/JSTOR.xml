@@ -1,4 +1,5 @@
-<settings target="z3950.uvt.nl:9997/jstor">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="z3950.uvt.nl:9997/jstor" xmlns="http://www.indexdata.com/pazpar2/1.0">
 
 	<set name="pz:name" value="JSTOR (alt)"/>
 

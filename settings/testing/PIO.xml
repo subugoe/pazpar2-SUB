@@ -1,4 +1,5 @@
-<settings target="pio.chadwyck.co.uk:210/pio">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="pio.chadwyck.co.uk:210/pio" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	PIO/Chadwyck Server.
 -->

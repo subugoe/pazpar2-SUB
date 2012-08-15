@@ -1,4 +1,5 @@
-<settings target="z3950.bsz-bw.de:20215/swb">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="z3950.bsz-bw.de:20215/swb" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the Z39.50 service of BSZ/SWB, displayed as
 	UB Freiberg records.

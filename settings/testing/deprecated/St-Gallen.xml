@@ -1,4 +1,5 @@
-<settings target="130.82.41.51:9995/SGB_IDS">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="130.82.41.51:9995/SGB_IDS" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for querying the St. Gallen Z39.50 server
 

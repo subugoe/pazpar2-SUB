@@ -1,4 +1,5 @@
-<settings target="z3950.gbv.de:20012/*">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="z3950.gbv.de:20012/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	GBV Z39.50 Targets:
 	transformations:
@@ -13,7 +14,7 @@
 	<!--
 		Default Search settings:
 		* ANDed word search for most fields (s=al)
-		* no truncation by default but giving the user the option to 
+		* no truncation by default but giving the user the option to
 			opt for right truncation by adding a ? (t=r)
 		* use attributes are Pica IKT numbers
 	-->
@@ -26,16 +27,16 @@
 
 	<!-- Logic for recognising date ranges is built into the index, we can send the string right there -->
 	<set name="pz:cclmap:date" value="u=9000"/>
-	
+
 	<set name="pz:cclmap:isbn" value="u=7"/>
 	<set name="pz:cclmap:issn" value="u=8"/>
 
 
-	<!-- Lokale Klassifikation for GOK subject search, LKL (5010) 
+	<!-- Lokale Klassifikation for GOK subject search, LKL (5010)
 		 Right-truncated phrase search for LKL (in fact this index is phrase search-only)
 	-->
 	<set name="pz:cclmap:lkl" value="u=5010 s=1 t=1"/>
-	
+
 	<!-- NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search -->
 	<set name="pz:cclmap:dtm" value="u=8064 t=1"/>
 

@@ -1,4 +1,5 @@
-<settings target="134.76.163.148:2010/*">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="134.76.163.148:2010/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	GEO-LEO Zebra server on port 2010
 	4 different services running:
@@ -6,9 +7,9 @@
 	* thesis
 	* repro
 	* digi
-	
+
 	All records are returned as 'electronic' medium after XSLT processing.
-	
+
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 	<set target="134.76.163.148:2010/thesis" name="pz:name" value="Dissertations- und Habilitationsserver"/>

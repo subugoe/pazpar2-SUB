@@ -1,4 +1,5 @@
-<settings target="copac.ac.uk:3000/copac">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="copac.ac.uk:3000/copac" xmlns="http://www.indexdata.com/pazpar2/1.0">
 
   <set target="copac.ac.uk:3000/copac"
 		  name="pz:name" value="COPAC (SRU)"/>

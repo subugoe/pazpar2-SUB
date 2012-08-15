@@ -1,11 +1,12 @@
-<settings target="134.76.176.48*">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="134.76.176.48*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	vifamath Zebra server
 	3 different services running:
 	* arXiv on :2021/arxiv
 	* jfm on :2020/jfm
 	* ELibM on :3954/ElibM
-	
+
 	2010-2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
@@ -14,7 +15,7 @@
 
 	<set target="134.76.176.48:2020/jfm" name="catalogueURLHintPrefix" value="http://www.emis.de/cgi-bin/jfmen/MATH/JFM/quick.html?first=1&amp;maxdocs=1&amp;type=html&amp;format=complete&amp;an="/>
 	<set target="134.76.176.48:2020/jfm" name="pz:xslt" value="xsl/jfm-languages.xsl,xsl/ZMath-doctypes.xsl,xsl/ZMath.xsl,xsl/catalogue-url-hint+id.xsl"/>
-	
+
 	<set target="134.76.176.48:3954/ElibM" name="pz:xslt" value="xsl/elibm-languages.xsl,xsl/ZMath-doctypes.xsl,xsl/ZMath.xsl"/>
 
 
@@ -34,7 +35,7 @@
 	<set name="pz:requestsyntax" value="xml"/>
 	<set name="pz:queryencoding" value="utf-8"/>
 	<set name="pz:elements" value="F"/>
-	
+
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
 
 </settings>

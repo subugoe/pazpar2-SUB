@@ -1,4 +1,5 @@
-<settings target="ssgfi1.sub.uni-goettingen.de:2020/*">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="ssgfi1.sub.uni-goettingen.de:2020/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	Settings for Z39.50 Interface to Allegro Databases with
 	SSG-FI Guides.

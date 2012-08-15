@@ -1,4 +1,5 @@
-<settings target="z3950.libris.kb.se/*">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="z3950.libris.kb.se/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	For of the catalogues of Sweden’s national library.
 

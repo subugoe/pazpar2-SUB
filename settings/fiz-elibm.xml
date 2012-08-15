@@ -1,4 +1,5 @@
-<settings target="elibm.fiz-karlsruhe.de/srw/search/escidoc_all">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="elibm.fiz-karlsruhe.de/srw/search/escidoc_all" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	FIZ Karlsruhe SRU Server for ELibM
 

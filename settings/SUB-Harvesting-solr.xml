@@ -1,4 +1,5 @@
-<settings target="vlib.sub.uni-goettingen.de/solr/*">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="vlib.sub.uni-goettingen.de/solr/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

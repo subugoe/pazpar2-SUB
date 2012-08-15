@@ -1,4 +1,5 @@
-<settings target="agricola.nal.usda.gov:7190/Voyager">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="agricola.nal.usda.gov:7190/Voyager" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	United States Department of Agriculture
 	National Agricultural Library Article Database Z39.50 Interface

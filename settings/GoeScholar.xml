@@ -1,4 +1,5 @@
-<settings target="goedoc.uni-goettingen.de:8080/SRW/search/DSpace">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="goedoc.uni-goettingen.de:8080/SRW/search/DSpace" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the GoeScholar DSpace server SRU interface.
 

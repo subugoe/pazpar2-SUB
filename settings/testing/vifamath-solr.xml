@@ -1,4 +1,5 @@
-<settings target="134.76.176.48:8983/solr">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="134.76.176.48:8983/solr" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	2011: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

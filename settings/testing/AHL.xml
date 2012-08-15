@@ -1,4 +1,5 @@
-<settings target="zgw.ebscohost.com/*">
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="zgw.ebscohost.com/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	America: History and Life bei EBSCOHost.
 
