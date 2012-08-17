@@ -8,13 +8,12 @@
 	Targets used for GEO-LEO
 	* GBV Databases, including Göttingen Opac, via SRU
 	* SSG-FI Guide via Solr
-	* SWB Catalogue search via Z39.50 with condition to search in Freiberg only
-	* Geo Zebra Server: Dokumentenserver, DigiZeitschriften, Retrodigitalisate,
-		Dissertations- und Habilitationsserver
+	* SWB Catalogue search via Z39.50
 	* NEBIS/ETH Zürich
 	* NAL
 	* Institut für Länderkunde (IfL)
-	* GEO-LEO edocs DSpace SRU interface
+	* Solr Index from OAI-Harvesting: Repositories, Digitised Works
+	* GEO-LEO e-docs DSpace SRU interface
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -57,7 +56,8 @@
 	<settings src="settings/GEO-LEO-edocs.xml"/>
 
 
-	<xi:include href="metadata-SUB.xml"/>
+
 	<metadata name="subject" brief="yes" merge="unique"/>
+	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>

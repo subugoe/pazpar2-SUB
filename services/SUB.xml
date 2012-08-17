@@ -13,7 +13,6 @@
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/olc" name="pz:name" value="Online Contents"/>
@@ -33,6 +32,7 @@
 	<settings src="settings/GEO-LEO-edocs.xml"/>
 
 
-	<xi:include href="metadata-SUB.xml"/>
+
+	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>

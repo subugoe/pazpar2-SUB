@@ -13,8 +13,7 @@
 
 	<settings>
 		<set target="*" name="pz:maxrecs" value="1000"/>
-	</settings>>
-
+	</settings>
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
@@ -22,6 +21,7 @@
 	</settings>
 
 
-	<xi:include href="metadata-SUB.xml"/>
+
+	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>

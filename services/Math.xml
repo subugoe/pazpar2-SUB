@@ -13,6 +13,7 @@
 	* SUB Solr Indexes (SSGFI1):
 		* Math Guide
 		* Digitalisate
+		* Jahrbuch-Datenbank
 	* SUB Solr Indexes (Harvesting):
 		* arXiv
 	* FIZ Karlsruhe (SRU): ElibM
@@ -20,7 +21,6 @@
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
-
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
@@ -58,6 +58,7 @@
 	</settings>
 
 
-	<xi:include href="metadata-SUB.xml"/>
+
+	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>

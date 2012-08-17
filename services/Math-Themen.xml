@@ -8,6 +8,11 @@
 	Targets used for vifamath Subject Search:
 	* fachopac-mat via GBV SRU interface
 	* SSG-FI Guide Databases via Solr interface
+		* Math-Guide
+		* Jahrbuch-Datenbank
+	* SUB Solr Indexes (Harvesting):
+		* arXiv
+	* FIZ Karlsruhe (SRU): ElibM
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -39,6 +44,7 @@
 	<settings src="settings/fiz-elibm.xml"/>
 
 
-	<xi:include href="metadata-SUB.xml"/>
+
+	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>

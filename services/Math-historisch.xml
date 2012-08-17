@@ -25,6 +25,7 @@
 	</settings>
 
 
-	<xi:include href="metadata-SUB.xml"/>
+
+	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>

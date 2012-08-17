@@ -10,13 +10,13 @@
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature Guide"/>
 	</settings>
 
 
-	<xi:include href="metadata-SUB.xml"/>
+
+	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>
