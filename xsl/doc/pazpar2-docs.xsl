@@ -57,17 +57,27 @@
 
 		<h3>Included Services</h3>
 		<ul>
-			<xsl:for-each select="pz2:include[@src]">
+			<xsl:for-each select="pz2:include[@src]|xi:include[@href]">
+				<xsl:variable name="path">
+					<xsl:choose>
+						<xsl:when test="@src">
+							<xsl:value-of select="@src"/>
+						</xsl:when>
+						<xsl:when test="@href">
+							<xsl:value-of select="@href"/>
+						</xsl:when>
+					</xsl:choose>
+				</xsl:variable>
 				<li>
 					<span class="name">
-						<xsl:value-of select="document(@src)/pz2:service/@id"/>
+						<xsl:value-of select="document($path, .)/pz2:service/@id"/>
 					</span>
 					<xsl:text> </xsl:text>
 					<a class="path">
 						<xsl:attribute name="href">
-							<xsl:value-of select="@src"/>
+							<xsl:value-of select="$path"/>
 						</xsl:attribute>
-						<xsl:value-of select="@src"/>
+						<xsl:value-of select="$path"/>
 					</a>
 				</li>
 			</xsl:for-each>
