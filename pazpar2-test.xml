@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="xsl/doc/pazpar2-docs.xsl"?>
-<pazpar2 xmlns="http://www.indexdata.com/pazpar2/1.0">
+<pazpar2
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude">
 
 
 <!-- non-zero to enable threaded operation -->
 <threads number="4"/>
 
-<server>
-	<listen host="localhost" port="9004"/>
-	<proxy host="localhost" port="80"/>
+	<server>
+		<listen host="localhost" port="9004"/>
+		<proxy host="localhost" port="80"/>
 
-	<!-- Testing -->
-
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="services/AAC.xml"/>
-
+		<!-- Testing -->
+		<xi:include href="services/AAC.xml"/>
 
 
-	<icu_chain id="relevance" locale="en">
-		<transform rule="[:Control:] Any-Remove"/>
-		<tokenize rule="l"/>
-		<transform rule="[[:WhiteSpace:][:Punctuation:]] Remove"/>
-		<casemap rule="l"/>
-	</icu_chain>
 
-	<icu_chain id="sort" locale="en">
-		<transform rule="[[:Control:][:WhiteSpace:][:Punctuation:][:Math:]] Remove"/>
-		<casemap rule="l"/>
-	</icu_chain>
+		<icu_chain id="relevance" locale="en">
+			<transform rule="[:Control:] Any-Remove"/>
+			<tokenize rule="l"/>
+			<transform rule="[[:WhiteSpace:][:Punctuation:]] Remove"/>
+			<casemap rule="l"/>
+		</icu_chain>
 
-	<icu_chain id="mergekey" locale="en">
-		<tokenize rule="l"/>
-		<transform rule="NFC; [[:Control:][:WhiteSpace:][:Punctuation:][:Math:]] Remove"/>
-		<casemap rule="l"/>
-	</icu_chain>
+		<icu_chain id="sort" locale="en">
+			<transform rule="[[:Control:][:WhiteSpace:][:Punctuation:][:Math:]] Remove"/>
+			<casemap rule="l"/>
+		</icu_chain>
 
-</server>
+		<icu_chain id="mergekey" locale="en">
+			<tokenize rule="l"/>
+			<transform rule="NFC; [[:Control:][:WhiteSpace:][:Punctuation:][:Math:]] Remove"/>
+			<casemap rule="l"/>
+		</icu_chain>
+
+	</server>
 </pazpar2>
