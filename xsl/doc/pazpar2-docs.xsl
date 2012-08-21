@@ -489,7 +489,19 @@
 	<xsl:template name="html-head">
 		<xsl:copy>
 			<head>
-				<title>Title</title>
+				<title>
+					<xsl:text>pazpar2 </xsl:text>
+					<xsl:choose>
+						<xsl:when test="local-name(/*) = 'pazpar2'">
+							<xsl:text>Main configuration</xsl:text>
+						</xsl:when>
+						<xsl:when test="local-name(/*) = 'service'">
+							<xsl:text>Service configuration: </xsl:text>
+							<xsl:value-of select="/pz2:service/@id"/>
+						</xsl:when>
+					</xsl:choose>
+				</title>
+
 				<style type="text/css">
 					<![CDATA[
 					body {
