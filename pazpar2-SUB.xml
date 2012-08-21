@@ -65,7 +65,7 @@
 		</icu_chain>
 
 		<icu_chain id="mergekey" locale="en">
-			<tokenize rule="l"/>
+			<tokenize rule="s"/>
 			<transform rule="NFD; [[:Control:][:WhiteSpace:][:Punctuation:][:Symbol:][:Math:][:Nonspacing Mark:]] Remove; NFC"/>
 			<casemap rule="l"/>
 		</icu_chain>
