@@ -75,6 +75,7 @@
 	<set name="pz:cclmap:bkl" value="u=pica.bkl t=r"/>
 	<set name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
 	<set name="pz:cclmap:bib" value="u=pica.bib t=r"/>
+	<set name="pz:cclmap:language" value="u=pica.taa s=1"/>
 
 	<!-- … probably only available in opac-de-7. -->
 	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
