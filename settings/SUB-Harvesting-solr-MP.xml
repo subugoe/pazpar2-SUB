@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="localhost:9000/harvest/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<set name="pz:sru" value="get"/>
+	<set name="pz:sru_version" value="1.1"/>
+
+	<set name="pz:maxrecs" value="500"/>
+
+	<set name="pz:cclmap:term" value="s=al t=r"/>
+
+	<!-- full-text search; maps to unqualified search if it doesn’t exist -->
+	<set name="pz:cclmap:fulltext" value="s=al t=r"/>
+
+	<set name="pz:cclmap:title" value="1=dc.title s=al t=r"/>
+	<set name="pz:cclmap:person" value="1=dc.creator t=r"/>
+
+	<set name="pz:cclmap:date" value="1=dc.date r=r"/>
+
+	<set name="pz:cclmap:subject" value="1=dc.subject s=al t=r"/>
+	<set name="pz:cclmap:lkl" value="1=dc.subject.gok s=pw t=r"/>
+	<set name="pz:cclmap:msc" value="1=dc.subject.msc s=pw t=r"/>
+
+	<!--
+		Fake Search key for Freiberg classification, mapped to MSC field.
+		Should not return any results.
+	-->
+	<set name="pz:cclmap:fbg" value="1=dc.subject.msc s=1 t=r"/>
+
+
+	<!--
+		Passed to solr as the fl parameter: all fields we want solr to return.
+		We need to map these to the approriate pz:metadata fields in solr-postprocess.xsl.
+	-->
+	<set name="pz:elements" value="*"/>
+
+	<!-- Result normalization settings -->
+	<set name="pz:nativesyntax" value="xml;utf-8"/>
+
+	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
+	<set target="localhost:9000/harvest/digizeitschriften" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
+	<set target="localhost:9000/harvest/math-arxiv" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
+</settings>

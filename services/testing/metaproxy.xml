@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="metaproxy">
+<!--
+	Service for testing metaproxy targets.
+
+	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
+
+	<settings src="settings/SUB-Guides-solr-MP.xml"/>
+	<settings>
+		<set target="localhost:9000/ssgfi/history-guide" name="pz:name" value="History-Guide"/>
+		<set target="localhost:9000/ssgfi/literature-guide" name="pz:name" value="Literature-Guide"/>
+		<set target="localhost:9000/ssgfi/geo-guide" name="pz:name" value="Geo-Guide"/>
+		<set target="localhost:9000/ssgfi/forestry-guide" name="pz:name" value="Forestry-Guide"/>
+		<set target="localhost:9000/ssgfi/math-guide" name="pz:name" value="Math-Guide"/>
+		<set target="localhost:9000/ssgfi/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
+		<set target="localhost:9000/ssgfi/math-digreg" name="pz:name" value="Mathematik Digitalisate"/>
+	</settings>
+
+	<settings src="settings/SUB-Harvesting-solr-MP.xml"/>
+	<settings>
+		<set target="localhost:9000/harvest/geo-leo-artikel" name="pz:name" value="GEO Repositories"/>
+		<set target="localhost:9000/harvest/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
+		<set target="localhost:9000/harvest/math-arxiv" name="pz:name" value="Math arXiv"/>
+		<set target="localhost:9000/harvest/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+	</settings>
+
+
+	<xi:include href="../metadata/SUB-default.xml"/>
+
+</service>

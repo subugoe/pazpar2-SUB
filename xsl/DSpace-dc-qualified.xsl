@@ -2,7 +2,7 @@
 <!--
 	Converts DC Qualified metadata coming from Göttingen DSpace SRU interfaces.
 	These contains a few non-standard fields.
-		
+
 	2010-2012, Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 <xsl:stylesheet
@@ -16,7 +16,7 @@
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
 
-	<xsl:template match="srw_dc:dc">
+	<xsl:template match="srw_dc:dc|record">
 		<xsl:variable name="medium">
 			<xsl:choose>
 				<xsl:when test="dc:type='article' or dc:type='lecture' or dc:type='workingPaper'">
@@ -27,7 +27,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-	
+
 		<pz:record>
 
 			<pz:metadata type="id">
@@ -93,7 +93,7 @@
 						<pz:metadata type="journal-title">
 							<xsl:value-of select="dc:relation.ispartofseries"/>
 						</pz:metadata>
-				
+
 						<pz:metadata type="journal-subpart">
 							<xsl:if test="dc:bibliographicCitation.volume">
 								<xsl:text>Vol. </xsl:text>
@@ -151,12 +151,12 @@
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
-			
+
 			<xsl:for-each select="dc:relation.dfgviewer">
 				<pz:metadata type="electronic-url" note="DFG Viewer">
 					<xsl:value-of select="."/>
 				</pz:metadata>
-			</xsl:for-each>		
+			</xsl:for-each>
 
 			<xsl:for-each select="dc:identifier.uri">
 				<pz:metadata type="catalogue-url">
@@ -230,7 +230,7 @@
 		</pz:record>
 	</xsl:template>
 
-	
+
 
 	<!-- Kill stray text -->
 	<xsl:template match="text()"/>
