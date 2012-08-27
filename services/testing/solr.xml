@@ -14,9 +14,14 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math-Guide (Solr)"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History-Guide (Solr)"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Anglistik-Guide (Solr)"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/forst" name="pz:name" value="Forestry-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Mathematik Digitalisate"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Mathematik Dissertationen"/>
 	</settings>
 
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
@@ -24,6 +29,7 @@
 		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="GEO Repositories"/>
 		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
 		<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="Math arXiv"/>
+		<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
 	</settings>
 
 	<settings src="settings/testing/gbv-solr.xml"/>
