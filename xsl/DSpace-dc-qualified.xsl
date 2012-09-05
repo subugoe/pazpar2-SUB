@@ -194,6 +194,12 @@
 				</pz:metadata>
 			</xsl:for-each>
 
+			<xsl:for-each select="dc:description.sponsorship">
+				<pz:metadata type="description">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
 			<xsl:for-each select="dc:description.abstract">
 				<pz:metadata type="abstract">
 					<xsl:value-of select="."/>
