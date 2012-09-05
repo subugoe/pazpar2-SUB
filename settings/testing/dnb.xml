@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="services.d-nb.de/sru/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	Deutsche Nationalbibliothek SRU Server
+		* answers can be quite slow
+
+	use for ZDB data:
+		* http://www.zeitschriftendatenbank.de/services/schnittstellen/sru/
+		* no sort feature, gives a somewhat arbitrary order to items
+
+	Sep 2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<set name="pz:sru" value="get"/>
+	<set name="pz:sru_version" value="1.1"/>
+
+	<set name="pz:cclmap:term" value="u=cql.anywhere s=al t=r"/>
+	<set name="pz:cclmap:fulltext" value="u=cql.anywhere s=al t=r"/>
+
+	<set name="pz:cclmap:title" value="u=dc.title s=al t=r"/>
+	<set name="pz:cclmap:person" value="u=dc.contributor t=r"/>
+	<set name="pz:cclmap:subject" value="u=dnb.subject s=al t=r"/>
+
+	<!-- Logic for recognising date ranges is built into the index, we can send the string right there. -->
+	<set name="pz:cclmap:date" value="u=dc.date"/>
+
+	<set name="pz:cclmap:isbn" value="u=dnb.isbn t=r"/>
+	<set name="pz:cclmap:issn" value="u=dnb.iss t=r"/>
+
+
+	<!-- Map additional Pica search keys to pazpar2. -->
+	<set name="pz:cclmap:ddc" value="u=dnb.ddc t=r"/>
+	<set name="pz:cclmap:zdbid" value="u=dnb.zdbid t=r"/>
+	<set name="pz:cclmap:bib" value="u=dnb.sigel t=r"/>
+
+
+	<!-- SRU schema. Eg. "dc" or "marcxml" -->
+	<set name="pz:elements" value="MARC21-xml"/>
+
+
+	<!-- Result normalization settings -->
+	<set name="pz:nativesyntax" value="xml"/>
+	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,pazpar2-etc/tmarc.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+
+
+	<!-- Catalogue URLs -->
+	<set name="catalogueURLHintPrefix" target="services.d-nb.de/sru/zdb" value="http://dispatch.opac.d-nb.de/DB=1.1/PRS=HOL/PPNSET?PPN="/>
+
+</settings>
+

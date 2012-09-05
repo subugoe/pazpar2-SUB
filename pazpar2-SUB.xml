@@ -43,6 +43,7 @@
 		<xi:include href="services/testing/test.xml"/>
 		<xi:include href="services/testing/all.xml"/>
 		<xi:include href="services/testing/GVK.xml"/>
+		<xi:include href="services/testing/ZDB.xml"/>
 		<xi:include href="services/testing/solr.xml"/>
 		<xi:include href="services/testing/metaproxy.xml"/>
 		<xi:include href="services/testing/DSpace.xml"/>

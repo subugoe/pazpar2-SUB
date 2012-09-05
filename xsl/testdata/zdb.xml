@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<slim:record xmlns:slim="http://www.loc.gov/MARC21/slim" type="Bibliographic">
+    <slim:leader>00592nas a2200229 c 4500</slim:leader>
+    <slim:controlfield tag="001">02514295X</slim:controlfield>
+    <slim:controlfield tag="003">DE-101</slim:controlfield>
+    <slim:controlfield tag="005">20090508185452.0</slim:controlfield>
+    <slim:controlfield tag="007">tu</slim:controlfield>
+    <slim:controlfield tag="008">031001c19899999gw u||p|r ||| 0||||0ger c</slim:controlfield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-101</slim:subfield>
+      <slim:subfield code="a">02514295X</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="016" ind1="7" ind2=" ">
+      <slim:subfield code="2">DE-600</slim:subfield>
+      <slim:subfield code="a">2121558-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="035" ind1=" " ind2=" ">
+      <slim:subfield code="a">(DE-599)ZDB2121558-3</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="040" ind1=" " ind2=" ">
+      <slim:subfield code="a">0068</slim:subfield>
+      <slim:subfield code="b">ger</slim:subfield>
+      <slim:subfield code="c">DE-101</slim:subfield>
+      <slim:subfield code="d">9999</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="041" ind1=" " ind2=" ">
+      <slim:subfield code="a">ger</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="044" ind1=" " ind2=" ">
+      <slim:subfield code="c">XA-DE</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="084" ind1=" " ind2=" ">
+      <slim:subfield code="a">070</slim:subfield>
+      <slim:subfield code="q">DE-600</slim:subfield>
+      <slim:subfield code="2">sdnb</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="090" ind1=" " ind2=" ">
+      <slim:subfield code="n">fn</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="245" ind1="1" ind2="0">
+      <slim:subfield code="a">Gaga</slim:subfield>
+      <slim:subfield code="b">d. Kieler Stadtjournal</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="260" ind1="3" ind2=" ">
+      <slim:subfield code="a">Kiel</slim:subfield>
+      <slim:subfield code="b">[s.n.]</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="362" ind1="0" ind2=" ">
+      <slim:subfield code="a">1.1989; damit Ersch. eingest</slim:subfield>
+    </slim:datafield>
+    <slim:datafield tag="751" ind1=" " ind2=" ">
+      <slim:subfield code="0">(DE-588)2015398-3</slim:subfield>
+      <slim:subfield code="0">(DE-101)004741544</slim:subfield>
+      <slim:subfield code="a">Kiel</slim:subfield>
+      <slim:subfield code="4">dbp</slim:subfield>
+      <slim:subfield code="2">gnd</slim:subfield>
+    </slim:datafield>
+  </slim:record>
