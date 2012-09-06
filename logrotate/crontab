@@ -1,1 +1,0 @@
-0 4 * * 0 /usr/sbin/logrotate /home/vlib/pazpar2-SUB/logrotate/pazpar2.logrotate

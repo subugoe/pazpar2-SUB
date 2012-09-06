@@ -18,6 +18,14 @@
 #     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,
 #     USA.
 #
+#
+#
+#     SUSE Linux init script for pazpar2, adapted from SUSE template.
+#     2010-2012, Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+#
+#
+#
+#
 # /etc/init.d/FOO
 #   and its symbolic link
 # /(usr/)sbin/rcFOO

@@ -1,20 +1,25 @@
 # pazpar2 configuration files for SUB Göttingen
 
-This repository contains configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) metasearch daemon.
+This repository contains the configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) metasearch daemon for use at [SUB Göttingen](http://www.sub.uni-goettingen.de). 
 
-## Notes
-* The files »pazpar2-SUB.xml« and »pazpar2-test.xml« are configuration files pazpar2.
+
+## Contents
+* »pazpar2-SUB.xml« and »pazpar2-test.xml« are main configuration files for pazpar2.
 * The folder »services« configures services provided by pazpar2 using the various settings files.
-** It also contains the file »metadata.xml« with metadata settings shared by various services«
-* The folder »settings« contains settings for various Z39.50, SRU and Solr data targets.
-	* Not all of them are used. Those which are not used should be in »testing« subfolders and may be experimental and incomplete.
+	* It also contains the file »metadata.xml« with metadata settings shared by various services.
+	* The subfolder »testing« contains experimental, deprecated or unused services.
+* The folder »settings« contains settings for various Z39.50, SRU and Solr targets.
+	* The subfolder »testing« contains experimental, deprescated or unused settings.
 * The folder »xsl« contains XSLTs to normalise the loaded data. These are used by the files in »settings«.
-** It contains the stylesheet »xsl/pazpar2-docs.xsl« which converts pazpar2 XML configuration files to HTML pages. 
-* Index Data’s [pazpar2](http://git.indexdata.com/?p=pazpar2.git) and [yaz](http://git.indexdata.com/?p=yaz.git) git repositories are included as a submodule in the folders »pazpar2« and »yaz«.
-* The [subrepository in »pazpar2-etc«](https://github.com/ssp/pazpar2-etc) contains customised files (e.g. tmarc.xsl) from the pazpar2/etc folder. These are kept in a separate repository to enable using a cleanly checked out version of the software.
-* The folder »init.d« contains the init script to automatically start pazpar2 on SuSE Linux.
-* The folder »logrotate« contains a logrotate configuration and crontab entry.
-
+	* It contains the stylesheet »xsl/pazpar2-docs.xsl« which converts pazpar2 XML configuration files to HTML pages.
+* Git submodules with Index Data’s software:
+	* »[pazpar2](http://git.indexdata.com/?p=pazpar2.git)«
+	* »[yaz](http://git.indexdata.com/?p=yaz.git)«
+* The [subrepository in »pazpar2-etc«](https://github.com/ssp/pazpar2-etc) contains customised files (e.g. »tmarc.xsl«) from the pazpar2/etc folder. These are kept in a separate repository to enable using a cleanly checked out version of the software.
+* The folder »setup« contains configuration files to help installing the pazpar2 service on a server:
+	* »pazpar2.init«: init script for SUSE Linux
+	* »pazpar2.logrotate«: logrotate configuration file
+	* »pazpar2-vhost.conf«: apache virtual host configuration
 
 ## Contact
 In case you have questions, please [get in touch with Sven-S. Porst](mailto:porst@sub.uni-goettingen.de?subject=pazpar2).
