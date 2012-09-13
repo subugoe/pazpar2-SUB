@@ -24,14 +24,6 @@
 #     2010-2012, Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 #
 #
-#
-#
-# /etc/init.d/FOO
-#   and its symbolic link
-# /(usr/)sbin/rcFOO
-#
-# Template system startup script for some example service/daemon FOO
-#
 # LSB compatible service control script; see http://www.linuxbase.org/spec/
 # 
 # Note: This template uses functions rc_XXX defined in /etc/rc.status on
@@ -42,7 +34,7 @@
 # See skeleton.compat for a template that works with other distros as well.
 #
 ### BEGIN INIT INFO
-# Provides:          FOO
+# Provides:          pazpar2
 # Required-Start:    $syslog $remote_fs
 # Should-Start:      $time ypbind smtp
 # Required-Stop:     $syslog $remote_fs
@@ -50,12 +42,7 @@
 # Default-Start:     3 5
 # Default-Stop:      0 1 2 6
 # Short-Description: pazpar2 metasearch service
-# Description:       Start FOO to allow XY and provide YZ
-#	continued on second line by '#<TAB>'
-#	should contain enough info for the runlevel editor
-#	to give admin some idea what this service does and
-#	what it's needed for ...
-#	(The Short-Description should already be a good hint.)
+# Description:       pazpar2 metasearch service
 ### END INIT INFO
 # 
 # Any extensions to the keywords given above should be preceeded by 
@@ -127,19 +114,20 @@
 
 # Check for missing binaries (stale symlinks should not happen)
 # Note: Special treatment of stop for LSB conformance
-FOO_BIN=/home/pazpar2/pazpar2-SUB/pazpar2/src/pazpar2
-test -x $FOO_BIN || { echo "$FOO_BIN not installed"; 
+PZ_DIR=/home/pazpar2/pazpar2-SUB
+PZ_BIN=$PZ_DIR/pazpar2/src/pazpar2
+test -x $PZ_BIN || { echo "$PZ_BIN not installed"; 
 	if [ "$1" = "stop" ]; then exit 0;
 	else exit 5; fi; }
 
 # Check for existence of needed config file and read it
-FOO_CONFIG=/home/pazpar2/pazpar2-SUB/conf/SUB.xml
-test -r $FOO_CONFIG || { echo "$FOO_CONFIG not existing";
+PZ_CONFIG=$PZ_DIR/SUB.xml
+test -r $PZ_CONFIG || { echo "$PZ_CONFIG not existing";
 	if [ "$1" = "stop" ]; then exit 0;
 	else exit 6; fi; }
 
 # Read config	
-#. $FOO_CONFIG
+#. $PZ_CONFIG
 
 # Source LSB init functions
 # providing start_daemon, killproc, pidofproc, 
@@ -187,21 +175,29 @@ case "$1" in
 	echo -n "Starting pazpar2 "
 	## Start daemon with startproc(8). If this fails
 	## the return value is set appropriately by startproc.
-	/sbin/startproc -u pazpar2 $FOO_BIN -D -f $FOO_CONFIG -l /var/log/pazpar2/pazpar2.log 
+	## Start pazpar2 as user pazpar2:
+	## http://www.indexdata.com/pazpar2/doc/pazpar2.html
+	## -D: daemonise
+	## -f: configuration file
+	## -l: log file
+	/sbin/startproc -u pazpar2 $PZ_BIN -D -f $PZ_CONFIG -l /var/log/pazpar2/pazpar2.log 
 
 	# Remember status and be verbose
 	rc_status -v
 	;;
+
+
     stop)
 	echo -n "Shutting down pazpar2 "
 	## Stop daemon with killproc(8) and if this fails
 	## killproc sets the return value according to LSB.
-
-	/sbin/killproc -TERM $FOO_BIN
+	/sbin/killproc -TERM $PZ_BIN
 
 	# Remember status and be verbose
 	rc_status -v
 	;;
+
+
     try-restart|condrestart)
 	## Do a restart only if the service was active before.
 	## Note: try-restart is now part of LSB (as of 1.9).
@@ -218,6 +214,8 @@ case "$1" in
 	# Remember status and be quiet
 	rc_status
 	;;
+
+
     restart)
 	## Stop the service and regardless of whether it was
 	## running or not, start it again.
@@ -227,6 +225,8 @@ case "$1" in
 	# Remember status and be quiet
 	rc_status
 	;;
+
+
     force-reload)
 	## Signal the daemon to reload its config. Most daemons
 	## do this on signal 1 (SIGHUP).
@@ -235,7 +235,7 @@ case "$1" in
 
 	echo -n "Reload service pazpar2 "
 	## if it supports it:
-	/sbin/killproc -HUP $FOO_BIN
+	/sbin/killproc -HUP $PZ_BIN
 	#touch /var/run/FOO.pid
 	rc_status -v
 
@@ -243,13 +243,15 @@ case "$1" in
 	#$0 try-restart
 	#rc_status
 	;;
+
+
     reload)
 	## Like force-reload, but if daemon does not support
 	## signaling, do nothing (!)
 
 	# If it supports signaling:
 	echo -n "Reload service pazpar2 "
-	/sbin/killproc -HUP $FOO_BIN
+	/sbin/killproc -HUP $PZ_BIN
 	#touch /var/run/FOO.pid
 	rc_status -v
 	
@@ -257,6 +259,8 @@ case "$1" in
 	#rc_failed 3
 	#rc_status -v
 	;;
+
+
     status)
 	echo -n "Checking for service pazpar2 "
 	## Check status with checkproc(8), if process is running
@@ -271,7 +275,7 @@ case "$1" in
 	# 5--199 reserved (5--99 LSB, 100--149 distro, 150--199 appl.)
 	
 	# NOTE: checkproc returns LSB compliant status values.
-	/sbin/checkproc $FOO_BIN
+	/sbin/checkproc $PZ_BIN
 	# NOTE: rc_status knows that we called this init script with
 	# "status" option and adapts its messages accordingly.
 	rc_status -v
