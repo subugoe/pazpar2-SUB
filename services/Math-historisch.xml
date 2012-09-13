@@ -5,9 +5,14 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="Math-historisch">
 <!--
-	Targets used for historical section of vifamath
-	* Digitalisierte Mathematik (Solr)
-	* Jahrbuch Datenbank (old Z39.50 Server)
+	Targets used for historical section of vifamath at:
+	http://vifamath.de/historische-mathematik/
+	http://vifamath.de/historical-mathematics/?L=1
+
+	* SUB Solr Indexes (SSGFI1):
+		* Digitalisate
+	* FIZ Karlsruhe (SRU):
+		* ElibM
 
 	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -18,11 +23,7 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:maxrecs" value="250"/>
 	</settings>
 
-	<settings src="settings/testing/zebra-vifamath.xml"/>
-	<settings>
-		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
-		<set target="134.76.176.48:2020/jfm" name="pz:maxrecs" value="250"/>
-	</settings>
+	<settings src="settings/fiz-elibm.xml"/>
 
 
 

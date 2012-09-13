@@ -5,9 +5,14 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="AAC-Lit-Themen">
 <!--
-	Targets used for Lib AAC Literature Subject Search:
-	* Göttingen Opac via GBV SRU service
-	* SSG-FI Guide Databases via Solr interface
+	Targets used for Lib AAC Literature Subject Search at:
+	http://aac.sub.uni-goettingen.de/literatur/themen/
+	http://aac.sub.uni-goettingen.de/en/literature/subjects/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+	* SUB Solr Indexes (SSGFI1):
+		* Literature Guide
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

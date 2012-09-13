@@ -5,9 +5,14 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="Math-Neuerwerbungen">
 <!--
-	Targets used for vifamath Neuerwerbungen
-	* SUB Göttingen Opac
-	* Math Guide
+	Targets used for vifamath New Acquisitions at:
+	http://vifamath.de/neuerwerbungen/
+	http://vifamath.de/neuerwerbungen/?L=1
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+	* SUB Solr Indexes (SSGFI1):
+		* Math Guide
 
 	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

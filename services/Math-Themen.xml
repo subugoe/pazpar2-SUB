@@ -5,10 +5,15 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="Math-Themen">
 <!--
-	Targets used for vifamath Subject Search:
-	* fachopac-mat via GBV SRU interface
-	* SSG-FI Guide Databases via Solr interface
-		* Math-Guide
+	Targets used for vifamath Subject Search at:
+	http://vifamath.de/thematische-suche/
+	http://vifamath.de/subject-catalogue/?L=1
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+		* Fachkatalog Mathematik without Göttingen books
+	* SUB Solr Indexes (SSGFI1):
+		* Math Guide
 		* Jahrbuch-Datenbank
 	* SUB Solr Indexes (Harvesting):
 		* arXiv

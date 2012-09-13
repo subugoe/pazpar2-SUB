@@ -5,9 +5,14 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="AAC-Hist-Themen">
 <!--
-	Targets used for Lib AAC History Subject Search:
-	* Göttingen Opac via GBV SRU service
-	* SSG-FI Guide Databases via Solr interface
+	Targets used for Lib AAC History Subject Search at:
+	http://aac.sub.uni-goettingen.de/geschichte/themen/
+	http://aac.sub.uni-goettingen.de/en/history/subjects/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+	* SUB Solr Indexes (SSGFI1):
+		* History Guide
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

@@ -5,7 +5,12 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="Literature-Guide">
 <!--
-	Literature Guide, using the Solr interface.
+	Literature link database, used in Lib AAC at:
+	http://aac.sub.uni-goettingen.de/literatur/guide/
+	http://aac.sub.uni-goettingen.de/en/literature/guide/
+
+	* SUB Solr Indexes (SSGFI1):
+		* Literature Guide
 
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

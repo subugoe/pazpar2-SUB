@@ -5,10 +5,21 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="SUB">
 <!--
-	Targets used for SUB Homepage
-	* GBV Databases, including Göttingen Opac, via new SRU service
-	* Digizeitschriften from OAI Harvesting
-	* GoeDoc
+	Targets used for SUB web site at:
+	http://www.sub.uni-goettingen.de/suche/aufsaetze-und-elektronische-volltexte/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+		* German National Licenses: Books
+		* German National Licenses: Periodicals
+	* SUB Solr Indexes (SSGFI1):
+		* Literature Guide
+		* History Guide
+	* SUB Solr Indexes (Harvesting):
+		* DigiZeitschriften
+	* DSpace Systems via SRU:
+		* GoeScholar
+		* GEO-LEO e-docs
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

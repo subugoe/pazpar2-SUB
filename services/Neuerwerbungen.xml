@@ -5,8 +5,12 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="Neuerwerbungen">
 <!--
-	Targets used for New Acquisition pages on www.sub.uni-goettingen.de
-	* Opac database via GBV SRU service
+	Targets used for New Acquisition pages on www.sub.uni-goettingen.de.
+	Pages using this service are currently (the URL looks like it needs fixing) listed here:
+	http://www.sub.uni-goettingen.de/sub-a-z/schlagwort/tags/neuerwerbungennew-acquisitions/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

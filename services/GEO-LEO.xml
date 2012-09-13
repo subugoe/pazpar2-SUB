@@ -5,14 +5,24 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="GEO-LEO">
 <!--
-	Targets used for GEO-LEO
-	* GBV Databases, including Göttingen Opac, via SRU
-	* SSG-FI Guide via Solr
-	* SWB Catalogue search via Z39.50
+	Targets used for GEO-LEO main search at:
+	http://geo-leo.de/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+		* Fachkatalog Geowissenschaften without Göttingen books
+		* Fachkatalog Astronomie without Göttingen books
+		* Online Contents Geowissenschaften
+		* Online Contents Astronomie
+	* SUB Solr Indexes (SSGFI1):
+		* Geo-Guide
+	* SWB Catalogue search via Z39.50 for Freiberg books
 	* NEBIS/ETH Zürich
-	* NAL
+	* USDA NAL
 	* Institut für Länderkunde (IfL)
-	* Solr Index from OAI-Harvesting: Repositories, Digitised Works
+	* SUB Solr Indexes (Harvesting):
+		* Articles
+		* Digitised Works
 	* GEO-LEO e-docs DSpace SRU interface
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
@@ -36,12 +46,12 @@
 		<set name="pz:allow" target="sru.gbv.de/olcssg-ast" value="1"/>
 	</settings>
 
+	<settings src="settings/Freiberg.xml"/>
+
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo-Guide"/>
 	</settings>
-
-	<settings src="settings/Freiberg.xml"/>
 
 	<settings src="settings/NEBIS-ETH.xml"/>
 	<settings src="settings/NAL.xml"/>

@@ -5,7 +5,12 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="History-Guide">
 <!--
-	History Guide, using the Solr interface.
+	History Link Database, used in Lib AAC at:
+	http://aac.sub.uni-goettingen.de/geschichte/guide/
+	http://aac.sub.uni-goettingen.de/en/history/guide/
+
+	* SUB Solr Indexes (SSGFI1):
+		* History Guide
 
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

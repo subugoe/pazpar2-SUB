@@ -5,7 +5,11 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="Geo-Guide">
 <!--
-	History Guide, using the Solr interface.
+	Geography link database, used in GEO-LEO at:
+	http://geo-leo.de/geo-guide/
+
+	* SUB Solr Indexes (SSGFI1):
+		* Geo-Guide
 
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

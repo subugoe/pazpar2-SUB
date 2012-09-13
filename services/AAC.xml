@@ -5,9 +5,18 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="AAC">
 <!--
-	Targets used for Lib AAC main search:
-	* GBV Databases, including Göttingen Opac, via new SRU service
-	* SSG-FI Guide Databases via Solr interface
+	Targets used for Lib AAC main search at:
+	http://aac.sub.uni-goettingen.de/
+	http://aac.sub.uni-goettingen.de/en/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+		* a bunch of article databases (German National Licenses)
+		* Online Contents Anglistik
+		* Online contents History
+	* SUB Solr Indexes (SSGFI1):
+		* Literature Guide
+		* History Guide
 
 	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->

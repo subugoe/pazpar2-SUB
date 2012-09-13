@@ -5,11 +5,16 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="GEO-LEO-Themen">
 <!--
-	Targets used for Geo-Leo Subject Search:
-	* Göttingen Opac via GBV SRU service
-	* SWB Catalogue search via Z39.50
-	* SSG-FI Guide via Solr
-	* GEo-LEO e-docs
+	Targets used for GEO-LEO Subject Search at:
+	http://geo-leo.de/themen/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+	* SWB Catalogue search via Z39.50 for Freiberg books
+	* SUB Solr Indexes (SSGFI1):
+		* Geo Guide
+	* GEO-LEO e-docs DSpace SRU interface
+
 
 	All targets support the fbg and lkl search keys for the Göttingen and Freiberg
 	subject classifications.
@@ -26,7 +31,7 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo-Guide"/>
 	</settings>
 
 	<settings src="settings/GEO-LEO-edocs.xml"/>
