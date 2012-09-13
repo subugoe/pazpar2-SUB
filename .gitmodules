@@ -7,3 +7,6 @@
 [submodule "yaz"]
 	path = yaz
 	url = git://git.indexdata.com/yaz.git
+[submodule "pazpar2-access"]
+	path = pazpar2-access
+	url = git://github.com/ssp/pazpar2-access.git
