@@ -122,10 +122,11 @@
 
 	<xsl:template match="pz2:service">
 		<h1>
-			<xsl:text>pazpar2 Service </xsl:text>
+			<xsl:text>pazpar2 Service »</xsl:text>
 			<span class="name">
 				<xsl:value-of select="@id"/>
 			</span>
+			<xsl:text>«</xsl:text>
 		</h1>
 
 		<xsl:apply-templates select="./comment()[1]"/>
@@ -143,7 +144,7 @@
 						</xsl:call-template>
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:for-each select="document(concat('../', @src), .)/pz2:settings/pz2:set[@name='pz:name']">
+						<xsl:for-each select="document(concat('../../', @src))/pz2:settings/pz2:set[@name='pz:name']">
 							<xsl:call-template name="database-info">
 								<xsl:with-param name="set" select="."/>
 								<xsl:with-param name="settings-paths" select="$settings-paths"/>

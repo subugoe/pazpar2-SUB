@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../xsl/doc/pazpar2-docs.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
 <service
 		xmlns="http://www.indexdata.com/pazpar2/1.0"
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="all">
 <!--
-	All targets we are using.
+	To test all targets we have configuration files for.
 
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
