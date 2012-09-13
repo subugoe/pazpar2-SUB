@@ -1,11 +1,11 @@
 /var/log/pazpar2/pazpar2.log {
 	weekly
 	missingok
-	rotate 4
+	rotate 5
 	compress
 	delaycompress
 	notifempty
 	postrotate
-		/etc/init.d/pazpar2 restart
+	/etc/init.d/pazpar2 restart
 	endscript
 }
