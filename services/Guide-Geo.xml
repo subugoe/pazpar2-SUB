@@ -21,6 +21,7 @@
 
 
 
+	<metadata name="subject" brief="yes" merge="unique"/>
 	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>
