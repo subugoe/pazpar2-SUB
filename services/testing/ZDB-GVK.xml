@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="ZDB-GVK">
+<!--
+	ZDB Service
+		* GVK contains a copy of ZDB
+		* records without owning libraries are hidden in the results for
+			gvk (2.1) but are present in gbvcat (1.1)
+		* The Z39.50 interface supports sort, the SRU interface does not
+
+	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings target="sru.gbv.de/gbvcat">
+		<set name="pz:maxrecs" value="1000"/>
+		<set name="pz:name" value="GBVKat"/>
+
+		<set name="pz:cclmap:term" value="u=1016 s=al t=r"/>
+		<set name="pz:cclmap:tit" value="u=4 s=al t=r"/>
+		<set name="pz:cclmap:zti" value="u=8543 s=al t=r"/>
+		<set name="pz:cclmap:mak" value="u=8600 s=al t=r"/>
+
+		<!-- Limit Search to Journals -->
+		<set name="pz:pqf_strftime" value='@and %% @attr 1=1016 "(mak ab* or mak ob*)"'/>
+
+		<!-- Sort by Title -->
+		<set name="pz:sortmap:title" value="z3950:title"/>
+
+		<set name="catalogueURLHintPrefix" value="http://gso.gbv.de/DB=1.1/PPNSET?PPN="/>
+
+		<set name="pz:requestsyntax" value="marc21"/>
+		<set name="pz:queryencoding" value="utf-8"/>
+
+		<set name="pz:nativesyntax" value="txml;utf-8"/>
+		<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl,xsl/gbv-parent-catalogue-url-postprocess.xsl,xsl/merge-fields.xsl"/>
+	</settings>
+
+
+
+	<xi:include href="../metadata/SUB-default.xml"/>
+
+</service>
