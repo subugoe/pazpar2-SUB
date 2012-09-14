@@ -1,0 +1,38 @@
+# Nagios configuration for pazpar2-Server
+#
+# 2011-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+#
+
+
+# Ping host.
+define host{
+        use                     linux-server
+        host_name               pazpar2.sub.uni-goettingen.de
+        alias                   pazpar2
+        address                 pazpar2.sub.uni-goettingen.de
+        hostgroups              SUB,aac,geoleo
+        contact_groups          vlib-admins
+}
+
+# Check webserver.
+define service {
+        use                             generic-service
+        host_name                       pazpar2.sub.uni-goettingen.de
+        service_description             HTTP
+        check_command                   check_http!--hostname=pazpar2.sub.uni-goettingen.de!--url=/
+        notifications_enabled           1
+        contact_groups                  vlib-admins
+        servicegroups                   http
+}
+
+# Check pazpar2-Service.
+define service {
+        use                             generic-service
+        host_name                       pazpar2.sub.uni-goettingen.de
+        service_description             pazpar2
+        check_command                   check_pazpar2!-Hpazpar2.sub.uni-goettingen.de!-p80!-P/pazpar2
+        notifications_enabled           1
+        contact_groups                  vlib-admins
+        servicegroups                   aac,geoleo,vifamath
+}
+
