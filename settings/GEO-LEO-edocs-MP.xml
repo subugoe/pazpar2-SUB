@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="localhost:9000/dspace/gldocs" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="sru.sub.uni-goettingen.de/dspace/gldocs" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the GEO-LEO e-docs DSpace server,
 		accessing the Solr Index via metaproxy’s SRU interface.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="localhost:9000/harvest/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="sru.sub.uni-goettingen.de/harvest/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -39,7 +39,10 @@
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
 
-	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
-	<set target="localhost:9000/harvest/digizeitschriften" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
-	<set target="localhost:9000/harvest/math-arxiv" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt"
+		value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
+	<set target="sru.sub.uni-goettingen.de/harvest/digizeitschriften" name="pz:xslt"
+		value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
+	<set target="sru.sub.uni-goettingen.de/harvest/math-arxiv" name="pz:xslt"
+		value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
 </settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="localhost:9000/ssgfi/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="sru.sub.uni-goettingen.de/ssgfi/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -58,10 +58,14 @@
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
 
 	<!-- Default: Guide Databases, set the medium to website for all records -->
-	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/medium-website.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt"
+		value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/medium-website.xsl,xsl/merge-fields.xsl"/>
 	<!-- DigReg: create journal-subpart field from the metadata -->
-	<set name="pz:xslt" target="localhost:9000/ssgfi/math-digreg" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/journal-subpart-creator.xsl,xsl/fulltext-urls.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" target="sru.sub.uni-goettingen.de/ssgfi/math-digreg"
+		value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/journal-subpart-creator.xsl,xsl/fulltext-urls.xsl,xsl/merge-fields.xsl"/>
 	<!-- JfM -->
-	<set name="pz:xslt" target="localhost:9000/ssgfi/jfm" value="pazpar2/etc/solr-pz2.xsl,xsl/jfm-id.xsl,xsl/solr-Guide-postprocess.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
-	<set name="catalogueURLHintPrefix" target="localhost:9000/ssgfi/jfm" value="http://www.emis.de/cgi-bin/jfmen/MATH/JFM/quick.html?first=1&amp;maxdocs=1&amp;type=html&amp;format=complete&amp;an="/>
+	<set name="pz:xslt" target="sru.sub.uni-goettingen.de/ssgfi/jfm"
+		value="pazpar2/etc/solr-pz2.xsl,xsl/jfm-id.xsl,xsl/solr-Guide-postprocess.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set name="catalogueURLHintPrefix" target="sru.sub.uni-goettingen.de/ssgfi/jfm"
+		value="http://www.emis.de/cgi-bin/jfmen/MATH/JFM/quick.html?first=1&amp;maxdocs=1&amp;type=html&amp;format=complete&amp;an="/>
 </settings>
