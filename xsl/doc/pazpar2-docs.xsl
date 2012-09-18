@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Stylesheet to convert pazpar2 configuration files into HTML pages.
+	It can be applied to both the main pazpar2 configuration file and pazpar2 service configuration files.
+	It is not comprehensive and focuses on the tags used in pazpar2 configurations at SUB Göttingen.
+
+	2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:pz2="http://www.indexdata.com/pazpar2/1.0"
@@ -13,6 +20,10 @@
 
 
 
+	<!--
+		Root node
+		Create HTML page.
+	-->
 	<xsl:template match="/">
 		<html>
 			<xsl:call-template name="html-head"/>
@@ -23,7 +34,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		pazpar2 Tag
+		Output the threads and server tags.
+	-->
 	<xsl:template match="pz2:pazpar2">
 		<h1>pazpar2 Configuration</h1>
 
@@ -39,7 +53,12 @@
 	</xsl:template>
 
 
-
+	<!--
+		server Tag
+		Basic server configuration with host, port and proxy settings.
+		List of all used services, via the pazpar2 or XInclude include tags.
+		List of ICU chains.
+	-->
 	<xsl:template match="pz2:server">
 		<h2>
 			<xsl:text>Server on </xsl:text>
@@ -90,7 +109,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		icu_chain Tags
+		Show each step of an ICU chain as a list item.
+	-->
 	<xsl:template match="pz2:icu_chain">
 		<li>
 			<span class="name">
@@ -119,7 +141,15 @@
 	</xsl:template>
 
 
-
+	<!--
+		service Tag
+		* service name
+		* the first XML comment in the service configuration file
+		* the databases used by this service, taking into account both
+			* set tags as child elements of the settings tag
+			* external settings loaded from the @src attribute’s address.
+		* metadata fields used by the service (allowing for inclusion with XInclude)
+	-->
 	<xsl:template match="pz2:service">
 		<h1>
 			<xsl:text>pazpar2 Service »</xsl:text>
@@ -182,7 +212,11 @@
 	</xsl:template>
 
 
-
+	<!--
+		database-info template
+		Create a list item for the database. The name and address are shown right away, the details can be unhidden with jQuery.
+		Gather all the relevant set Tags that are applied for the target URL and display them.
+	-->
 	<xsl:template name="database-info">
 		<xsl:param name="set"/>
 		<xsl:param name="settings-paths"/>
@@ -257,7 +291,6 @@
 									</xsl:call-template>
 								</xsl:for-each>
 							</dl>
-
 						</xsl:if>
 					</xsl:for-each>
 				</xsl:for-each>
@@ -266,7 +299,11 @@
 	</xsl:template>
 
 
-
+	<!--
+		show-setting template
+		Create definition-list output for a setting name/value pair.
+		Process terms a little for more legible display.
+	-->
 	<xsl:template name="show-setting">
 		<xsl:param name="name"/>
 		<xsl:param name="value"/>
@@ -323,7 +360,7 @@
 					</xsl:call-template>
 				</xsl:when>
 				<xsl:when test="$name = 'pz:xslt'">
-					<xsl:call-template name="xslt-to-text">
+					<xsl:call-template name="xslt-to-markup">
 						<xsl:with-param name="string" select="$value"/>
 					</xsl:call-template>
 				</xsl:when>
@@ -348,7 +385,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		cclmap-to-text template
+		Create more legible explanation of the cclmap_XXX values.
+	-->
 	<xsl:template name="cclmap-to-text">
 		<xsl:param name="string"/>
 
@@ -359,8 +399,11 @@
 	</xsl:template>
 
 
-
-	<xsl:template name="xslt-to-text">
+	<!--
+		xslt-to-markup template
+		Split the string containing the XSLT paths and return an ordered list of linked stylesheet names.
+	-->
+	<xsl:template name="xslt-to-markup">
 		<xsl:param name="string"/>
 
 		<ol>
@@ -372,7 +415,11 @@
 	</xsl:template>
 
 
-
+	<!--
+		cclmap-postprocess
+		Take an item of a CCL map string (e.g. »s=al«) and turn it into a more legible output.
+		TODO: expand this with fully legible explanations of all yaz options like s=al, t=r, …
+	-->
 	<xsl:template name="cclmap-postprocess">
 		<xsl:param name="string"/>
 		<span class="cclmap-part">
@@ -397,7 +444,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		set Tag
+		Display name/value pairs from pazpar2 set tags. Omit leading pz: from the names.
+	-->
 	<xsl:template match="pz2:set">
 		<li class="set">
 			<xsl:if test="@target">
@@ -420,7 +470,11 @@
 	</xsl:template>
 
 
-
+	<!--
+		metadata template
+		Create list item for each metadata tag.
+		Add classes and explanations based on the tag’s attributes.
+	-->
 	<xsl:template name="metadata">
 		<xsl:param name="element"/>
 
@@ -478,7 +532,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		XML comment
+		Output the comment’s content in a pre tag.
+	-->
 	<xsl:template match="comment()">
 		<pre class="comment">
 			<xsl:value-of select="."/>
@@ -486,7 +543,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		html <head>
+		Inserted into web page.
+	-->
 	<xsl:template name="html-head">
 		<xsl:copy>
 			<head>
@@ -584,7 +644,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		cclmap-splitter template
+		split cclmap strings at spaces and postprocess them.
+	-->
 	<xsl:template name="cclmap-splitter">
 		<xsl:param name="list"/>
 		<xsl:param name="separator"/>
@@ -602,7 +665,6 @@
 
 		<xsl:variable name="remainingItems" select="substring-after($list, $separator)"/>
 
-
 		<xsl:if test="$firstItem">
 			<xsl:call-template name="cclmap-postprocess">
 				<xsl:with-param name="string" select="$firstItem"/>
@@ -618,7 +680,10 @@
 	</xsl:template>
 
 
-
+	<!--
+		xslt-splitter template
+		Split a string of XSL file paths at commas and create a list item for each one.
+	-->
 	<xsl:template name="xslt-splitter">
 		<xsl:param name="list"/>
 		<xsl:param name="separator"/>
@@ -654,6 +719,5 @@
 			</xsl:call-template>
 		</xsl:if>
 	</xsl:template>
-
 
 </xsl:stylesheet>
