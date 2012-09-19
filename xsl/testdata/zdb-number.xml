@@ -1,0 +1,139 @@
+
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnms a22yyyyy c 4500</l>
+  <c001>608943576</c001>
+  <c003>DE-601</c003>
+  <c005>20120907042635.0</c005>
+  <c007>cr</c007>
+  <c008>090916m20099999gw  u p       0   u0ger d</c008>
+  <d016 i1="7" i2=" ">
+    <sa>996741364</sa>
+    <s2>DE-101</s2>
+  </d016>
+  <d016 i1="7" i2=" ">
+    <sa>25148618</sa>
+    <s2>DE-600</s2>
+  </d016>
+  <d022 i1=" " i2=" ">
+    <sa>1868-9094 (autorisierte ISSN)</sa>
+  </d022>
+  <d029 i1="a" i2="d">
+    <sa>18689094</sa>
+  </d029>
+  <d035 i1=" " i2=" ">
+    <sa>(OCoLC)610012145</sa>
+  </d035>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)ZDB2514861-8</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>ger</sa>
+  </d041>
+  <d082 i1="0" i2="0">
+    <sa>344.430105</sa>
+  </d082>
+  <d082 i1="0" i2="9">
+    <sa>340</sa>
+  </d082>
+  <d082 i1="0" i2="9">
+    <sa>340</sa>
+  </d082>
+  <d084 i1=" " i2=" ">
+    <sa>2</sa>
+    <s2>ssgn</s2>
+  </d084>
+  <d222 i1=" " i2="0">
+    <sa>Arbeitsrecht aktuell München</sa>
+  </d222>
+  <d245 i1="1" i2="0">
+    <sa>Arbeitsrecht aktuell :</sa>
+    <sb>ArbR ; Informationen für die arbeitsrechtliche Praxis</sb>
+  </d245>
+  <d246 i1="3" i2=" ">
+    <sa>ArbR</sa>
+  </d246>
+  <d246 i1="3" i2=" ">
+    <sa>Informationen für die arbeitsrechtliche Praxis</sa>
+  </d246>
+  <d260 i1="3" i2=" ">
+    <sa>München ;Frankfurt, Main</sa>
+    <sb>Beck</sb>
+    <sc>2009-</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>Online-Ressource</sa>
+  </d300>
+  <d362 i1="0" i2=" ">
+    <sa>1.2009,1(Aug.) -</sa>
+  </d362>
+  <d363 i1="0" i2="1">
+    <sa>1</sa>
+    <si>2009</si>
+  </d363>
+  <d365 i1=" " i2=" ">
+    <sb>Arbeitsrecht aktuell (München)</sb>
+  </d365>
+  <d490 i1="0" i2=" ">
+    <sa>Beck-online</sa>
+  </d490>
+  <d515 i1=" " i2=" ">
+    <sa>Ersch. alle zwei Wochen</sa>
+  </d515>
+  <d591 i1=" " i2=" ">
+    <sa>C!URL-Ä(29-10-09)</sa>
+  </d591>
+  <d689 i1="0" i2="0">
+    <s0>(DE-601)104704861</s0>
+    <s0>(DE-588)4011882-4</s0>
+    <sa>Deutschland</sa>
+  </d689>
+  <d689 i1="0" i2="1">
+    <s0>(DE-601)106392085</s0>
+    <s0>(DE-588)4002769-7</s0>
+    <sa>Arbeitsrecht</sa>
+  </d689>
+  <d689 i1="0" i2="2">
+    <sA>f</sA>
+    <sa>Zeitschrift</sa>
+  </d689>
+  <d689 i1="0" i2=" ">
+    <s5>DE-101</s5>
+  </d689>
+  <d689 i1="0" i2="0">
+    <sa>Online-Publikation</sa>
+  </d689>
+  <d689 i1="0" i2=" ">
+    <s5>DE-601</s5>
+  </d689>
+  <d787 i1="0" i2="8">
+    <si>Druckausg: </si>
+    <st>Arbeitsrecht aktuell</st>
+    <sw>(DE-600)2507646-2</sw>
+  </d787>
+  <d856 i1="4" i2="1">
+    <su>http://www.bibliothek.uni-regensburg.de/ezeit/?2514861</su>
+    <s3>Volltext</s3>
+  </d856>
+  <d856 i1="4" i2="1">
+    <su>http://beck-online.beck.de/?bcid=Y-300-Z-ArbRAktuell</su>
+    <s3>Volltext</s3>
+  </d856>
+  <d900 i1=" " i2=" ">
+    <sa>GBV</sa>
+    <sb>SUB+Uni Göttingen &lt;7&gt;</sb>
+  </d900>
+  <d912 i1=" " i2=" ">
+    <sa>ZDB-18-BEO</sa>
+  </d912>
+  <d954 i1=" " i2=" ">
+    <sa>40</sa>
+    <sb>1114353442</sb>
+    <sc>01</sc>
+    <sx>0007</sx>
+  </d954>
+</r>
