@@ -233,6 +233,30 @@
 				</xsl:call-template>
 			</xsl:for-each>
 
+			<xsl:for-each select="dc:subject.gok">
+				<pz:metadata type="classification-gok">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
+			<xsl:for-each select="dc:subject.ddc">
+				<pz:metadata type="classification-ddc">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
+			<xsl:for-each select="dc:subject.gbv">
+				<pz:metadata type="classification-bkl">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
+			<xsl:for-each select="dc:subject.swd">
+				<pz:metadata type="subject">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:for-each>
+
 		</pz:record>
 	</xsl:template>
 
