@@ -38,7 +38,7 @@
 		<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl,xsl/gbv-parent-catalogue-url-postprocess.xsl,xsl/merge-fields.xsl"/>
 	</settings>
 
-
+	<sort-default field="title:1"/>
 
 	<xi:include href="../metadata/SUB-default.xml"/>
 
