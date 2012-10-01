@@ -96,8 +96,8 @@
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
 
-			<xsl:if test="../tmarc:d920/tmarc:sa/text() = 'OLC'">
-				<xsl:element name="tmarc:s4">aut</xsl:element>
+			<xsl:if test="../tmarc:d901/tmarc:sa/text() = 'OLC'">
+				<tmarc:s4>aut</tmarc:s4>
 			</xsl:if>
 		</xsl:copy>
 	</xsl:template>
