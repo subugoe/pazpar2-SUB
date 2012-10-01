@@ -189,7 +189,7 @@
 			</xsl:for-each>
 
 			<xsl:for-each select="dc:type.version">
-				<pz:metadata type="description">
+				<pz:metadata type="edition">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:for-each>
