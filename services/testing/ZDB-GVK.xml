@@ -35,7 +35,7 @@
 		<set name="pz:queryencoding" value="utf-8"/>
 
 		<set name="pz:nativesyntax" value="txml;utf-8"/>
-		<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/catalogue-url-hint+id.xsl,xsl/gbv-parent-catalogue-url-postprocess.xsl,xsl/merge-fields.xsl"/>
+		<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/catalogue-url-hint+id.xsl,xsl/gbv-parent-catalogue-url-postprocess.xsl,xsl/merge-fields.xsl"/>
 	</settings>
 
 	<sort-default field="title:1"/>

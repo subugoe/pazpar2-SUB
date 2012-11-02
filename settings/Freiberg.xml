@@ -60,6 +60,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="xsl/swb-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/language-code-cleaner.xsl,xsl/parent-id-strip-isil.xsl,xsl/catalogue-url-hint+id.xsl,xsl/medium-strip-electronic.xsl,xsl/medium-video.xsl,xsl/urn-to-url.xsl,xsl/zdb-number.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/swb-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/parent-id-strip-isil.xsl,xsl/catalogue-url-hint+id.xsl,xsl/medium-strip-electronic.xsl,xsl/medium-video.xsl,xsl/urn-to-url.xsl,xsl/zdb-number.xsl,xsl/merge-fields.xsl"/>
 
 </settings>

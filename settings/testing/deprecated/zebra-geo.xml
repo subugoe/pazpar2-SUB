@@ -37,5 +37,5 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
-	<set name="pz:xslt" value="xsl/oai-dc-zebra.xsl,xsl/language-code-cleaner.xsl,xsl/medium-electronic.xsl"/>
+	<set name="pz:xslt" value="xsl/oai-dc-zebra.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/medium-electronic.xsl"/>
 </settings>
