@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Applies the template iso-639-2-to-639-2b.xsl to pz:metadata fields of type language.
+	Applies the template »iso-639-2-cleaner« from »iso-639-2-to-639-2b.xsl«
+	to pz:metadata fields of type language.
 	Copies all other fields unchanged.
 
-	2011
-	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 <xsl:stylesheet
@@ -12,7 +12,8 @@
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:pz="http://www.indexdata.com/pazpar2/1.0">
 
-	<xsl:import href="iso-639-1-to-639-2b.xsl"/>
+	<xsl:import href="iso-639-2-to-639-2b.xsl"/>
+
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
 

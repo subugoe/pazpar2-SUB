@@ -10,10 +10,10 @@
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:dcterms="http://purl.org/dc/terms/"
 	xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
-	
+
 	<xsl:import href="metadata-splitter.xsl"/>
 	<xsl:import href="iso-639-1-to-639-2b.xsl"/>
-	
+
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
 
@@ -78,7 +78,7 @@
 			<xsl:for-each select="dc:language">
 				<xsl:call-template name="splitter">
 					<xsl:with-param name="list">
-						<xsl:call-template name="languageCodeConverter">
+						<xsl:call-template name="iso-639-1-converter">
 							<xsl:with-param name="languageCode" select="."/>
 						</xsl:call-template>
 					</xsl:with-param>
@@ -87,7 +87,7 @@
 				</xsl:call-template>
 			</xsl:for-each>
 
-			<!-- 
+			<!--
 				Try to normalise media types to our standard set.
 			-->
 			<xsl:for-each select="dc:type">

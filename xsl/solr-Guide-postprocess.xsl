@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Post-processes solr records coming from the ssgfi1 server after
+	Post-processes records coming from the ssgfi1 Solr index after
 	they are processed by solr-pz2.xsl.
 
-	2011 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 <xsl:stylesheet
@@ -282,12 +282,12 @@
 	</xsl:template>
 
 	<!-- Language:
-			* Call languageCodeConverter template from iso-639-1-to-639-2b.xsl.
+			* Call iso-639-1-converter template from iso-639-1-to-639-2b.xsl.
 			* Use the first two characters of the field content only.
 	-->
 	<xsl:template match="pz:metadata[@type='Language']">
 		<pz:metadata type="language">
-			<xsl:call-template name="languageCodeConverter">
+			<xsl:call-template name="iso-639-1-converter">
 				<xsl:with-param name="languageCode" select="substring(., 1, 2)"/>
 			</xsl:call-template>
 		</pz:metadata>
