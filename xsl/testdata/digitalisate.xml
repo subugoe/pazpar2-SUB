@@ -1,0 +1,45 @@
+<doc>
+<arr name="Author">
+<str>D. Hilbert</str>
+</arr>
+<arr name="Contained_in">
+<str>Göttinger Digitalisierungszentrum</str>
+</arr>
+<str name="Created">2001-02-19T00:00:00Z</str>
+<str name="Journal">Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse</str>
+<arr name="Language">
+<str>de</str>
+</arr>
+<str name="MD_Created">2011-11-28T12:46:12Z</str>
+<str name="MD_Revised">2011-12-02T16:41:36Z</str>
+<str name="Number">074920</str>
+<str name="OAI-ID">oai:gdz.sub.uni-goettingen.de:PPN252457811</str>
+<arr name="OAI_set">
+<str>mathematica</str>
+</arr>
+<str name="PPN">GDZPPN002501953</str>
+<arr name="PPN_virt">
+<str>PPN252457811</str>
+</arr>
+<str name="Page">308-313</str>
+<str name="Parent_ID">PPN252457811</str>
+<arr name="Size/Quality">
+<str>6 pages</str>
+</arr>
+<arr name="Timestamp">
+<str>2001-02-19T00:00:00Z</str>
+</arr>
+<arr name="Title">
+<str>Ueber die Gestalt einer Fläche 4ter Ordnung</str>
+</arr>
+<arr name="Type">
+<str>Article</str>
+</arr>
+<arr name="URL">
+<str>http://resolver.sub.uni-goettingen.de/purl?PPN252457811_1909/dmdlog41</str>
+</arr>
+<str name="Volume">1909</str>
+<str name="Year">1909</str>
+<str name="db">reg</str>
+<str name="id">reg_074920</str>
+</doc>

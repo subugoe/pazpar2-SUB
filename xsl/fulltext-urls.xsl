@@ -37,7 +37,7 @@
 	<xsl:template match="pz:record">
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
-			<pz:metadata name="has-fulltext">yes</pz:metadata>
+			<pz:metadata type="has-fulltext">yes</pz:metadata>
 		</xsl:copy>
 	</xsl:template>
 
