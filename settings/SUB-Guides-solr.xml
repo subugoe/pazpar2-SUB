@@ -17,7 +17,7 @@
 
 
 	<set name="pz:cclmap:title" value="1=Title s=al t=r"/>
-	<set name="pz:cclmap:person" value="1=Author t=r"/>
+	<set name="pz:cclmap:person" value="1=pers t=r"/>
 	<!--
 		The Keywords field may not be the best for searches as interesting subject
 		titles may be present in LCSH and MSCverbal fields as well.
