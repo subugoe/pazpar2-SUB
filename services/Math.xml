@@ -46,6 +46,7 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Digitalisate"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Dissertationen"/>
 	</settings>
 
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
@@ -55,11 +56,6 @@
 	</settings>
 
 	<settings src="settings/fiz-elibm.xml"/>
-
-	<settings src="settings/testing/SUB-Guides.xml"/>
-	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:2020/diss" name="pz:name" value="Dissertationen"/>
-	</settings>
 
 	<xi:include href="metadata/SUB-default.xml"/>
 
