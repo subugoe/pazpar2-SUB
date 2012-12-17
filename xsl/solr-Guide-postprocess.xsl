@@ -187,9 +187,11 @@
 	</xsl:template>
 
 	<xsl:template match="pz:metadata[@type='URL']">
-		<pz:metadata type="electronic-url">
-			<xsl:value-of select="."/>
-		</pz:metadata>
+		<xsl:if test="not(../pz:metadata[@type='URN'])">
+			<pz:metadata type="electronic-url">
+				<xsl:value-of select="."/>
+			</pz:metadata>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="pz:metadata[@type='URN']">
