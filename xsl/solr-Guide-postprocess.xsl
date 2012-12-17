@@ -58,6 +58,16 @@
 		</pz:metadata>
 	</xsl:template>
 
+	<!-- db: Media type for mathdiss is always electronic -->
+	<xsl:template match="pz:metadata[@type='db']">
+		<xsl:choose>
+			<xsl:when test=". = 'diss'">
+				<pz:metadata type="medium">electronic</pz:metadata>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+
+
 	<xsl:template match="pz:metadata[@type='Author']">
 		<pz:metadata type="author">
 			<xsl:value-of select="."/>
@@ -65,15 +75,43 @@
 	</xsl:template>
 
 	<xsl:template match="pz:metadata[@type='Publisher']">
-		<pz:metadata type="title-responsibility">
-			<xsl:value-of select="."/>
-		</pz:metadata>
+		<xsl:variable name="db">
+			<xsl:value-of select="../pz:metadata[@type='db']"/>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="$db='forst' or $db='geo' or $db='hist' or $db='lit' or $db='math'">
+				<!-- map to title-responsibility for Guide databases -->
+				<pz:metadata type="title-responsibility">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- otherwise map to publication-name -->
+				<pz:metadata type="publication-name">
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="pz:metadata[@type='Editor']">
 		<pz:metadata type="other-person">
 			<xsl:value-of select="."/>
 			<xsl:text> (Ed.)</xsl:text>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Advisor']">
+		<pz:metadata type="other-person">
+			<xsl:value-of select="."/>
+			<xsl:text> (Advisor)</xsl:text>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Referee']">
+		<pz:metadata type="other-person">
+			<xsl:value-of select="."/>
+			<xsl:text> (Referee)</xsl:text>
 		</pz:metadata>
 	</xsl:template>
 
@@ -142,7 +180,7 @@
 		</pz:metadata>
 	</xsl:template>
 
-	<xsl:template match="pz:metadata[@type='Year']">
+	<xsl:template match="pz:metadata[@type='Year'] | pz:metadata[@type='Date']">
 		<pz:metadata type="date">
 			<xsl:value-of select="."/>
 		</pz:metadata>
@@ -153,6 +191,13 @@
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='URN']">
+		<pz:metadata type="electronic-url">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
 
 	<!-- Classification information, mapped to the respective classification fields. -->
 	<xsl:template match="pz:metadata[@type='DDC']">
@@ -168,13 +213,16 @@
 	</xsl:template>
 
 	<!-- Textual subject information, all mapped to 'subject'. -->
-	<xsl:template match="pz:metadata[@type='MSCverbal']">
+	<xsl:template match="pz:metadata[@type='MSCverbal']
+							| pz:metadata[@type='Keywords']
+							| pz:metadata[@type='LCSH']
+							| pz:metadata[@type='Subject']">
 		<pz:metadata type="subject">
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
 
-	<xsl:template match="pz:metadata[@type='Keywords']">
+	<xsl:template match="pz:metadata[@type='Keywords'] ">
 		<pz:metadata type="subject">
 			<xsl:value-of select="."/>
 		</pz:metadata>
@@ -198,6 +246,12 @@
 		</pz:metadata>
 	</xsl:template>
 
+	<xsl:template match="pz:metadata[@type='Abstract_(de)'] | pz:metadata[@type='Abstract_(en)']">
+		<pz:metadata type="abstract">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
 	<xsl:template match="pz:metadata[@type='Description']">
 		<pz:metadata type="description">
 			<xsl:value-of select="."/>
@@ -211,6 +265,12 @@
 	</xsl:template>
 
 	<xsl:template match="pz:metadata[@type='Size/Quality']">
+		<pz:metadata type="description">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Grantor']">
 		<pz:metadata type="description">
 			<xsl:value-of select="."/>
 		</pz:metadata>

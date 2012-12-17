@@ -59,6 +59,8 @@
 
 	<!-- Default: Guide Databases, set the medium to website for all records -->
 	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/medium-website.xsl,xsl/merge-fields.xsl"/>
+	<!-- Diss: make all records electronic fulltexts -->
+	<set name="pz:xslt" target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/medium-electronic.xsl,xsl/fulltext-urls.xsl,xsl/merge-fields.xsl"/>
 	<!-- DigReg: create journal-subpart field from the metadata -->
 	<set name="pz:xslt" target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-Guide-postprocess.xsl,xsl/journal-subpart-creator.xsl,xsl/fulltext-urls.xsl,xsl/merge-fields.xsl"/>
 	<!-- JfM -->
