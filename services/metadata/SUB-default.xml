@@ -29,7 +29,7 @@
 	<metadata name="title-responsibility" brief="yes" merge="longest"/>
 	<metadata name="title-dates" brief="yes" merge="longest"/>
 	<metadata name="title-medium" brief="yes" merge="longest"/>
-	<metadata name="title-number-section" brief="yes" merge="unique"/>
+	<metadata name="title-number-section" brief="yes" sortkey="skiparticle" merge="unique"/>
 	<metadata name="title-complete"/>
 	<metadata name="medium" brief="yes" merge="unique" termlist="yes" limitmap="local:"/>
 	<metadata name="iii-id" brief="yes" merge="no"/>
