@@ -10,16 +10,18 @@
 	http://vifamath.de/subject-catalogue/?L=1
 
 	* GBV Databases (SRU):
-		* Göttingen Opac
-		* Fachkatalog Mathematik without Göttingen books
+		* SUB Göttingen Opac
+		* TIB Hannover (technically: GVK restricted to TIB Hannover minus books available in Göttingen)
+		* Fachkatalog Mathematik without books available in Göttingen or Hannover
 	* SUB Solr Indexes (SSGFI1):
 		* Math Guide
 		* Jahrbuch-Datenbank
 	* SUB Solr Indexes (Harvesting):
 		* arXiv
-	* FIZ Karlsruhe (SRU): ElibM
+	* FIZ Karlsruhe (SRU):
+		* ElibM
 
-	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<settings src="settings/gbv-sru-neu.xml"/>
@@ -27,8 +29,11 @@
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
 		<set target="sru.gbv.de/opac-de-7" name="pz:maxrecs" value="250"/>
 
+		<set target="sru.gbv.de/gvk-tib" name="pz:name" value="TIB Hannover (GBV)"/>
+		<set target="sru.gbv.de/gvk-tib" name="pz:maxrecs" value="250"/>
+
 		<set target="sru.gbv.de/fachopac-mat" name="pz:name" value="Fachkatalog Mathematik"/>
-		<set target="sru.gbv.de/fachopac-mat" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
+		<set target="sru.gbv.de/fachopac-mat" name="pz:pqf_strftime" value="@not @not %% @attr 1=pica.bib 0007 @attr 1=pica.bib 0089"/>
 	</settings>
 
 

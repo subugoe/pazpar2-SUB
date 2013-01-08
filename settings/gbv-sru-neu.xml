@@ -97,14 +97,19 @@
 	<set name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/catalogue-url-hint+id.xsl,xsl/gbv-parent-catalogue-url-postprocess.xsl,xsl/zdb-number.xsl,xsl/merge-fields.xsl"/>
 
 
-	<!-- Load more records from Göttingen Opac. -->
-	<set name="pz:maxrecs" target="sru.gbv.de/opac-de-7" value="500"/>
 
-	<!-- Set up Göttingen catalogue URLs. -->
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/opac-de-7" value="http://gso.gbv.de/DB=2.1/PPNSET?PPN="/>
+	<!-- SUB Göttingen OPAC. -->
+	<set name="pz:maxrecs" target="sru.gbv.de/opac-de-7" value="500"/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/proj-subgoeolr" value="https://opac.sub.uni-goettingen.de/DB=1.3/PPNSET?PPN="/>
 
-	<!-- Set up central GBV catalogue URLs. -->
+
+	<!-- TIB Hannover catalogue URLs. -->
+	<set target="sru.gbv.de/gvk-tib" name="pz:url" value="sru.gbv.de/gvk"/>
+	<set target="sru.gbv.de/gvk-tib" name="pz:pqf_strftime" value="@not @and %% @attr 1=pica.bib 0089 @attr 1=pica.bib 0007"/>
+	<set target="sru.gbv.de/gvk-tib" name="catalogueURLHintPrefix"  value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=70/PPNSET?PPN="/>
+
+
+	<!-- Central GBV catalogue URLs. -->
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/wao" value="http://gso.gbv.de/DB=1.46/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natliz" value="http://gso.gbv.de/DB=1.50/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natlizzss" value="http://gso.gbv.de/DB=1.55/PPNSET?PPN="/>
