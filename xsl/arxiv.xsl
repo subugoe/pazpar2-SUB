@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Create catalogue-url Links for harvested arXiv records.
+	Massage records harvested from arxiv.org:
+		- turn electronic-url into catalogue-url
+		- make all records medium electronic
+		- move MSCs to classification-msc field
 
-	2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2012-2013 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 <xsl:stylesheet
@@ -22,7 +25,7 @@
 
 	<!--
 		Turn electronic-url field into catalogue-url if it points to the
-		arxiv Server.
+		arXiv server.
 	-->
 	<xsl:template match="pz:metadata[@type='electronic-url']">
 		<xsl:choose>
@@ -43,6 +46,17 @@
 	<!-- All records are of type 'electronic' -->
 	<xsl:template match="pz:metadata[@type='medium']">
 		<pz:metadata type="medium">electronic</pz:metadata>
+	</xsl:template>
+
+
+	<!--
+		Extract MSCs:
+		Solr field subject_msc to pz:metadata of type 'classification-msc'
+	-->
+	<xsl:template match="pz:metadata[@type='subject_msc']">
+		<pz:metadata type="classification-msc">
+			<xsl:value-of select="."/>
+		</pz:metadata>
 	</xsl:template>
 
 

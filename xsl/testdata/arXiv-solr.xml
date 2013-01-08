@@ -1,0 +1,47 @@
+<doc>
+<arr name="author">
+<str>Böhning, Christian</str>
+<str>von Bothmer, Hans-Christian Graf</str>
+<str>Casnati, Gianfranco</str>
+</arr>
+<str name="country_code">US</str>
+<arr name="date">
+<str>2011-05-02</str>
+</arr>
+<arr name="description">
+<str>  Let M_{7,n} be the (coarse) moduli space of smooth curves of genus 7 with nmarked points defined over the complex field. We denote by M^1_{7,n;4} thelocus of points inside M_{7,n} representing curves carrying a g^1_4. It isclassically known that M^1_{7,n;4} is irreducible of dimension 17+n. We provein this paper that M^1_{7,n;4} is rational for 0&lt;= n &lt;= 11.</str>
+<str>Comment: 20 pages; in the second version we replaced the previous Lemma 4.3 by  Lemma 4.5, and fixed the proof of the rationality of the moduli space of  unpointed tetragonal genus 7 curves in section 4. Hans-Christian von Bothmer  as further author added</str>
+</arr>
+<arr name="doi">
+<str>10.1093/imrn/rnr230</str>
+</arr>
+<str name="id">oai:arXiv.org:1105.0310</str>
+<date name="indexed">2012-07-04T23:04:21.239Z</date>
+<date name="oai_datestamp">2012-07-04T00:59:59Z</date>
+<str name="oai_isbd">/ Böhning, Christian ; von Bothmer, Hans-Christian Graf ; Casnati, Gianfranco. — 2011-05-02. — http://arxiv.org/abs/1105.0310. — doi:10.1093/imrn/rnr230</str>
+<str name="oai_repository_id">1</str>
+<str name="oai_title">Birational properties of some moduli spaces related to tetragonal curves  of genus 7</str>
+<arr name="oai_url">
+<str>http://arxiv.org/abs/1105.0310</str>
+</arr>
+<arr name="subject">
+<str>Mathematics - Algebraic Geometry</str>
+<str>14H10, 14H45, 14E08, 14L30</str>
+</arr>
+<arr name="subject_msc">
+<str>14H10</str>
+<str>14H45</str>
+<str>14E08</str>
+<str>14L30</str>
+</arr>
+<arr name="title">
+<str>Birational properties of some moduli spaces related to tetragonal curves  of genus 7</str>
+</arr>
+<arr name="type">
+<str>oai</str>
+<str>text</str>
+</arr>
+<arr name="url">
+<str>http://arxiv.org/abs/1105.0310</str>
+</arr>
+</doc>
