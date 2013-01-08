@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings target="sru.gbv.de/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
-	New GBV SRU Server
+	GBV SRU Server
 	* Pica-style search keys
 	* transformations:
 		-> gbv-cleaner to fix a few quirks of the GBV data
@@ -9,10 +9,9 @@
 		-> iso-639-2-to-639-2b-converter to convert deprecated language codes
 		-> catalogue-url-hint+id.xsl to insert catalogue-urls into the records based
 			on the catalogue-url-prefix value
-	* fetch 500 results for SUB Göttingen Opac
-	* set up catalogueURLHints for a number of databases
+	* set up catalogueURLHints and other basic configuration for a number of databases
 
-	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<!-- SRU 1.1 GET -->
@@ -49,10 +48,17 @@
 	<set name="pz:cclmap:issn" value="u=pica.iss t=r"/>
 
 	<!--
-		Lokale Klassifikation for GOK subject search.
-		Right-truncated phrase search for LKL (in fact this index is phrase search-only).
+		… probably only available in opac-de-7:
+		lkl: Lokale Klassifikation (GOK)
+		brk: Bandrealkatalog
+		osg: Online Contents SSG
+		sst: Sonderstandort
 	-->
 	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
+	<set name="pz:cclmap:brk" value="u=pica.brk s=1 t=r"/>
+	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
+	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
+
 
 	<!--
 		Fake search key for Freiberg classification, mapped to the BKL field.
@@ -76,14 +82,12 @@
 	<set name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
 	<set name="pz:cclmap:bib" value="u=pica.bib t=r"/>
 	<set name="pz:cclmap:language" value="u=pica.taa s=1"/>
+	<set name="pz:cclmap:url" value="u=pica.url t=r"/>
 
-	<!-- … probably only available in opac-de-7. -->
-	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
-	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
 
 
 	<!-- Set up limit maps for our facets where possible. -->
-<!--	<set name="pz:limitmap:medium" value="local:medium"/> -->
+	<!--	<set name="pz:limitmap:medium" value="local:medium"/> -->
 	<set name="pz:limitmap:language" value="rpn:@attr 1=pica.taa"/>
 	<set name="pz:limitmap:date" value="rpn:@attr 1=pica.jah"/>
 
