@@ -32,6 +32,8 @@
 	<set name="pz:cclmap:ddc" value="u=dnb.ddc t=r"/>
 	<set name="pz:cclmap:zdbid" value="u=dnb.zdbid t=r"/>
 	<set name="pz:cclmap:bib" value="u=dnb.sigel t=r"/>
+	<set name="pz:cclmap:ssg" value="u=dnb.ssg s=1 t=r"/>
+	<set name="pz:cclmap:ppn" value="u=dnb.idn s=1 t=r"/>
 
 
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
@@ -40,7 +42,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,pazpar2-etc/tmarc.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/medium-newspaper.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
 
 
 	<!-- Catalogue URLs -->
