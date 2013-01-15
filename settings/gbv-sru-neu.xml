@@ -83,6 +83,7 @@
 	<set name="pz:cclmap:bib" value="u=pica.bib t=r"/>
 	<set name="pz:cclmap:language" value="u=pica.taa s=1"/>
 	<set name="pz:cclmap:url" value="u=pica.url t=r"/>
+	<set name="pz:cclmap:nea" value="u=pica.nea t=r"/>
 
 
 
