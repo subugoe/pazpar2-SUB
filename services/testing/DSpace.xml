@@ -7,10 +7,9 @@
 <!--
 	Service using the GoeDoc DSpace server’s SRU interface.
 
-	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/GoeScholar.xml"/>
 	<settings src="settings/ADW.xml"/>
 	<settings src="settings/GEO-LEO-edocs.xml"/>
 

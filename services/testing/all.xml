@@ -7,7 +7,7 @@
 <!--
 	To test all targets we have configuration files for.
 
-	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<!-- GBV -->>
@@ -55,7 +55,11 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History Guide"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/forst" name="pz:name" value="Forestry Guide"/>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Mathe Digitalisate"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="JfM"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Mathe Dissertationen"/>
 	</settings>
 
 
@@ -76,7 +80,6 @@
 	<!-- DSpace -->
 	<settings src="settings/ADW.xml"/>
 	<settings src="settings/GEO-LEO-edocs.xml"/>
-	<settings src="settings/GoeScholar.xml"/>
 
 	<!-- Harvesting -->
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
@@ -85,6 +88,8 @@
 		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
 		<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="Math arXiv"/>
 		<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+		<set target="vlib.sub.uni-goettingen.de/solr/test" name="pz:name" value="Harvesting Test"/>
+		<set target="vlib.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
 	</settings>
 
 
