@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="vlib.sub.uni-goettingen.de/solr/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="solr-harvest.tc.sub.uni-goettingen.de/solr/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
-	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	Configuration for OAI-Harvesting data from Solr indexes.
+
+	2012-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<set name="pz:sru" value="solr"/>
@@ -40,6 +42,6 @@
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
 
 	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
-	<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
-	<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
 </settings>

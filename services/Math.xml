@@ -52,13 +52,17 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Dissertationen"/>
 	</settings>
 
+
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
 	<settings>
-		<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="arXiv"/>
-		<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:maxrecs" value="100"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="arXiv"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:maxrecs" value="250"/>
 	</settings>
 
+
 	<settings src="settings/fiz-elibm.xml"/>
+
+
 
 	<xi:include href="metadata/SUB-default.xml"/>
 

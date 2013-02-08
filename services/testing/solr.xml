@@ -5,9 +5,9 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="solr">
 <!--
-	Service using solr.
+	Service for testing Solr targets.
 
-	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<settings src="settings/testing/vifamath-solr.xml"/>
@@ -26,10 +26,14 @@
 
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
 	<settings>
-		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="GEO Repositories"/>
-		<set target="vlib.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
-		<set target="vlib.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="Math arXiv"/>
-		<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+<!--		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/adw" name="pz:name" value="AdW"/> -->
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/gdz" name="pz:name" value="GDZ"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="GEO Repositories"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="Math arXiv"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/test" name="pz:name" value="Test"/>
 	</settings>
 
 	<settings src="settings/testing/gbv-solr.xml"/>

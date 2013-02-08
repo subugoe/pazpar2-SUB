@@ -33,14 +33,14 @@
 
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
 	<settings>
-		<set target="vlib.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
-		<set target="vlib.sub.uni-goettingen.de/solr/goescholar" name="pz:maxrecs" value="250"/>
-		<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
-		<set target="vlib.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:maxrecs" value="250"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:maxrecs" value="250"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:maxrecs" value="250"/>
 	</settings>
 
-
 	<settings src="settings/GEO-LEO-edocs.xml"/>
+
 
 
 	<xi:include href="metadata/SUB-default.xml"/>
