@@ -52,6 +52,7 @@
 		<xi:include href="services/testing/CERL.xml"/>
 		<xi:include href="services/testing/vifanord.xml"/>
 		<xi:include href="services/testing/vifapol.xml"/>
+		<xi:include href="services/testing/zvdd.xml"/>
 
 
 

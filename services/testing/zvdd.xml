@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="ZVDD">
+<!--
+	pazpar2 service ZVDD
+
+	2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/testing/zvdd.xml"/>
+
+
+
+	<xi:include href="../metadata/SUB-default.xml"/>
+
+</service>
