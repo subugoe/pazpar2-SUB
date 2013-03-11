@@ -53,7 +53,7 @@
 
 	<settings src="settings/testing/dnb.xml"/>
 	<settings>
-		<set target="services.d-nb.de/sru/zdb" name="pz:name" value="John F. Kennedy Institut"/>
+		<set target="services.d-nb.de/sru/zdb" name="pz:name" value="John F. Kennedy Institut (ZDB)"/>
 		<set target="services.d-nb.de/sru/zdb" name="pz:pqf_strftime" value="@and %% @attr 1=dnb.ssg 7,261"/>
 		<set target="services.d-nb.de/sru/zdb" name="catalogueURLHintPrefix" value="http://dispatch.opac.d-nb.de/DB=1.1/PRS=HOL/HLIB=009001506/PPNSET?PPN="/>
 		<!-- <set target="services.d-nb.de/sru/zdb" name="catalogueURLHintPrefix" value="http://aleph-www.ub.fu-berlin.de/F/?func=find-c&amp;ccl_term=ZDS%3D"/> -->
