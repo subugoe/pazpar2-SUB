@@ -2,11 +2,10 @@
 	compress
 	dateext
 	maxage 365
-	rotate 99
-	size=+4096k
+	rotate 12
+	size=+1024k
 	notifempty
 	missingok
-	create 644 root root
 	prerotate
 		/etc/init.d/apache2 check-reload
 	endscript
@@ -19,11 +18,10 @@
 	compress
 	dateext
 	maxage 365
-	rotate 99
+	rotate 12
 	size=+1024k
 	notifempty
 	missingok
-	create 644 root root
 	prerotate
 		/etc/init.d/apache2 check-reload
 	endscript
@@ -31,4 +29,3 @@
 		/etc/init.d/apache2 reload
 	endscript
 }
-
