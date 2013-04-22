@@ -3,11 +3,10 @@
 	weekly
 	dateext
 	missingok
+	notifempty
 	rotate 12
-	delaycompress
 	create 640 pazpar2 pazpar2
 	su pazpar2 pazpar2
-	notifempty
 	postrotate
 		/etc/init.d/pazpar2 restart
 	endscript
