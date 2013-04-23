@@ -42,7 +42,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/medium-newspaper.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/medium-newspaper.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl,xsl/medium-strip-electronic.xsl"/>
 
 
 	<!-- Catalogue URLs -->

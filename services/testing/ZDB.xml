@@ -14,10 +14,10 @@
 
 	<settings src="settings/testing/dnb.xml"/>
 	<settings>
-		<set target="services.d-nb.de/sru/zdb" name="pz:maxrecs" value="500"/>
-		<set target="services.d-nb.de/sru/zdb" name="pz:name" value="ZDB"/>
+		<set target="services.d-nb.de/sru/zdb" name="pz:name" value="ZDB (SRU)"/>
 	</settings>
 
+	<settings src="settings/testing/zdb-z3950.xml"/>
 
 <!--
 	<settings src="settings/gbv-sru-neu.xml"/>
