@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="aleph-www.ub.fu-berlin.de/fub01_usm" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	FU Berlin SRU Server.
+
+	April 2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<set name="pz:sru" value="get"/>
+	<set name="pz:sru_version" value="1.1"/>
+
+	<set name="pz:cclmap:term" value="s=al t=r"/>
+	<set name="pz:cclmap:fulltext" value="s=al t=r"/>
+
+	<set name="pz:cclmap:title" value="u=dc.title s=al t=r"/>
+	<set name="pz:cclmap:person" value="u=dc.creator t=r"/>
+	<set name="pz:cclmap:subject" value="u=dc.subject s=al t=r"/>
+
+	<!-- Index name for date unknown on this server -->
+	<set name="pz:cclmap:date" value="u=dc.date"/>
+
+	<set name="pz:cclmap:isbn" value="u=dc.isbn t=r"/>
+	<set name="pz:cclmap:issn" value="u=dc.issn t=r"/>
+
+
+	<!-- SRU schema. Eg. "dc" or "marcxml" -->
+	<set name="pz:elements" value="marcxml"/>
+
+
+	<!-- Result normalisation settings -->
+	<set name="pz:nativesyntax" value="xml"/>
+	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,xsl/fu-berlin-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+
+</settings>
+

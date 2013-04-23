@@ -1,0 +1,169 @@
+<record xmlns="http://www.loc.gov/MARC21/slim">
+<!-- Indicator length at offset 10 should hold a digit. Assuming 2 -->
+<!-- Identifier length at offset 11 should hold a digit. Assuming 2 -->
+<!-- Length implementation at offset 22 should hold a digit. Assuming 0 -->
+  <leader>01625    a2200601   450 </leader>
+  <controlfield tag="005">20130409121000.0</controlfield>
+  <datafield tag="020" ind1="-" ind2="1">
+    <subfield code="0">2328129</subfield>
+  </datafield>
+  <datafield tag="020" ind1="a" ind2="1">
+    <subfield code="a">004135814</subfield>
+    <subfield code="b">DNB</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="025" ind1="a" ind2="1">
+    <subfield code="a">010360387</subfield>
+  </datafield>
+  <datafield tag="025" ind1="z" ind2="1">
+    <subfield code="a">40768-9</subfield>
+  </datafield>
+  <datafield tag="025" ind1="z" ind2="1">
+    <subfield code="a">004135814</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="026" ind1="-" ind2="1">
+    <subfield code="a">ZDB40768-9</subfield>
+  </datafield>
+  <datafield tag="027" ind1="-" ind2="1">
+    <subfield code="a">FU003906260</subfield>
+  </datafield>
+  <datafield tag="030" ind1="-" ind2="1">
+    <subfield code="|">zucz|z|||35</subfield>
+  </datafield>
+  <datafield tag="036" ind1="a" ind2="1">
+    <subfield code="a">XD-US</subfield>
+  </datafield>
+  <datafield tag="037" ind1="b" ind2="1">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="050" ind1="-" ind2="1">
+    <subfield code="|">ac||||||||||</subfield>
+  </datafield>
+  <datafield tag="052" ind1="-" ind2="1">
+    <subfield code="u">p||||zd||||||</subfield>
+  </datafield>
+  <datafield tag="057" ind1="-" ind2="1">
+    <subfield code="u">uu|||uuuu</subfield>
+  </datafield>
+  <datafield tag="070" ind1="a" ind2="1">
+    <subfield code="a">DNB</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="073" ind1="-" ind2="1">
+    <subfield code="a">7,261</subfield>
+  </datafield>
+  <datafield tag="075" ind1="-" ind2="1">
+    <subfield code="a">1</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="077" ind1="b" ind2="1">
+    <subfield code="a">40768-9</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="077" ind1="-" ind2="1">
+    <subfield code="a">169176-4</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="085" ind1="x" ind2="1">
+    <subfield code="a">Eastern edition</subfield>
+  </datafield>
+  <datafield tag="107" ind1="-" ind2="1">
+    <subfield code="a">M 684</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="200" ind1="-" ind2="1">
+    <subfield code="0">1</subfield>
+    <subfield code="b">1977 -</subfield>
+    <subfield code="e">als Mikrofilm</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="210" ind1="b" ind2="1">
+    <subfield code="j">1977</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+  <datafield tag="310" ind1="-" ind2="1">
+    <subfield code="a">&lt;&lt;The&gt;&gt; Christian science monitor / Eastern edition</subfield>
+  </datafield>
+  <datafield tag="331" ind1="-" ind2="1">
+    <subfield code="a">&lt;&lt;The&gt;&gt; Christian science monitor</subfield>
+  </datafield>
+  <datafield tag="335" ind1="-" ind2="1">
+    <subfield code="a">an internat. daily newspaper</subfield>
+  </datafield>
+  <datafield tag="360" ind1="-" ind2="1">
+    <subfield code="a">Eastern edition</subfield>
+  </datafield>
+  <datafield tag="370" ind1="a" ind2="1">
+    <subfield code="a">Eastern edition</subfield>
+  </datafield>
+  <datafield tag="405" ind1="-" ind2="1">
+    <subfield code="a">1966 -</subfield>
+  </datafield>
+  <datafield tag="410" ind1="-" ind2="1">
+    <subfield code="a">Boston, Mass.</subfield>
+  </datafield>
+  <datafield tag="412" ind1="-" ind2="1">
+    <subfield code="a">Christian Science Publ. Soc.</subfield>
+  </datafield>
+  <datafield tag="415" ind1="-" ind2="1">
+    <subfield code="a">Boston, Mass.</subfield>
+  </datafield>
+  <datafield tag="417" ind1="-" ind2="1">
+    <subfield code="a">Bell &amp; Howell [Index]</subfield>
+  </datafield>
+  <datafield tag="425" ind1="b" ind2="1">
+    <subfield code="a">1966</subfield>
+  </datafield>
+  <datafield tag="523" ind1="-" ind2="1">
+    <subfield code="a">Periodizitat: tagl.</subfield>
+  </datafield>
+  <datafield tag="531" ind1="z" ind2="1">
+    <subfield code="p">Vorg. ---&gt;</subfield>
+    <subfield code="a">&lt;&lt;The&gt;&gt; Christian science monitor / Atlantic edition</subfield>
+    <subfield code="9">BV002679868</subfield>
+  </datafield>
+  <datafield tag="537" ind1="-" ind2="1">
+    <subfield code="a">(ua/Z)</subfield>
+  </datafield>
+  <datafield tag="542" ind1="a" ind2="1">
+    <subfield code="a">0145-8027</subfield>
+  </datafield>
+  <datafield tag="610" ind1="-" ind2="1">
+    <subfield code="a">Mikrofilm-Ausg.</subfield>
+  </datafield>
+  <datafield tag="610" ind1="a" ind2="1">
+    <subfield code="a">Wooster, Ohio : Bell &amp; Howell</subfield>
+  </datafield>
+  <datafield tag="611" ind1="-" ind2="1">
+    <subfield code="a">Wooster, Ohio</subfield>
+  </datafield>
+  <datafield tag="613" ind1="-" ind2="1">
+    <subfield code="a">Bell &amp; Howell</subfield>
+  </datafield>
+  <datafield tag="673" ind1="b" ind2="1">
+    <subfield code="a">Boston, Mass.</subfield>
+    <subfield code="9">4007840-1</subfield>
+  </datafield>
+  <datafield tag="700" ind1="-" ind2="1">
+    <subfield code="a">070</subfield>
+    <subfield code="2">ZDB</subfield>
+  </datafield>
+  <datafield tag="700" ind1="-" ind2="1">
+    <subfield code="a">230</subfield>
+    <subfield code="2">ZDB</subfield>
+  </datafield>
+  <datafield tag="902" ind1="-" ind2="1">
+    <subfield code="s">Sekte</subfield>
+    <subfield code="9">(DE-588)4077343-7</subfield>
+  </datafield>
+  <datafield tag="902" ind1="-" ind2="1">
+    <subfield code="s">Christian Science</subfield>
+    <subfield code="9">(DE-588)4147928-2</subfield>
+  </datafield>
+  <datafield tag="012" ind1="-" ind2="1">
+    <subfield code="a">BV036811573</subfield>
+    <subfield code="l">FUB01</subfield>
+    <subfield code="2">144</subfield>
+  </datafield>
+</record>

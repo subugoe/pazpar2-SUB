@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>00775nas a2200241 u 4500</leader>
+  <controlfield tag="001">BV036831243</controlfield>
+  <controlfield tag="005">00000000000000.0</controlfield>
+  <controlfield tag="007">zz|||||||||||||||||||||</controlfield>
+  <controlfield tag="008">                  d          |||        </controlfield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">&lt;&lt;The&gt;&gt; Boston daily globe</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="p">Morning edition</subfield>
+  </datafield>
+  <datafield tag="246" ind1=" " ind2="3">
+    <subfield code="a">Boston daily globe / Morning edition</subfield>
+  </datafield>
+  <datafield tag="250" ind1=" " ind2=" ">
+    <subfield code="b">Repr.: Glen Rock, NJ : Microfilming Corp. of America</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="a">Boston, Mass.</subfield>
+    <subfield code="c">1872, 1960</subfield>
+  </datafield>
+  <datafield tag="310" ind1=" " ind2=" ">
+    <subfield code="a">Periodizitt&#x303;: tg&#x303;l.</subfield>
+  </datafield>
+  <datafield tag="533" ind1=" " ind2=" ">
+    <subfield code="n">(reproduction note)</subfield>
+  </datafield>
+  <datafield tag="580" ind1=" " ind2=" ">
+    <subfield code="a">BV036797615         Digital. Ausg. ---&gt;:Boston daily globe</subfield>
+  </datafield>
+  <datafield tag="900" ind1=" " ind2=" ">
+    <subfield code="a">FU Berlin: 144 $bSignatur: M 681</subfield>
+    <subfield code="m">ISSBD</subfield>
+  </datafield>
+  <datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="362" ind1="1" ind2=" ">
+    <subfield code="a">1872,4.Mr&#x303;z - 1960,25.Apr.</subfield>
+  </datafield>
+  <datafield tag="785" ind1="0" ind2="0">
+    <subfield code="t">BV036831242         Forts. ---&gt;:Boston globe</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+    <subfield code="a">(a/Z)</subfield>
+  </datafield>
+  <datafield tag="084" ind1=" " ind2=" ">
+    <subfield code="a">070ZDB</subfield>
+  </datafield>
+</record>
