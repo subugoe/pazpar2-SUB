@@ -5,13 +5,15 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="DSpace">
 <!--
-	Service using the GoeDoc DSpace server’s SRU interface.
+	Service loading data from DSpace.
+		* via DSpace’s SRU interface (to be deprecated as it is instable)
+		* using SRU (provided by Metaproxy) accessing DSpace’s Solr index
 
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<settings src="settings/ADW.xml"/>
-	<settings src="settings/GEO-LEO-edocs.xml"/>
+	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
 
 
 

@@ -39,7 +39,7 @@
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:maxrecs" value="250"/>
 	</settings>
 
-	<settings src="settings/GEO-LEO-edocs.xml"/>
+	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
 
 
 

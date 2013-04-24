@@ -79,7 +79,7 @@
 
 	<!-- DSpace -->
 	<settings src="settings/ADW.xml"/>
-	<settings src="settings/GEO-LEO-edocs.xml"/>
+	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
 
 	<!-- Harvesting -->
 	<settings src="settings/SUB-Harvesting-solr.xml"/>

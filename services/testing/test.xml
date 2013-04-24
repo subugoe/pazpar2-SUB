@@ -10,7 +10,6 @@
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/GEO-LEO-edocs.xml"/>
 	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
 
 

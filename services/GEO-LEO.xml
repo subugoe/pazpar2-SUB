@@ -23,7 +23,7 @@
 	* SUB Solr Indexes (Harvesting):
 		* Articles
 		* Digitised Works
-	* GEO-LEO e-docs DSpace SRU interface
+	* GEO-LEO e-docs DSpace (SRU via Metaproxy)
 
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -63,12 +63,12 @@
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="Digitalisate"/>
 	</settings>
 
-	<settings src="settings/GEO-LEO-edocs.xml"/>
+	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
 
 
 
 	<metadata name="subject" brief="yes" merge="unique"/>
-	
+
 	<xi:include href="metadata/SUB-default.xml"/>
 
 </service>

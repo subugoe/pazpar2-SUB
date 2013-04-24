@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="sru.sub.uni-goettingen.de/dspace/gldocs" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings
+	xmlns="http://www.indexdata.com/pazpar2/1.0"
+	target="sru.sub.uni-goettingen.de/dspace/geo-leo">
 <!--
 	pazpar2 settings for the GEO-LEO e-docs DSpace server,
 		accessing the Solr Index via metaproxy’s SRU interface.
 
-	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2012-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
-	<set name="pz:name" value="GEO-LEO e-docs (Metaproxy)"/>
+	<set name="pz:name" value="GEO-LEO e-docs"/>
 
 	<set name="pz:sru" value="get"/>
 	<set name="pz:sru_version" value="1.1"/>
@@ -36,7 +38,7 @@
 
 
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
-	<set name="pz:elements" value="custom"/>
+	<set name="pz:elements" value="dc"/>
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>

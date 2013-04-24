@@ -13,13 +13,13 @@
 	* SWB Catalogue search via Z39.50 for Freiberg books
 	* SUB Solr Indexes (SSGFI1):
 		* Geo Guide
-	* GEO-LEO e-docs DSpace SRU interface
+	* GEO-LEO e-docs (SRU via Metaproxy)
 
 
 	All targets support the fbg and lkl search keys for the Göttingen and Freiberg
 	subject classifications.
 
-	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<settings src="settings/gbv-sru-neu.xml"/>
@@ -34,7 +34,7 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo-Guide"/>
 	</settings>
 
-	<settings src="settings/GEO-LEO-edocs.xml"/>
+	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
 
 
 
