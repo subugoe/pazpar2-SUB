@@ -180,7 +180,8 @@ case "$1" in
 	## -D: daemonise
 	## -f: configuration file
 	## -l: log file
-	/sbin/startproc -u pazpar2 $PZ_BIN -D -f $PZ_CONFIG -l /var/log/pazpar2/pazpar2.log 
+	## -m: time format for log file
+	/sbin/startproc -u pazpar2 $PZ_BIN -D -f $PZ_CONFIG -l /var/log/pazpar2/pazpar2.log -m "%F %T"
 
 	# Remember status and be verbose
 	rc_status -v
