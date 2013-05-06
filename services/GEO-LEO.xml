@@ -23,6 +23,7 @@
 	* SUB Solr Indexes (Harvesting):
 		* Articles
 		* Digitised Works
+		* Pangaea
 	* GEO-LEO e-docs DSpace (SRU via Metaproxy)
 
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
@@ -61,6 +62,7 @@
 	<settings>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="Repositories"/>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="Digitalisate"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea" name="pz:name" value="Pangaea"/>
 	</settings>
 
 	<settings src="settings/GEO-LEO-edocs-MP.xml"/>

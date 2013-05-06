@@ -9,7 +9,7 @@
 	<set name="pz:sru" value="solr"/>
 	<set name="pz:sru_version" value="1.4"/>
 
-	<set name="pz:maxrecs" value="500"/>
+	<set name="pz:maxrecs" value="250"/>
 
 	<set name="pz:cclmap:term" value="s=al t=r"/>
 
@@ -24,6 +24,7 @@
 	<set name="pz:cclmap:subject" value="1=subject s=al t=r"/>
 	<set name="pz:cclmap:lkl" value="1=subject_gok s=pw t=r"/>
 	<set name="pz:cclmap:msc" value="1=subject_msc s=pw t=r"/>
+
 
 	<!--
 		Fake Search key for Freiberg classification, mapped to MSC field.
@@ -41,7 +42,19 @@
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
 
-	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
-	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
-	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
+	<!-- General Harvester Index XSL setup. -->
+	<set name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
+	<!-- DigiZeitschriften -->
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften"
+		name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/digizeitschriften.xsl,xsl/merge-fields.xsl"/>
+	<!-- arXiv -->
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv"
+		name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
+	<!-- Pangaea -->
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea"
+		name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/pangaea.xsl,xsl/merge-fields.xsl"/>
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea"
+		name="pz:pqf_strftime" value='@not %% @attr 1=hierarchyLevel_s child'/>
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea"
+		name="pz:maxrecs" value='100'/>
 </settings>

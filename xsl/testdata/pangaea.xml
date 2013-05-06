@@ -1,0 +1,54 @@
+<result name="response" numFound="346391" start="0">
+  <doc>
+    <date name="indexed">2013-05-03T07:41:14.575Z</date>
+    <arr name="type">
+      <str>oai</str>
+    </arr>
+    <str name="country_code">DE</str>
+    <str name="oai_repository_id">1</str>
+    <str name="id">oai:pangaea.de:doi:10.1594/PANGAEA.721811</str>
+    <date name="oai_datestamp">2013-04-22T17:22:50Z</date>
+    <arr name="author">
+      <str>Forster, Astrid</str>
+      <str>Schouten, Stefan</str>
+      <str>Baas, Marianne</str>
+      <str>Sinninghe Damsté, Jaap S</str>
+    </arr>
+    <arr name="date">
+      <str>2007</str>
+    </arr>
+    <arr name="title">
+      <str>(Table DR2) Geochemical data, paleo-sea surface temperatures reconstructed by TEX86 paleothermometry and time intervals differentiated based thereon at ODP Site 207-1259</str>
+    </arr>
+    <arr name="doi">
+      <str>doi:10.1594/PANGAEA.721811</str>
+    </arr>
+    <arr name="relation">
+      <str>Forster, AstridSchouten, StefanBaas, MarianneSinninghe Damsté, Jaap S: Mid-Cretaceous (Albian-Santonian) sea surface temperature record of the tropical Atlantic Ocean, Geology, 2007</str>
+    </arr>
+    <arr name="relation-url_s">
+      <str>http://dx.doi.org/10.1130/G23874A.1</str>
+    </arr>
+    <arr name="geo-west_f">
+      <float>-54.199516</float>
+    </arr>
+    <arr name="geo-east_f">
+      <float>-54.199516</float>
+    </arr>
+    <arr name="geo-south_f">
+      <float>9.3004</float>
+    </arr>
+    <arr name="geo-north_f">
+      <float>9.3004</float>
+    </arr>
+    <arr name="description">
+      <str>vertical profile</str>
+    </arr>
+    <arr name="project-name_s">
+      <str>Ocean Drilling Program</str>
+    </arr>
+    <arr name="project-url_s">
+      <str>http://www-odp.tamu.edu/</str>
+    </arr>
+    <long name="_version_">1433997806707671040</long></doc>
+</result>
