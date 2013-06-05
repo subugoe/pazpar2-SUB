@@ -7,7 +7,7 @@
 	<set name="pz:sru" value="get"/>
 	<set name="pz:sru_version" value="1.1"/>
 
-	<set name="pz:maxrecs" value="500"/>
+	<set name="pz:maxrecs" value="250"/>
 
 	<set name="pz:cclmap:term" value="s=al t=r"/>
 
