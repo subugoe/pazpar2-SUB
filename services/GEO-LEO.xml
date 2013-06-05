@@ -62,7 +62,7 @@
 	<settings>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="Repositories"/>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="Digitalisate"/>
-		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea" name="pz:name" value="Pangaea"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea" name="pz:name" value="Pangaea Data Publisher"/>
 	</settings>
 
 	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
