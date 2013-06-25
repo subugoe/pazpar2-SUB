@@ -54,7 +54,7 @@
 	</settings>
 
 
-	<settings src="settings/testing/fu-berlin.xml"/>
+	<settings src="settings/fu-berlin.xml"/>
 	<settings>
 		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:name" value="John F. Kennedy Institut"/>
 		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:pqf_strftime" value="@and %% @attr 1=dc.sno 7,261"/>
