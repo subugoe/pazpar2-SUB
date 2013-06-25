@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="AAC-Zeitungen">
+<!--
+	Targets used for Lib AAC newspapers search.
+
+	* FU Berlin (SRU):
+		* John F. Kennedy Institut
+
+	2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+	<settings src="settings/fu-berlin.xml"/>
+	<settings>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:name" value="John F. Kennedy Institut"/>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:pqf_strftime" value="@and %% @attr 1=dc.sno 7,261"/>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="catalogueURLHintPrefix" value="http://aleph-www.ub.fu-berlin.de/F/?func=find-c&amp;ccl_term=idn%3D"/>
+	</settings>
+
+
+
+	<xi:include href="metadata/SUB-default.xml"/>
+
+</service>

@@ -15,6 +15,7 @@
 		<!-- Lib AAC -->
 		<xi:include href="services/AAC.xml"/>
 		<xi:include href="services/AAC-Neuerwerbungen.xml"/>
+		<xi:include href="services/AAC-Zeitungen.xml"/>
 		<xi:include href="services/AAC-Lit-Themen.xml"/>
 		<xi:include href="services/Guide-Literature.xml"/>
 		<xi:include href="services/AAC-Hist-Themen.xml"/>
