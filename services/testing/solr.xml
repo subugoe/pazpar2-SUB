@@ -10,8 +10,6 @@
 	2011-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/testing/vifamath-solr.xml"/>
-
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History-Guide"/>

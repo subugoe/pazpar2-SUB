@@ -69,19 +69,14 @@
 	<settings src="settings/NEBIS-ETH.xml"/>
 	<settings src="settings/testing/PIO.xml"/>
 
-	<!-- Zebras -->
-	<settings src="settings/testing/zebra-vifamath.xml"/>
-	<settings>
-		<set target="134.76.176.48:2020/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
-	</settings>
-
+	<!-- ElibM SRU (FIZ) -->
 	<settings src="settings/fiz-elibm.xml"/>
 
 	<!-- DSpace -->
 	<settings src="settings/ADW.xml"/>
 	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
 
-	<!-- Harvesting -->
+	<!-- Harvesting Solr -->
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
 	<settings>
 <!--		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/adw" name="pz:name" value="AdW"/> -->
@@ -92,14 +87,16 @@
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="Math arXiv"/>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/test" name="pz:name" value="Test"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea" name="pz:name" value="Pangaea"/>
 	</settings>
 
-
-
-<!--
-	<settings src="conf.d/AHL.xml"/>
-	<settings src="conf.d/MLA.xml"/>
--->
+	<!-- FU Berlin, JFK Institut -->
+	<settings src="settings/fu-berlin.xml"/>
+	<settings>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:name" value="John F. Kennedy Institut"/>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:pqf_strftime" value="@and %% @attr 1=dc.sno 7,261"/>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="catalogueURLHintPrefix" value="http://aleph-www.ub.fu-berlin.de/F/?func=find-c&amp;ccl_term=idn%3D"/>
+	</settings>
 
 
 
