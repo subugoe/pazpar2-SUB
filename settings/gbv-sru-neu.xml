@@ -55,7 +55,7 @@
 		sst: Sonderstandort
 	-->
 	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
-	<set name="pz:cclmap:brk" value="u=pica.brk s=1 t=r"/>
+	<set name="pz:cclmap:brk" value="u=pica.brk s=1 t=1"/>
 	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
 	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
 
