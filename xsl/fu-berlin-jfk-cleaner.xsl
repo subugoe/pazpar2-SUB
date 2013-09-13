@@ -21,6 +21,15 @@
 	</xsl:template>
 
 
+	<!--
+		Artificially mark the record as a newspaper.
+		Unfortunately Field 008 is broken on this system (contains 5 characters instead of 40).
+		Only useful for JFK Institut holdings (which are newspapers).
+	-->
+	<xsl:template match="tmarc:c008">
+		<tmarc:c008>|||||||||||||||||||||n||||||||||||||||||</tmarc:c008>
+	</xsl:template>
+
 
 	<!--
 		Articles in titles can have << >> around them (non-sorting).

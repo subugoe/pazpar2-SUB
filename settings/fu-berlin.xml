@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings target="aleph-www.ub.fu-berlin.de/fub01_usm" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
-	FU Berlin SRU Server.
+	FU Berlin SRU Server, configured for JFK Institut library.
 
 	April 2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -29,7 +29,7 @@
 
 	<!-- Result normalisation settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,xsl/fu-berlin-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,xsl/fu-berlin-jfk-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
 
 </settings>
 
