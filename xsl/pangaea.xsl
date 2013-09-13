@@ -25,6 +25,13 @@
 	</xsl:template>
 
 
+	<!--
+		Set medium to »data«.
+	-->
+	<xsl:template match="pz:metadata[@type='medium']">
+		<pz:metadata type="medium">data</pz:metadata>
+	</xsl:template>
+	
 
 	<!--
 		relation:
