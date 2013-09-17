@@ -3,7 +3,7 @@
 <!--
 	FU Berlin SRU Server, configured for JFK Institut library.
 
-	April 2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 	<set name="pz:sru" value="get"/>
@@ -26,6 +26,7 @@
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
 	<set name="pz:elements" value="marcxml"/>
 
+	<set name="medium" value="newspaper"/>
 
 	<!-- Result normalisation settings -->
 	<set name="pz:nativesyntax" value="xml"/>
