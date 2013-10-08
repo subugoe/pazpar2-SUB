@@ -116,7 +116,6 @@
 
 
 	<!-- Central GBV catalogue URLs. -->
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/wao" value="http://gso.gbv.de/DB=1.46/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natliz" value="http://gso.gbv.de/DB=1.50/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natlizzss" value="http://gso.gbv.de/DB=1.55/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/gbvcat" value="http://gso.gbv.de/DB=1.1/PPNSET?PPN="/>

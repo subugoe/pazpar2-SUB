@@ -12,7 +12,6 @@
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
-		<set target="sru.gbv.de/wao" name="pz:name" value="World Affairs Online"/>
 		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog ViFa Nord"/>
 
 		<set target="sru.gbv.de/olcssg-bal" name="pz:name" value="OLC Baltikum"/>
@@ -20,9 +19,15 @@
 		<set target="sru.gbv.de/olcssg-nord" name="pz:name" value="OLC Nordeuropa"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-nord" value="1"/>
 	</settings>
+	
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
+	</settings>
+
+	<settings src="settings/swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb362" name="pz:name" value="World Affairs Online"/>
 	</settings>
 
 	<settings src="settings/testing/libis-litauen.xml"/>

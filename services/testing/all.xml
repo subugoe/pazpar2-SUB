@@ -15,7 +15,6 @@
 	<settings>
 		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK"/>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
-		<set target="sru.gbv.de/wao" name="pz:name" value="World Affairs Online"/>
 		<set target="sru.gbv.de/zdb-1-eai" name="pz:name" value="Early American Imprints"/>
 		<set target="sru.gbv.de/zdb-1-eeb" name="pz:name" value="Early English Books"/>
 		<set target="sru.gbv.de/zdb-1-ecc" name="pz:name" value="18th Century Collections"/>
@@ -63,8 +62,16 @@
 	</settings>
 
 
+	<!-- SWB -->
+	<settings src="settings/swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:name" value="UB Freiberg und SWB"/>
+		<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:name" value="UB Freiberg"/>
+		<set target="z3950n.bsz-bw.de:20210/swb362" name="pz:name" value="World Affairs Online"/>
+	</settings>
+
+
 	<!-- other Libraries -->
-	<settings src="settings/Freiberg.xml"/>
 	<settings src="settings/NAL.xml"/>
 	<settings src="settings/NEBIS-ETH.xml"/>
 	<settings src="settings/testing/PIO.xml"/>

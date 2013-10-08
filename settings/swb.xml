@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="z3950n.bsz-bw.de:20210/swb" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="z3950n.bsz-bw.de:20210/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
-	pazpar2 settings for the new Z39.50 service of BSZ/SWB, displayed as
-	UB Freiberg records.
-
+	pazpar2 settings for the new Z39.50 service of BSZ/SWB.
+	
+	Could be filtered for books in the Freiberg library with @and @attr 1=1044 105.
+		
 	https://wiki.bsz-bw.de/doku.php?id=v-team:daten:z39.50neu
 	http://swb2.bsz-bw.de/DB=2.1/XML=1.0/IKTLIST
 
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
-	<set name="pz:name" value="UB Freiberg und SWB"/>
-
-	<!-- Catalogue URL to the union catalogue, automatically expanding Holdings in Freiberg -->
-	<set name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
-
-
-	<!-- filter for books in Freiberg library, @attr 1=1044 105 -->
-	<!--
-	<set name="pz:pqf_prefix" value="@and @attr 1=1044 105"/>
-	-->
 
 	<!-- unqualified search -->
 	<set name="pz:cclmap:term" value="u=1016 s=al t=r"/>
@@ -61,5 +52,13 @@
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/swb-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/parent-id-strip-isil.xsl,xsl/catalogue-url-hint+id.xsl,xsl/medium-strip-electronic.xsl,xsl/medium-video.xsl,xsl/urn-to-url.xsl,xsl/zdb-number.xsl,xsl/merge-fields.xsl"/>
+	
+
+	<!-- Catalogue URLs -->
+	<set target="z3950n.bsz-bw.de:20210/swb" name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
+	<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:url" value="z3950n.bsz-bw.de:20210/swb"/>
+	<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:pqf_prefix" value="@and @attr 1=1044 105"/>
+	<set target="z3950n.bsz-bw.de:20210/freiberg" name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
+	<set target="z3950n.bsz-bw.de:20210/swb362" name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.362/PPNSET?PPN="/>
 
 </settings>

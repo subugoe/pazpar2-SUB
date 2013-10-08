@@ -19,13 +19,15 @@
 		<set target="sru.gbv.de/olcssg-zge" name="pz:name" value="OLC Zeitgeschichte"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-zge" value="1"/>
 
-		<set target="sru.gbv.de/wao" name="pz:name" value="World Affairs Online"/>
-
 		<set target="sru.gbv.de/menschenrechte" name="pz:name" value="Institut für Menschenrechte"/>
 		<set target="sru.gbv.de/menschenrechte" name="pz:pqf_strftime" value="@and %% @attr 1=pica.bib 4339"/>
 		<set target="sru.gbv.de/menschenrechte" name="pz:url" value="sru.gbv.de/gvk"/>
 	</settings>
 
+	<settings src="settings/swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb362" name="pz:name" value="World Affairs Online"/>
+	</settings>
 
 
 	<xi:include href="../metadata/SUB-default.xml"/>

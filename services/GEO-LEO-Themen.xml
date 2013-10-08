@@ -27,7 +27,10 @@
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
 	</settings>
 
-	<settings src="settings/Freiberg.xml"/>
+	<settings src="settings/swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:name" value="UB Freiberg und SWB"/>
+	</settings>
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
