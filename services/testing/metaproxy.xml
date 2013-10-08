@@ -7,10 +7,16 @@
 <!--
 	Service for testing metaproxy targets.
 
-	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2012-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
+	<settings src="settings/testing/dspace-mp-marc.xml"/>
+	<settings>
+		<set target="vlib.sub.uni-goettingen.de/sru/dspace/ediss" name="pz:name" value="eDiss"/>		
+		<set target="vlib.sub.uni-goettingen.de/sru/dspace/geo-leo" name="pz:name" value="GEO-LEO e-docs"/>		
+	</settings>
+
+
 
 	<settings src="settings/SUB-Guides-solr-MP.xml"/>
 	<settings>
