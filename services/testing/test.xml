@@ -10,7 +10,10 @@
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
+	<settings src="settings/dspace-mp.xml"/>
+	<settings>
+		<set target="sru.sub.uni-goettingen.de/dspace/geo-leo"  name="pz:name" value="GEO-LEO e-docs"/>
+	</settings>
 
 
 

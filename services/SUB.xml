@@ -16,7 +16,7 @@
 	* SUB Solr Indexes (Harvesting):
 		* GoeScholar
 		* DigiZeitschriften
-	* DSpace Systems via SRU:
+	* DSpace SRU (via Metaproxy):
 		* GEO-LEO e-docs
 
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
@@ -39,7 +39,11 @@
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:maxrecs" value="250"/>
 	</settings>
 
-	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
+
+	<settings src="settings/dspace-mp.xml"/>
+	<settings>
+		<set target="sru.sub.uni-goettingen.de/dspace/geo-leo"  name="pz:name" value="GEO-LEO e-docs"/>
+	</settings>
 
 
 

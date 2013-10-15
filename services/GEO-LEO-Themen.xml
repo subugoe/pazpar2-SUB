@@ -10,11 +10,12 @@
 
 	* GBV Databases (SRU):
 		* Göttingen Opac
-	* SWB Catalogue search via Z39.50 for Freiberg books
+	* SWB new Z39.50 server:
+		* in particular for Freiberg books
 	* SUB Solr Indexes (SSGFI1):
 		* Geo Guide
-	* GEO-LEO e-docs (SRU via Metaproxy)
-
+	* DSpace SRU (via Metaproxy):
+		* GEO-LEO e-docs
 
 	All targets support the fbg and lkl search keys for the Göttingen and Freiberg
 	subject classifications.
@@ -37,7 +38,10 @@
 		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo-Guide"/>
 	</settings>
 
-	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
+	<settings src="settings/dspace-mp.xml"/>
+	<settings>
+		<set target="sru.sub.uni-goettingen.de/dspace/geo-leo"  name="pz:name" value="GEO-LEO e-docs"/>
+	</settings>
 
 
 

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings
 	xmlns="http://www.indexdata.com/pazpar2/1.0"
-	target="sru.sub.uni-goettingen.de/dspace/geo-leo">
+	target="sru.sub.uni-goettingen.de/dspace/*">
 <!--
-	pazpar2 settings for the GEO-LEO e-docs DSpace server,
-		accessing the Solr Index via metaproxy’s SRU interface.
-
+	pazpar2 settings to access DSpace Solr indexes via a SRU interface
+		provided by Metaproxy.
+	
 	2012-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
-	<set name="pz:name" value="GEO-LEO e-docs"/>
-
 	<set name="pz:sru" value="get"/>
 	<set name="pz:sru_version" value="1.1"/>
 
@@ -38,10 +36,14 @@
 
 
 	<!-- SRU schema. Eg. "dc" or "marcxml" -->
-	<set name="pz:elements" value="dc"/>
+	<set name="pz:elements" value="turbomarc"/>
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/DSpace-dc-qualified.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/medium-electronic.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/medium-electronic.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+
+
+	<set name="catalogueURLHintPrefix" target="sru.sub.uni-goettingen.de/dspace/ediss" value="http://ediss.uni-goettingen.de/handle/"/>
+	<set name="catalogueURLHintPrefix" target="sru.sub.uni-goettingen.de/dspace/geo-leo" value="http://e-docs.geo-leo.de/handle/"/>
 
 </settings>
