@@ -5,16 +5,29 @@
 		xmlns:xi="http://www.w3.org/2001/XInclude"
 		id="DSpace">
 <!--
-	Service loading data from DSpace.
-		* via DSpace’s SRU interface (to be deprecated as it is instable)
-		* using SRU (provided by Metaproxy) accessing DSpace’s Solr index
+	Service accessing DSpace data:
 
+	* SRU interface on DSpace Solr Index (Metaproxy)
+		* eDiss
+		* GEO-LEO e-docs
+	* Solr index with data from OAI harvesting
+		* GoeScholar
+
+	
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/ADW.xml"/>
-	<settings src="settings/GEO-LEO-edocs-MP.xml"/>
+	<settings src="settings/dspace-mp.xml"/>
+	<settings>
+		<set target="sru.sub.uni-goettingen.de/dspace/geo-leo"  name="pz:name" value="GEO-LEO e-docs"/>
+		<set target="sru.sub.uni-goettingen.de/dspace/ediss"  name="pz:name" value="eDiss"/>
+	</settings>
 
+	<settings src="settings/SUB-Harvesting-solr.xml"/>
+	<settings>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:maxrecs" value="250"/>
+	</settings>
 
 
 	<xi:include href="../metadata/SUB-default.xml"/>

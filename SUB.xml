@@ -36,10 +36,6 @@
 		<xi:include href="services/SUB.xml"/>
 		<xi:include href="services/Neuerwerbungen.xml"/>
 
-		<!-- ADW -->
-		<xi:include href="services/ADW.xml"/>
-
-
 		<!-- Testing -->
 		<xi:include href="services/testing/test.xml"/>
 		<xi:include href="services/testing/all.xml"/>
