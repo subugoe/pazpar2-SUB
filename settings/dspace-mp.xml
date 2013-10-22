@@ -40,7 +40,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/medium-electronic.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/tmarc-856-remove-handle.xsl,pazpar2-etc/tmarc.xsl,xsl/medium-electronic.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
 
 
 	<set name="catalogueURLHintPrefix" target="sru.sub.uni-goettingen.de/dspace/ediss" value="http://ediss.uni-goettingen.de/handle/"/>
