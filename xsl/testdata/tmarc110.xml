@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnas a22yyyyy c 4500</l>
+  <c001>72017077X</c001>
+  <c003>DE-601</c003>
+  <c005>20130117014412.0</c005>
+  <c008>120725m20129999lu uu p       0   u0eng d</c008>
+  <d016 i1="7" i2=" ">
+    <sa>102448209X</sa>
+    <s2>DE-101</s2>
+  </d016>
+  <d016 i1="7" i2=" ">
+    <sa>2674272X</sa>
+    <s2>DE-600</s2>
+  </d016>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)ZDB2674272-X</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>eng</sa>
+  </d041>
+  <d082 i1="0" i2="0">
+    <sa>340</sa>
+  </d082>
+  <d082 i1="0" i2="9">
+    <sa>340</sa>
+  </d082>
+  <d110 i1="2" i2=" ">
+    <sa>Europäische Kommission</sa>
+    <sb>Europäisches Amt für Betrugsbekämpfung</sb>
+    <sc>Brüssel</sc>
+    <sd>1999</sd>
+    <s0>(DE-601)319016773</s0>
+    <s0>(DE-588)10005065-7</s0>
+  </d110>
+  <d245 i1="1" i2="4">
+    <sa>The OLAF report :</sa>
+    <sb>... report of the European Anti-Fraud Office</sb>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>Luxembourg</sa>
+    <sb>Publ. Off. of the European Union</sb>
+    <sc>2012-</sc>
+  </d260>
+  <d362 i1="0" i2=" ">
+    <sa>12.2011(2012) -</sa>
+  </d362>
+  <d363 i1="0" i2="1">
+    <sa>12</sa>
+    <si>2011</si>
+  </d363>
+  <d650 i1=" " i2="7">
+    <s8>1.1\x</s8>
+    <sa>Korruption</sa>
+    <s0>(DE-601)091372232</s0>
+    <s0>(DE-STW)16193-4</s0>
+    <s2>stw</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <s8>1.2\x</s8>
+    <sa>Korruptionsbekämpfung</sa>
+    <s0>(DE-601)63800103X</s0>
+    <s2>stw</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <s8>1.3\x</s8>
+    <sa>EU-Staaten</sa>
+    <s0>(DE-601)091358639</s0>
+    <s0>(DE-STW)17983-5</s0>
+    <s2>stw</s2>
+  </d650>
+  <d689 i1="0" i2="0">
+    <s0>(DE-601)319016773</s0>
+    <s0>(DE-588)10005065-7</s0>
+    <sa>Europäische Kommission</sa>
+  </d689>
+  <d689 i1="0" i2="1">
+    <sA>f</sA>
+    <sa>Bericht</sa>
+  </d689>
+  <d689 i1="0" i2=" ">
+    <s5>DE-188</s5>
+  </d689>
+  <d780 i1="0" i2="2">
+    <si>Vorg.</si>
+    <st>Operational report of the European Anti-Fraud Office</st>
+    <sw>(DE-600)2650324-4</sw>
+  </d780>
+  <d787 i1="0" i2="8">
+    <si>Online-Ausg: </si>
+    <st>The OLAF report</st>
+    <sw>(DE-600)2674273-1</sw>
+  </d787>
+  <d787 i1="0" i2="8">
+    <si>Dt. Ausg: </si>
+    <st>Der OLAF-Bericht</st>
+    <sw>(DE-600)2691065-2</sw>
+  </d787>
+  <d787 i1="0" i2="8">
+    <si>Franz. Ausg: </si>
+    <st>Rapport de l&apos;OLAF / Commission Européenne,  OLAF</st>
+    <sw>(DE-600)2697593-2</sw>
+  </d787>
+</r>
