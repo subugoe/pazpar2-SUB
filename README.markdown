@@ -13,9 +13,9 @@ This repository contains the configuration files for Index Data’s [pazpar2](ht
 * The folder »xsl« contains XSLTs to normalise the loaded data. These are used by the files in »settings«.
 	* It contains the stylesheet »xsl/pazpar2-docs.xsl« which converts pazpar2 XML configuration files to HTML pages.
 * Git submodules with Index Data’s software:
-	* »[pazpar2](http://git.indexdata.com/?p=pazpar2.git)«
+	* »[pazpar2](https://github.com/subugoe/pazpar2-SUB)« (forked)
 	* »[yaz](http://git.indexdata.com/?p=yaz.git)«
-* The [subrepository in »pazpar2-etc«](https://github.com/ssp/pazpar2-etc) contains customised files (e.g. »tmarc.xsl«) from the pazpar2/etc folder. These are kept in a separate repository to enable using a cleanly checked out version of the software.
+* The [subrepository in »pazpar2-etc«](https://github.com/subugoe/pazpar2-etc) contains customised files (e.g. »tmarc.xsl«) from the pazpar2/etc folder. These are kept in a separate repository to enable using a cleanly checked out version of the software.
 * The folder »setup« contains configuration files to help installing the pazpar2 service on a server:
 	* »pazpar2.init«: init script for SUSE Linux
 	* »pazpar2.logrotate«: logrotate configuration file
