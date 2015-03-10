@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="217.7.254.220:9999" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="gottfried.wissensbank.com:210/IFL.CAT" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	Institut für Länderkunde Z39.50 target.
 	The server is run by KTS Informationssysteme, München.
@@ -29,10 +29,10 @@
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="usmarc"/>
 	<set name="pz:elements" value="F"/>
-	<set name="pz:queryencoding" value="utf-8"/>
+	<set name="pz:queryencoding" value="iso-8859-1"/>
 
 	<!-- Result normalization settings -->
-	<set name="pz:nativesyntax" value="txml;utf-8"/>
+	<set name="pz:nativesyntax" value="txml;iso-8859-1"/>
 	<set name="pz:xslt" value="xsl/IfL.xsl,pazpar2-etc/tmarc.xsl,xsl/medium-override.xsl,xsl/merge-fields.xsl"/>
 </settings>
 

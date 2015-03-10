@@ -17,7 +17,7 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature Guide"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/lit" name="pz:name" value="Literature Guide"/>
 	</settings>
 
 

@@ -19,8 +19,8 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Digitalisate"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:maxrecs" value="250"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/digreg" name="pz:name" value="Digitalisate"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/digreg" name="pz:maxrecs" value="250"/>
 	</settings>
 
 	<settings src="settings/fiz-elibm.xml"/>

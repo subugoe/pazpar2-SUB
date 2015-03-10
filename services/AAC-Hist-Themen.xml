@@ -25,7 +25,7 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History Guide"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/hist" name="pz:name" value="History Guide"/>
 	</settings>
 
 

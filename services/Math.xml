@@ -45,11 +45,11 @@
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/*" name="pz:maxrecs" value="100"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Digitalisate"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Dissertationen"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/*" name="pz:maxrecs" value="100"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/math" name="pz:name" value="Math Guide"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/digreg" name="pz:name" value="Digitalisate"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/mathdiss" name="pz:name" value="Dissertationen"/>
 	</settings>
 
 
