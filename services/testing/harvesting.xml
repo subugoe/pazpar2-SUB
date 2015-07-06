@@ -24,6 +24,6 @@
 
 
 
-	<xi:include href="../metadata/SUB-default.xml"/>
+	<include src="services/metadata/SUB-default.xml"/>
 
 </service>

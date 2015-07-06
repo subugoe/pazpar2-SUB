@@ -13,7 +13,7 @@
 		<proxy host="localhost" port="80"/>
 
 		<!-- Testing -->
-		<xi:include href="services/AAC.xml"/>
+		<include src="services/AAC.xml"/>
 
 
 

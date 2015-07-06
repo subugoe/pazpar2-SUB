@@ -1,55 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="xsl/doc/pazpar2-docs.xsl"?>
-<pazpar2
-		xmlns="http://www.indexdata.com/pazpar2/1.0"
-		xmlns:xi="http://www.w3.org/2001/XInclude">
-
+<pazpar2 xmlns="http://www.indexdata.com/pazpar2/1.0">
 
 	<!-- non-zero to enable threaded operation -->
 	<threads number="4"/>
+	<file path="/opt/pazpar2/pazpar2-SUB:/opt/pazpar2/pazpar2-etc/:/opt/pazpar2/pazpar2-SUB/xsl:/usr/share/pazpar2"/>
 
 	<server>
 		<listen host="localhost" port="9004"/>
 		<proxy host="localhost" port="80"/>
 
 		<!-- Lib AAC -->
-		<xi:include href="services/AAC.xml"/>
-		<xi:include href="services/AAC-Neuerwerbungen.xml"/>
-		<xi:include href="services/AAC-Zeitungen.xml"/>
-		<xi:include href="services/AAC-Lit-Themen.xml"/>
-		<xi:include href="services/Guide-Literature.xml"/>
-		<xi:include href="services/AAC-Hist-Themen.xml"/>
-		<xi:include href="services/Guide-History.xml"/>
+		<include src="services/AAC.xml"/>
+		<include src="services/AAC-Neuerwerbungen.xml"/>
+		<include src="services/AAC-Zeitungen.xml"/>
+		<include src="services/AAC-Lit-Themen.xml"/>
+		<include src="services/Guide-Literature.xml"/>
+		<include src="services/AAC-Hist-Themen.xml"/>
+		<include src="services/Guide-History.xml"/>
 
 		<!-- GEO-LEO -->
-		<xi:include href="services/GEO-LEO.xml"/>
-		<xi:include href="services/GEO-LEO-Themen.xml"/>
-		<xi:include href="services/Guide-Geo.xml"/>
+		<include src="services/GEO-LEO.xml"/>
+		<include src="services/GEO-LEO-Themen.xml"/>
+		<include src="services/Guide-Geo.xml"/>
 
 		<!-- vifamath -->
-		<xi:include href="services/Math.xml"/>
-		<xi:include href="services/Math-historisch.xml"/>
-		<xi:include href="services/Math-Neuerwerbungen.xml"/>
-		<xi:include href="services/Math-Themen.xml"/>
+		<include src="services/Math.xml"/>
+		<include src="services/Math-historisch.xml"/>
+		<include src="services/Math-Neuerwerbungen.xml"/>
+		<include src="services/Math-Themen.xml"/>
 
 		<!-- SUB Site -->
-		<xi:include href="services/SUB.xml"/>
-		<xi:include href="services/Neuerwerbungen.xml"/>
+		<include src="services/SUB.xml"/>
+		<include src="services/Neuerwerbungen.xml"/>
 
 		<!-- Testing -->
-		<xi:include href="services/testing/test.xml"/>
-		<xi:include href="services/testing/all.xml"/>
-		<xi:include href="services/testing/GVK.xml"/>
-		<xi:include href="services/testing/ZDB.xml"/>
-		<xi:include href="services/testing/ZDB-GVK.xml"/>
-		<xi:include href="services/testing/solr.xml"/>
-		<xi:include href="services/testing/metaproxy.xml"/>
-		<xi:include href="services/testing/DSpace.xml"/>
-		<xi:include href="services/testing/harvesting.xml"/>
-		<xi:include href="services/testing/CERL.xml"/>
-		<xi:include href="services/testing/vifanord.xml"/>
-		<xi:include href="services/testing/vifapol.xml"/>
-		<xi:include href="services/testing/zvdd.xml"/>
+		<include src="services/testing/test.xml"/>
+		<include src="services/testing/all.xml"/>
+		<include src="services/testing/GVK.xml"/>
+		<include src="services/testing/ZDB.xml"/>
+		<include src="services/testing/ZDB-GVK.xml"/>
+		<include src="services/testing/solr.xml"/>
+		<include src="services/testing/metaproxy.xml"/>
+		<include src="services/testing/DSpace.xml"/>
+		<include src="services/testing/harvesting.xml"/>
+		<include src="services/testing/CERL.xml"/>
+		<include src="services/testing/vifanord.xml"/>
+		<include src="services/testing/vifapol.xml"/>
+		<include src="services/testing/zvdd.xml"/>
 
 
 

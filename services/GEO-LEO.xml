@@ -19,7 +19,7 @@
 	* SUB Solr Indexes (SSGFI1):
 		* Geo-Guide
 	* DSpace SRU (via Metaproxy):
-		* GEO-LEO e-docs
+		* GEO-LEO e-docs (derzeit inaktiv)
 	* NEBIS/ETH Zürich
 	* USDA NAL
 	* Institut für Länderkunde (IfL)
@@ -60,10 +60,12 @@
 	</settings>
 
 	<settings src="settings/dspace-mp.xml"/>
+
+<!-- inaktiv:
 	<settings>
 		<set target="sru.sub.uni-goettingen.de/dspace/geo-leo"  name="pz:name" value="GEO-LEO e-docs"/>
 	</settings>
-
+-->
 	<settings src="settings/NEBIS-ETH.xml"/>
 	<settings src="settings/NAL.xml"/>
 	<settings src="settings/IfL.xml"/>
@@ -79,6 +81,6 @@
 
 	<metadata name="subject" brief="yes" merge="unique"/>
 
-	<xi:include href="metadata/SUB-default.xml"/>
+	<include src="services/metadata/SUB-default.xml"/>
 
 </service>
