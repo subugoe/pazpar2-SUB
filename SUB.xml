@@ -48,6 +48,7 @@
 		<include src="services/testing/vifanord.xml"/>
 		<include src="services/testing/vifapol.xml"/>
 		<include src="services/testing/zvdd.xml"/>
+		<include src="services/testing/VD18.xml"/>
 
 
 

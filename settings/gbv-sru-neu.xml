@@ -153,6 +153,7 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/zdb-1-rth" value="http://gso.gbv.de/DB=5.72/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/eromm" value="http://gso.gbv.de/DB=2.8/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/vd17" value="http://gso.gbv.de/DB=1.28/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/vd18" value="http://gso.gbv.de/DB=1.26/PPNSET?PPN="/>
 
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/proj-ssgpol" value="http://gso.gbv.de/DB=1.28/PPNSET?PPN="/>
 
