@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="Finnougristik">
+<!--
+	Targets used for vifamath main search at FID Finnougristik
+	* SUB Solr Indexes (SSGFI1):
+		* Finnougristik
+	* inactive: GBV Fachkatalog Finnugristik
+
+	2017 Hans-Werner Hilse <hilse@sub.uni-goettingen.de>
+-->
+
+<!-- alter solr-Index von Thomas:
+	<settings src="settings/SUB-Guides-solr.xml"/>
+	<settings>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/*" name="pz:maxrecs" value="100"/>
+		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/finnug" name="pz:name" value="FinnUgGuide"/>
+	</settings>
+-->
+<!-- neu: Integration der Daten ins CBS -->
+	<settings src="settings/gbv-sru-neu.xml"/>
+	<settings>
+		<set target="sru.gbv.de/gvk" name="pz:name" value="FinnUgGuide"/>
+		<set target="sru.gbv.de/gvk" name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/zdb-number.xsl,xsl/url-remove-ciando.xsl,xsl/medium-website.xsl,xsl/merge-fields.xsl"/>
+		<set target="sru.gbv.de/gvk" name="pz:pqf_strftime" value="@and %% @attr 1=pica.xpr finnugguide"/>
+	</settings>
+
+
+<!--
+	<settings src="settings/gbv-sru-neu.xml"/>
+	<settings>
+		<set target="sru.gbv.de/fachopac-fin" name="pz:name" value="Fachkatalog Finnougristik"/>
+	</settings>
+-->
+
+	<include src="services/metadata/SUB-default.xml"/>
+
+</service>

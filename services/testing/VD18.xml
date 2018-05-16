@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="VD18">
+<!--
+	Targets for VD18 search
+
+	* GBV Databases (SRU):
+		* VD18
+
+	2015: Hans-Werner Hilse <hilse@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/gbv-sru-neu.xml"/>
+	<settings>
+		<set target="sru.gbv.de/vd18" name="pz:name" value="vd18"/>
+		<set target="sru.gbv.de/vd18" name="pz:pqf_prefix" value="@and @attr 1=pica.pub online"/>
+	</settings>
+
+	<include src="services/metadata/SUB-default.xml"/>
+
+</service>

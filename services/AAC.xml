@@ -61,7 +61,8 @@
 	<settings>
 		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:name" value="John F. Kennedy Institut"/>
 		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:pqf_strftime" value="@and %% @attr 1=dc.sno 7,261"/>
-		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="catalogueURLHintPrefix" value="http://aleph-www.ub.fu-berlin.de/F/?func=find-c&amp;ccl_term=idn%3D"/>
+		<!-- 2016/07/05 hwh: <set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="catalogueURLHintPrefix" value="http://aleph-www.ub.fu-berlin.de/F/?func=find-c&amp;ccl_term=idn%3D"/> -->
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="catalogueURLHintPrefix" value="http://primo.kobv.de/primo_library/libweb/action/dlSearch.do?&amp;vid=FUB&amp;institution=FUB&amp;search_scope=FUB_Blended_2&amp;tab=fub&amp;query=any,exact,"/>
 	</settings>
 
 

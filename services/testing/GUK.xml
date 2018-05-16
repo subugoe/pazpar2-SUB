@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="GUK">
+<!--
+	GVK Target via SRU
+
+	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/gbv-sru-neu.xml"/>
+	<settings>
+		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="GUK"/>
+	</settings>
+
+
+
+	<include src="services/metadata/SUB-default.xml"/>
+
+</service>

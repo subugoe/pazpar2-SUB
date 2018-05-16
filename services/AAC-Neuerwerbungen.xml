@@ -24,6 +24,8 @@
 
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
+		<!-- alternative gbv-cleaner.xsl -->
+		<set target="sru.gbv.de/opac-de-7" name="pz:xslt" value="xsl/gbv-cleaner-neuerwerbungen.xsl,pazpar2-etc/tmarc.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/catalogue-url-hint+id.xsl,xsl/gbv-parent-catalogue-url-postprocess.xsl,xsl/zdb-number.xsl,xsl/url-remove-ciando.xsl,xsl/merge-fields.xsl"/>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
 	</settings>
 
