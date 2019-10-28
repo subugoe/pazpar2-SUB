@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="gottfried.wissensbank.com:210/IFL.CAT" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="ifl.wissensbank.com:210/IFL.CAT" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	Institut für Länderkunde Z39.50 target.
 	The server is run by KTS Informationssysteme, München.

@@ -18,8 +18,6 @@
 		* in particular for Freiberg books
 	* SUB Solr Indexes (SSGFI1):
 		* Geo-Guide
-	* DSpace SRU (via Metaproxy):
-		* GEO-LEO e-docs (derzeit inaktiv)
 	* NEBIS/ETH Zürich
 	* USDA NAL
 	* Institut für Länderkunde (IfL)
@@ -27,6 +25,7 @@
 		* Articles
 		* Digitised Works
 		* Pangaea
+		* GEO-LEO e-docs
 
 	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
@@ -34,14 +33,17 @@
 	<settings src="settings/gbv-sru-neu.xml"/>
 	<settings>
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
+		<set target="sru.gbv.de/opac-de-7" name="pz:pqf_strftime" value="@and %% @attr 1=pica.osg ggo"/>
+		<!-- <set target="sru.gbv.de/opac-de-7" name="pz:allow" value="0"/> -->
 
 		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
 		<set target="sru.gbv.de/ikar" name="pz:name" value="Alte Karten"/>
 
 		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
-		<set target="sru.gbv.de/fachopac-ggo" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
+		<!-- <set target="sru.gbv.de/fachopac-ggo" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/> -->
+		<set target="sru.gbv.de/fachopac-ggo" name="pz:allow" value="0"/>
 		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
-		<set target="sru.gbv.de/fachopac-ast" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/>
+		<!-- <set target="sru.gbv.de/fachopac-ast" name="pz:pqf_strftime" value="@not %% @attr 1=pica.bib 0007"/> -->
 
 		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="Artikel Geowissenschaften"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-ggo" value="1"/>
@@ -52,6 +54,10 @@
 	<settings src="settings/swb.xml"/>
 	<settings>
 		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:name" value="UB Freiberg und SWB"/>
+		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:pqf_strftime" value="@and %% @or @or @or @or @or @or @or @or @or @or @or @attr 1=13 333? @attr 1=13 5? @attr 1=13 62? @attr 1=13 63? @attr 1=13 999? @attr 1=20 qt? @attr 1=20 uq? @attr 1=20 us? @attr 1=20 ut? @attr 1=20 t? @attr 1=20 zi? @attr 1=20 zk?"/>
+<!--
+		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:allow" value="0"/>
+-->
 	</settings>
 
 	<settings src="settings/SUB-Guides-solr.xml"/>
@@ -61,20 +67,17 @@
 
 	<settings src="settings/dspace-mp.xml"/>
 
-<!-- inaktiv:
-	<settings>
-		<set target="sru.sub.uni-goettingen.de/dspace/geo-leo"  name="pz:name" value="GEO-LEO e-docs"/>
-	</settings>
--->
 	<settings src="settings/NEBIS-ETH.xml"/>
 	<settings src="settings/NAL.xml"/>
 	<settings src="settings/IfL.xml"/>
 
 	<settings src="settings/SUB-Harvesting-solr.xml"/>
 	<settings>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-data-repositories" name="pz:name" value="Data Repositories"/>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="Repositories"/>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="Digitalisate"/>
 		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea" name="pz:name" value="Pangaea Data Publisher"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-edocs" name="pz:name" value="GEO-LEO e-docs"/>
 	</settings>
 
 

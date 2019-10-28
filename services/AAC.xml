@@ -65,6 +65,10 @@
 		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="catalogueURLHintPrefix" value="http://primo.kobv.de/primo_library/libweb/action/dlSearch.do?&amp;vid=FUB&amp;institution=FUB&amp;search_scope=FUB_Blended_2&amp;tab=fub&amp;query=any,exact,"/>
 	</settings>
 
+	<settings src="settings/SUB-Harvesting-solr.xml"/>
+        <settings>
+                <set target="solr-harvest.tc.sub.uni-goettingen.de/solr/libaac-dspace" name="pz:name" value="The Stacks"/>
+        </settings>
 
 
 	<include src="services/metadata/SUB-default.xml"/>

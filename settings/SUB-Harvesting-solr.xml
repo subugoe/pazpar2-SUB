@@ -50,6 +50,13 @@
 	<!-- arXiv -->
 	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv"
 		name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/arxiv.xsl,xsl/merge-fields.xsl"/>
+	<!-- ODA -->
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-oda"
+		name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
+
+	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-kulturerbe"
+		name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/merge-fields.xsl"/>
+
 	<!-- Pangaea -->
 	<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea"
 		name="pz:xslt" value="pazpar2-etc/solr-pz2.xsl,xsl/solr-sub-harvester.xsl,xsl/pangaea.xsl,xsl/merge-fields.xsl"/>

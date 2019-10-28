@@ -15,12 +15,18 @@
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
+<!--
 	<settings src="settings/SUB-Guides-solr.xml"/>
 	<settings>
 		<set target="ssgfi.sub.uni-goettingen.de:8080/solr/hist" name="pz:name" value="History Guide"/>
 	</settings>
-
-
+-->
+	<settings src="settings/gbv-sru-neu.xml"/>
+	<settings>
+		<set target="sru.gbv.de/gvk" name="pz:xslt" value="xsl/gbv-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/iso-639-2-to-639-2b-converter.xsl,xsl/zdb-number.xsl,xsl/url-remove-ciando.xsl,xsl/medium-website.xsl,xsl/merge-fields.xsl"/>
+		<set target="sru.gbv.de/gvk" name="pz:name" value="History Guide"/>
+		<set target="sru.gbv.de/gvk" name="pz:pqf_strftime" value="@and %% @attr 1=pica.xpr histguide"/>
+	</settings>
 
 	<include src="services/metadata/SUB-default.xml"/>
 

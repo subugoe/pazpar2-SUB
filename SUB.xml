@@ -10,13 +10,17 @@
 		<listen host="localhost" port="9004"/>
 		<proxy host="localhost" port="80"/>
 
+		<settings src="settings-default.xml"/>
+
 		<!-- Lib AAC -->
 		<include src="services/AAC.xml"/>
 		<include src="services/AAC-Neuerwerbungen.xml"/>
 		<include src="services/AAC-Zeitungen.xml"/>
+		<include src="services/AAC-Journals.xml"/>
 		<include src="services/AAC-Lit-Themen.xml"/>
 		<include src="services/Guide-Literature.xml"/>
 		<include src="services/AAC-Hist-Themen.xml"/>
+
 		<include src="services/Guide-History.xml"/>
 
 		<!-- GEO-LEO -->
@@ -29,6 +33,9 @@
 		<include src="services/Math-historisch.xml"/>
 		<include src="services/Math-Neuerwerbungen.xml"/>
 		<include src="services/Math-Themen.xml"/>
+
+		<!-- Finnougristik -->
+		<include src="services/Finnougristik.xml"/>
 
 		<!-- SUB Site -->
 		<include src="services/SUB.xml"/>
@@ -49,6 +56,7 @@
 		<include src="services/testing/vifapol.xml"/>
 		<include src="services/testing/zvdd.xml"/>
 		<include src="services/testing/VD18.xml"/>
+		<include src="services/testing/GUK.xml"/>
 
 
 

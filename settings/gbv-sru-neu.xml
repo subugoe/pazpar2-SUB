@@ -53,11 +53,13 @@
 		brk: Bandrealkatalog
 		osg: Online Contents SSG
 		sst: Sonderstandort
+		ssn: ...
 	-->
 	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
 	<set name="pz:cclmap:brk" value="u=pica.brk s=1 t=1"/>
 	<set name="pz:cclmap:osg" value="u=pica.osg s=1 t=r"/>
 	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
+	<set name="pz:cclmap:ssn" value="u=pica.ssn s=1 t=r"/>
 
 
 	<!--
@@ -84,6 +86,7 @@
 	<set name="pz:cclmap:language" value="u=pica.taa s=1"/>
 	<set name="pz:cclmap:url" value="u=pica.url t=r"/>
 	<set name="pz:cclmap:nea" value="u=pica.nea t=r"/>
+	<set name="pz:cclmap:sys" value="u=pica.sys s=1 t=r"/>
 
 
 
