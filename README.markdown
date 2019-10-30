@@ -1,3 +1,6 @@
+# Repository moved!
+The new location is at [GWDG GitLab](https://gitlab.gwdg.de/subugoe/pazpar2/pazpar2-SUB).
+
 # pazpar2 configuration files for SUB Göttingen
 
 This repository contains the configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) metasearch daemon for use at [SUB Göttingen](http://www.sub.uni-goettingen.de). 
